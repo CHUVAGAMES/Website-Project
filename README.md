@@ -358,5 +358,4 @@ Este projeto está licenciado sob termos específicos - veja o arquivo [LICENSE.
   **Desenvolvido com ❤️ pela equipe CHUVA Games**
   
   *"Contando histórias através de jogos"*
-</div>#   W e b s i t e - P r o j e c t  
- 
+</div>

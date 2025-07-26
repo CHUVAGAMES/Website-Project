@@ -407,9 +407,9 @@ footer p {
 }
 
 .team-card {
-  background: rgb(255, 255, 255);
+  background-color: rgba(94, 93, 93, 0.404);
   border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(33,150,243,0.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -418,20 +418,23 @@ footer p {
   transition: box-shadow 0.2s, transform 0.2s;
   height: 100%;
   backdrop-filter: blur(3px); /* Efeito de blur */
+  border: 1.5px solid #9999994f;
 }
 
 .team-card:hover {
-  box-shadow: 0 8px 32px rgba(33,150,243,0.18);
   transform: translateY(-4px);
-}
+ background-color: #ffffff;
+  transition: transform 0.5s ease;
+  border: 1.5px solid #cccccc8e;
+} 
 
 .team-thumb {
   width: 120px;
   height: 120px;
   border-radius: 16px;
   object-fit: cover;
-  border: 2px solid #2196f3;
-  background: #fff;
+  
+  background: #ffffff00;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
 }
@@ -439,23 +442,30 @@ footer p {
 .team-card:hover .team-thumb,
 .team-thumb.hovered {
   transform: scale(1.05);
-  box-shadow: 0 0 0 4px #90caf9;
 }
 
 .team-card-name {
   font-weight: 700;
-  color: #2196f3;
+  color: #ffffff;
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 0.5em;
 }
 
 .team-card-role {
-  color: #000000;
+  color: #d8d6d6;
   font-size: 0.9rem;
   text-align: center;
   font-weight: 600;
   font-weight: bold;
+}
+
+.team-card:hover .team-card-name {
+  color: #222222;
+}
+
+.team-card:hover .team-card-role {
+  color: #444444;
 }
 
 /* Modal estilos */

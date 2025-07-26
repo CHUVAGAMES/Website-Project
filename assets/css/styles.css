@@ -474,7 +474,7 @@ footer p {
   position: fixed;
   z-index: 2000;
   left: 0; top: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.199);
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
@@ -538,6 +538,7 @@ footer p {
   object-fit: cover;
   box-shadow: 0 2px 12px rgba(33,150,243,0.10);
   transition: transform 0.3s ease;
+
 }
 
 .team-modal-img.hovered {
@@ -627,6 +628,188 @@ footer p {
   transform: scale(1.15);
 }
 
+/* Novo estilo para cards de jogos */
+.games-cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
+  
+}
+
+.game-highlight-card {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(94, 93, 93, 0.404);
+  box-shadow: 0 4px 24px rgba(3, 3, 3, 0.342);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  display: flex;
+  align-items: flex-end;
+}
+
+.game-highlight-card:hover {
+  transform: scale(1.04) translateY(-4px);
+  background: transparent;
+  box-shadow: 0 4px 24px rgba(3, 3, 3, 0.342);
+  transform: ease-in-out 0.3s;
+}
+
+.game-highlight-thumb {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.game-highlight-card:hover .game-highlight-thumb {
+  transform: scale(1.07);
+  transition: transform 0.3s;
+}
+
+.game-highlight-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.336) 70%, rgba(0,0,0,0.1) 100%);
+  padding: 1.1rem 0.7rem 0.7rem 0.7rem;
+  z-index: 2;
+  border-radius: 0 0 20px 20px;
+
+}
+
+.game-highlight-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center  ;
+  text-shadow: 0 2px 8px #000a;
+}
+
+.game-highlight-card:hover .game-highlight-title {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .games-cards-flex {
+    gap: 3rem;
+  }
+  .game-highlight-card {
+    width: 95vw;
+    max-width: 300px;
+    min-width: 180px;
+    aspect-ratio: 1/1;
+  }
+}
+
+
+
+/* Modal igual ao das páginas de jogo */
+.game-modal-bg,
+#modal-jogos {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(73, 73, 73, 0.438);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.game-modal-bg.active,
+#modal-jogos.active,
+#modal-jogos[style*="display: block"] {
+  display: flex !important;
+  animation: modalFadeIn 0.3s ease;
+}
+
+.game-modal,
+#modal-jogos .modal-content {
+  background: #00000000;
+  border-radius: 20px;
+  max-width: 95vw;
+  max-height: 90vh;
+  width: 90vw;
+  height: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: modalContentFadeIn 0.3s ease;
+}
+
+.game-modal-img,
+#modal-jogos .modal-image {
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  background: transparent;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+@media (max-width: 600px) {
+  .game-modal,
+  #modal-jogos .modal-content {
+    width: 95vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .game-modal-img,
+  #modal-jogos .modal-image {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.modal-close,
+#modal-jogos .close {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+  padding: 5px;
+  line-height: 1;
+  text-shadow: 0 2px 8px #000a;
+}
+
+.modal-close:hover,
+#modal-jogos .close:hover {
+  color: var(--primary-color);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes modalContentFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
 /* ========== GAMES SECTION ========== */
 .game-section {
   padding: 1em;
@@ -640,7 +823,7 @@ footer p {
 
 .games-cloud-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   justify-content: center;
   margin: 2rem auto;
@@ -699,25 +882,29 @@ footer p {
   margin-top: 0.5rem;
 }
 
+.game-cloud-card:hover .game-title {
+  color: #222222;
+}
+
 /* Game Modal */
 .game-modal-bg {
   display: none;
   position: fixed;
   z-index: 2000;
   left: 0; top: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.199);
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
 }
 
 .game-modal-bg.active {
   display: flex;
-  animation: modalFadeIn 0.3s ease;
+  animation: modalFadeIn 0.5s ease;
 }
 
 .game-modal {
-  background: rgba(30, 30, 30, 0.9);
+  background: rgb(255, 255, 255);
   border-radius: 1.5rem;
   max-width: 95vw;
   max-height: 90vh;
@@ -728,7 +915,7 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto;
+  
   animation: modalContentFadeIn 0.3s ease;
 }
 
@@ -737,26 +924,28 @@ footer p {
   height: auto;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .game-modal-img.zoom {
-  transform: scale(1.5);
+  transform: scale(1);
   cursor: grab;
 }
+
+
 
 .game-modal-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: #000;
   margin-bottom: 1rem;
   text-align: center;
 }
 
 .game-modal-desc {
-  color: var(--text-color);
+  color: #000;
   font-size: 1.1rem;
   text-align: center;
   line-height: 1.6;
@@ -827,8 +1016,8 @@ footer p {
   }
 
   .team-modal-img, .game-modal-img {
-    width: 120px;
-    height: 120px;
+    width: 600px;
+    
   }
 
   .team-modal-title, .game-modal-title {

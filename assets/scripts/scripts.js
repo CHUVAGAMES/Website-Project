@@ -229,75 +229,100 @@ function initCopyEmail() {
 
 // Game modals
 function initGameModals() {
-  // Game data
-  const games = {
+  // Dados dos jogos em inglês
+  const gamesEn = {
     amazon: {
       title: "The Amazon Grove",
       img: "/assets/images/games/amazongrove.jpg",
-      desc: "Coming soon. An adventure through the mystical Amazon rainforest, where ancient spirits and modern threats collide in a story of preservation and discovery."
+      desc: "Soon"
     },
     arcane: {
       title: "Trials of the Arcane Grove",
       img: "/assets/images/games/arcanegrove.jpg",
-      desc: "Coming soon. Embark on a magical journey through the Arcane Grove, solving puzzles and uncovering secrets in this enchanting adventure."
+      desc: "Soon"
     },
     magicless: {
       title: "Magicless Mage",
       img: "/assets/images/games/magicless.jpg",
-      desc: "Coming soon. Follow the story of a mage who lost their magical abilities and must find new ways to navigate a world that expects the impossible."
+      desc: "Soon"
     },
     silent: {
       title: "The Legend of the Silent Knight",
       img: "/assets/images/games/silentknight.jpg",
-      desc: "Coming soon. A tale of courage and sacrifice, where a knight who took a vow of silence must save a kingdom from darkness without uttering a single word."
+      desc: "Soon"
     }
   };
-  
+
+  // Dados dos jogos em português
+  const gamesPt = {
+    amazon: {
+      title: "The Amazon Grove",
+      img: "/assets/images/games/amazongrove.jpg",
+      desc: "Em breve"
+    },
+    arcane: {
+      title: "Trials of the Arcane Grove",
+      img: "/assets/images/games/arcanegrove.jpg",
+      desc: "Em breve"
+    },
+    magicless: {
+      title: "Magicless Mage",
+      img: "/assets/images/games/magicless.jpg",
+      desc: "Em breve"
+    },
+    silent: {
+      title: "The Legend of the Silent Knight",
+      img: "/assets/images/games/silentknight.jpg",
+      desc: "Em breve"
+    }
+  };
+
+  // Detecta idioma da página
+  const lang = document.documentElement.lang || 'en';
+  const games = lang.startsWith('pt') ? gamesPt : gamesEn;
+
   const modalBg = $('#gameModalBg');
   const modal = $('#gameModal');
   const modalImg = $('#modalImg');
   const modalTitle = $('#modalTitle');
   const modalDesc = $('#modalDesc');
   const modalClose = $('#modalClose');
-  
+
   if (!modalBg || !modal || !modalImg || !modalTitle || !modalDesc || !modalClose) return;
-  
+
   // Open modal when clicking on a game card
-  $$('.game-cloud-card').forEach(card => {
+  $$('.game-cloud-card, .game-highlight-card').forEach(card => {
     card.addEventListener('click', () => {
       const key = card.getAttribute('data-game');
       const game = games[key];
-      
       if (!game) return;
-      
+
       modalImg.src = game.img;
       modalImg.alt = game.title;
       modalTitle.textContent = game.title;
       modalDesc.textContent = game.desc;
-      
+
       modalBg.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
   });
-  
+
   // Close modal functions
   function closeModal() {
     modalBg.classList.remove('active');
     document.body.style.overflow = '';
-    
-    // Reset zoom
     if (modalImg.classList.contains('zoom')) {
       modalImg.classList.remove('zoom');
       modalImg.style.transform = '';
     }
   }
-  
+
   modalClose.addEventListener('click', closeModal);
-  
+
   modalBg.addEventListener('click', (e) => {
     if (e.target === modalBg) closeModal();
   });
-  
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeModal();
   });
@@ -902,17 +927,18 @@ function initTeamCards() {
   }
   
   // Add hover effect for team cards
-  $$('.team-thumb').forEach(thumb => {
-    thumb.addEventListener('mouseover', function() {
-      this.src = this.getAttribute('data-hover-src');
-      this.classList.add('hovered');
-    });
-    
-    thumb.addEventListener('mouseout', function() {
-      this.src = this.getAttribute('data-original-src');
-      this.classList.remove('hovered');
-    });
+$$('.team-card').forEach(card => {
+  const thumb = card.querySelector('.team-thumb');
+  if (!thumb) return;
+  card.addEventListener('mouseenter', function() {
+    thumb.src = thumb.getAttribute('data-hover-src');
+    thumb.classList.add('hovered');
   });
+  card.addEventListener('mouseleave', function() {
+    thumb.src = thumb.getAttribute('data-original-src');
+    thumb.classList.remove('hovered');
+  });
+});
 }
 
 // Initialize team member modal
@@ -1168,3 +1194,4 @@ document.addEventListener('click', (e) => {
     modal.style.display = 'none';
   }
 });
+

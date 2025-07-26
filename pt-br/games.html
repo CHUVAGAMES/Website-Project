@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link rel="canonical" href="https://chuvagames.com/games">
     <meta charset="UTF-8">
@@ -47,7 +47,7 @@
                 </a>
             </li>
             <li class="dropdown">
-                <a href="games.html" class="dropdown-toggle navselect"><b>Jogos</b></a>
+                <a href="games.html" class="dropdown-toggle3 navselect"><b>Jogos</b></a>
                 <ul class="dropdown-menu">
                     <!--<li><a href="theamazongrove.html">The Amazon Grove</a></li>-->
                     <li><a href="trialsofthearcanegrove.html">Trials of the Arcane Grove</a></li>
@@ -67,51 +67,40 @@
 </header>
     <!-- Games Section -->
     <section class="team">
-        <h1><b>Nossos Jogos</b></h1>
+        <h1><b>Conheça nossos Jogos</b></h1>
     </section>
     
-    <section class="game-section">
-        <!-- Games Grid -->
-        <div class="games-cloud-grid">
-            <div class="game-cloud-card" data-game="amazon">
-                <div class="cloud-shape">
-                    <img src="/assets/images/games/amazongrove.jpg" alt="The Amazon Grove" class="game-thumb">
-                </div>
-                <div class="game-title">The Amazon Grove</div>
-            </div>
-            
-            <div class="game-cloud-card" data-game="arcane">
-                <div class="cloud-shape">
-                    <img src="/assets/images/games/arcanegrove.jpg" alt="Trials of the Arcane Grove" class="game-thumb">
-                </div>
-                <div class="game-title">Trials of the Arcane Grove</div>
-            </div>
-            
-            <div class="game-cloud-card" data-game="magicless">
-                <div class="cloud-shape">
-                    <img src="/assets/images/games/magicless.jpg" alt="Magicless Mage" class="game-thumb">
-                </div>
-                <div class="game-title">Magicless Mage</div>
-            </div>
-            
-            <div class="game-cloud-card" data-game="silent">
-                <div class="cloud-shape">
-                    <img src="/assets/images/games/silentknight.jpg" alt="The Legend of the Silent Knight" class="game-thumb">
-                </div>
-                <div class="game-title">The Legend of the Silent Knight</div>
-            </div>
-        </div>
-
-        <!-- Game Modal -->
-        <div class="game-modal-bg" id="gameModalBg">
-            <div class="game-modal" id="gameModal">
-                <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
-                <img src="/placeholder.svg" alt="" class="game-modal-img" id="modalImg">
-                <div class="game-modal-title" id="modalTitle"></div>
-                <div class="game-modal-desc" id="modalDesc"></div>
-            </div>
-        </div>
-    </section>
+        <section class="game-section">
+  <div class="games-cards-flex">
+    <div class="game-highlight-card" data-game="arcane">
+      <img src="/assets/images/games/arcanegrove.jpg" alt="Trials of the Arcane Grove" class="game-highlight-thumb">
+      <div class="game-highlight-overlay">
+        <div class="game-highlight-title">Trials of the Arcane Grove</div>
+      </div>
+    </div>
+    <div class="game-highlight-card" data-game="magicless">
+      <img src="/assets/images/games/magicless.jpg" alt="Magicless Mage" class="game-highlight-thumb">
+      <div class="game-highlight-overlay">
+        <div class="game-highlight-title">Magicless Mage</div>
+      </div>
+    </div>
+    <div class="game-highlight-card" data-game="silent">
+      <img src="/assets/images/games/silentknight.jpg" alt="The Legend of the Silent Knight" class="game-highlight-thumb">
+      <div class="game-highlight-overlay">
+        <div class="game-highlight-title">The Legend of the Silent Knight</div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal permanece igual, só o estilo será herdado do CSS -->
+  <div class="game-modal-bg" id="gameModalBg">
+    <div class="game-modal" id="gameModal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <img src="/placeholder.svg" alt="" class="game-modal-img" id="modalImg">
+      <div class="game-modal-title" id="modalTitle"></div>
+      <div class="game-modal-desc" id="modalDesc"></div>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
         <footer>

@@ -863,7 +863,7 @@ footer p {
 }
 
 .botao-rede:hover {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1);
 }
 
 .botao-rede:hover .icone-rede-padrao {

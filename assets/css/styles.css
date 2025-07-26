@@ -1015,9 +1015,13 @@ footer p {
     max-width: 300px;
   }
 
-  .team-modal-img, .game-modal-img {
+  .team-modal-img {
     width: 150px;
     
+  }
+
+ .game-modal-img {
+    width: 600px;
   }
 
   .team-modal-title, .game-modal-title {

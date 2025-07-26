@@ -1,4 +1,4 @@
-# 🚀 Otimizações de SEO - CHUVA Games CO
+# 🚀 Otimizações de SEO - CHUVA Games
 
 ## 📋 Resumo das Correções Implementadas
 
@@ -23,9 +23,9 @@ Este documento detalha todas as otimizações de SEO implementadas para resolver
 **Problema**: Páginas internas apontavam para URL canônica incorreta.
 
 **Correções**:
-- ✅ **Página principal** (`/index.html`): `https://chuvagames.co/`
-- ✅ **Página inglês** (`/eng/index.html`): `https://chuvagames.co/eng/`
-- ✅ **Página português** (`/pt-br/index.html`): `https://chuvagames.co/pt-br/`
+- ✅ **Página principal** (`/index.html`): `https://chuvagames.com/`
+- ✅ **Página inglês** (`/eng/index.html`): `https://chuvagames.com/eng/`
+- ✅ **Página português** (`/pt-br/index.html`): `https://chuvagames.com/pt-br/`
 
 ### 3. **Meta Descriptions Ausentes**
 
@@ -44,9 +44,9 @@ Este documento detalha todas as otimizações de SEO implementadas para resolver
 Implementadas tags hreflang para SEO internacional:
 
 ```html
-<link rel="alternate" hreflang="en" href="https://chuvagames.co/eng/">
-<link rel="alternate" hreflang="pt-BR" href="https://chuvagames.co/pt-br/">
-<link rel="alternate" hreflang="x-default" href="https://chuvagames.co/">
+<link rel="alternate" hreflang="en" href="https://chuvagames.com/eng/">
+<link rel="alternate" hreflang="pt-BR" href="https://chuvagames.com/pt-br/">
+<link rel="alternate" hreflang="x-default" href="https://chuvagames.com/">
 ```
 
 ### Correções de Idioma
@@ -213,9 +213,9 @@ Implementadas tags hreflang para SEO internacional:
 
 <div align="center">
 
-**🚀 SEO Otimizado - CHUVA Games CO**
+**🚀 SEO Otimizado - CHUVA Games**
 
-*Implementado em Janeiro 2025*
+*Implementado em Agosto 2025*
 
 **"Maximizando visibilidade, otimizando experiência"**
 
@@ -223,4 +223,4 @@ Implementadas tags hreflang para SEO internacional:
 
 ---
 
-*Para dúvidas sobre estas otimizações, consulte a equipe de desenvolvimento da CHUVA Games CO.*
+*Para dúvidas sobre estas otimizações, consulte a equipe de desenvolvimento da CHUVA Games.*

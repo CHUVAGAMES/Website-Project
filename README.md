@@ -1,8 +1,8 @@
-# 🎮 CHUVA Games CO - Website Oficial
+# 🎮 CHUVA Games - Website Oficial
 
 > **"Somos um coletivo de neurodivergentes amantes de jogos que se reuniram para contar histórias"**
 
-Site oficial do estúdio brasileiro de jogos independentes CHUVA Games CO, desenvolvido com foco em acessibilidade, responsividade e experiência do usuário.
+Site oficial do estúdio brasileiro de jogos independentes CHUVA Games, desenvolvido com foco em acessibilidade, responsividade e experiência do usuário.
 
 ## 📋 Índice
 
@@ -345,7 +345,7 @@ Este projeto está licenciado sob termos específicos - veja o arquivo [LICENSE.
 
 ## 📞 Contato
 
-- **Website**: [chuvagames.co](https://chuvagames.co)
+- **Website**: [chuvagames.co](https://chuvagames.com)
 - **Discord**: [Servidor Oficial](https://discord.gg/Py6nAHGcDX)
 - **YouTube**: [@ChuvaGames](https://www.youtube.com/@ChuvaGames)
 - **Instagram**: [@chuvagames](https://www.instagram.com/chuvagames/)

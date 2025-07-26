@@ -1,8 +1,8 @@
 # 📜 Licença e Termos de Uso
 
-## CHUVA Games CO - Website Oficial
+## CHUVA Games - Website Oficial
 
-**Copyright © 2025 CHUVA Games CO. Todos os direitos reservados.**
+**Copyright © 2025 CHUVA Games. Todos os direitos reservados.**
 
 ---
 
@@ -15,7 +15,7 @@ Este projeto, incluindo mas não limitado a:
 - Conteúdo textual e narrativo
 - Estrutura e arquitetura do site
 
-É **propriedade exclusiva da CHUVA Games CO**, um estúdio brasileiro de desenvolvimento de jogos independentes.
+É **propriedade exclusiva da CHUVA Games**, um estúdio brasileiro de desenvolvimento de jogos independentes.
 
 ---
 
@@ -31,16 +31,16 @@ Você **PODE**:
 - 💡 Inspirar-se nas soluções técnicas implementadas
 
 **Condições para uso educacional:**
-- Sempre creditar a CHUVA Games CO como fonte original
+- Sempre creditar a CHUVA Games como fonte original
 - Não remover avisos de copyright
 - Incluir link para o repositório original
 - Mencionar que o uso é apenas para fins educacionais
 
 ### Exemplo de Citação
 ```
-Baseado no website da CHUVA Games CO
+Baseado no website da CHUVA Games
 Fonte: https://github.com/chuvagames/website
-Copyright © 2025 CHUVA Games CO
+Copyright © 2025 CHUVA Games
 Usado apenas para fins educacionais
 ```
 
@@ -77,7 +77,7 @@ Este projeto utiliza as seguintes bibliotecas de terceiros:
 
 #### Bootstrap 5.3.3
 - **Licença**: MIT License
-- **Copyright**: Copyright (c) 2011-2023 The Bootstrap Authors
+- **Copyright**: Copyright (c) 2011-2025 The Bootstrap Authors
 - **URL**: https://getbootstrap.com/
 - **Uso**: Framework CSS para responsividade
 
@@ -138,14 +138,14 @@ limitations under the License.
 ### Jogos Embarcados
 
 Os jogos **Kuadrika** e **Orbit** incluídos neste website são:
-- Propriedade exclusiva da CHUVA Games CO
+- Propriedade exclusiva da CHUVA Games
 - Protegidos por direitos autorais
 - Não podem ser extraídos ou redistribuídos
 - Disponíveis apenas através do website oficial
 
 ### Imagens e Screenshots
 
-Todas as imagens relacionadas aos jogos da CHUVA Games CO são:
+Todas as imagens relacionadas aos jogos da CHUVA Games são:
 - Material promocional oficial
 - Protegidas por direitos autorais
 - Não podem ser usadas sem autorização expressa
@@ -181,7 +181,7 @@ Este software é fornecido "como está", sem garantias de qualquer tipo, express
 
 ### Limitação de Responsabilidade
 
-Em nenhuma circunstância a CHUVA Games CO será responsável por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares ou consequenciais decorrentes do uso deste software.
+Em nenhuma circunstância a CHUVA Games será responsável por quaisquer danos diretos, indiretos, incidentais, especiais, exemplares ou consequenciais decorrentes do uso deste software.
 
 ### Jurisdição
 
@@ -189,7 +189,7 @@ Este acordo será regido pelas leis do Brasil. Qualquer disputa relacionada a es
 
 ### Modificações
 
-A CHUVA Games CO reserva-se o direito de modificar estes termos a qualquer momento. As modificações entrarão em vigor imediatamente após a publicação.
+A CHUVA Games reserva-se o direito de modificar estes termos a qualquer momento. As modificações entrarão em vigor imediatamente após a publicação.
 
 ---
 
@@ -199,7 +199,7 @@ Para solicitações de licenciamento comercial ou uso além dos termos aqui espe
 
 - **Email**: contato@chuvagames.co
 - **Discord**: [Servidor Oficial](https://discord.gg/Py6nAHGcDX)
-- **Website**: [chuvagames.co](https://chuvagames.co)
+- **Website**: [chuvagames.co](https://chuvagames.com)
 
 ### Licenciamento Comercial
 
@@ -238,9 +238,9 @@ Para uso comercial, oferecemos:
 
 <div align="center">
   
-**© 2025 CHUVA Games CO - Todos os direitos reservados**
+**© 2025 CHUVA Games - Todos os direitos reservados**
 
-*Este documento foi atualizado em Janeiro de 2025*
+*Este documento foi atualizado em Agosto de 2025*
 
 **"Protegendo nossa criatividade, compartilhando conhecimento"**
 

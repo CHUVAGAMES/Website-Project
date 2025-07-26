@@ -1,4 +1,4 @@
-# CHUVA Games CO - Apache Configuration
+# CHUVA Games - Apache Configuration
 # Performance and SEO Optimizations
 
 # Enable mod_rewrite
@@ -151,7 +151,7 @@ ServerSignature Off
 
 # Prevent hotlinking (optional)
 # RewriteCond %{HTTP_REFERER} !^$
-# RewriteCond %{HTTP_REFERER} !^https?://(www\.)?chuvagames\.co [NC]
+# RewriteCond %{HTTP_REFERER} !^https?://(www\.)?chuvagames\.com [NC]
 # RewriteRule \.(jpg|jpeg|png|gif|svg)$ - [F,L]
 
-# End of CHUVA Games CO Configuration
+# End of CHUVA Games Configuration

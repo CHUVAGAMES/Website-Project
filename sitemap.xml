@@ -7,7 +7,7 @@
 
 <!-- Main Pages -->
 <url>
-  <loc>https://chuvagames.co/</loc>
+  <loc>https://chuvagames.com/</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
@@ -15,25 +15,25 @@
 
 <!-- English Pages -->
 <url>
-  <loc>https://chuvagames.co/eng/</loc>
+  <loc>https://chuvagames.com/eng/</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.90</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/eng/games.html</loc>
+  <loc>https://chuvagames.com/eng/games.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/eng/team.html</loc>
+  <loc>https://chuvagames.com/eng/team.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.70</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/eng/contact.html</loc>
+  <loc>https://chuvagames.com/eng/contact.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.60</priority>
   <changefreq>monthly</changefreq>
@@ -41,25 +41,25 @@
 
 <!-- Portuguese Pages -->
 <url>
-  <loc>https://chuvagames.co/pt-br/</loc>
+  <loc>https://chuvagames.com/pt-br/</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.90</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/pt-br/games.html</loc>
+  <loc>https://chuvagames.com/pt-br/games.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/pt-br/team.html</loc>
+  <loc>https://chuvagames.com/pt-br/team.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.70</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/pt-br/contact.html</loc>
+  <loc>https://chuvagames.com/pt-br/contact.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.60</priority>
   <changefreq>monthly</changefreq>
@@ -67,25 +67,25 @@
 
 <!-- Game Pages -->
 <url>
-  <loc>https://chuvagames.co/eng/theamazongrove.html</loc>
+  <loc>https://chuvagames.com/eng/theamazongrove.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/eng/magiclessmage.html</loc>
+  <loc>https://chuvagames.com/eng/magiclessmage.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/eng/thelegendofthesilentknight.html</loc>
+  <loc>https://chuvagames.com/eng/thelegendofthesilentknight.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/eng/trialsofthearcanegrove.html</loc>
+  <loc>https://chuvagames.com/eng/trialsofthearcanegrove.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
@@ -93,25 +93,25 @@
 
 <!-- Portuguese Game Pages -->
 <url>
-  <loc>https://chuvagames.co/pt-br/theamazongrove.html</loc>
+  <loc>https://chuvagames.com/pt-br/theamazongrove.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/pt-br/magiclessmage.html</loc>
+  <loc>https://chuvagames.com/pt-br/magiclessmage.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/pt-br/thelegendofthesilentknight.html</loc>
+  <loc>https://chuvagames.com/pt-br/thelegendofthesilentknight.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/pt-br/trialsofthearcanegrove.html</loc>
+  <loc>https://chuvagames.com/pt-br/trialsofthearcanegrove.html</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.75</priority>
   <changefreq>monthly</changefreq>
@@ -119,13 +119,13 @@
 
 <!-- Embedded Games -->
 <url>
-  <loc>https://chuvagames.co/Kuadrika/</loc>
+  <loc>https://chuvagames.com/Kuadrika/</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.65</priority>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>https://chuvagames.co/orbit/</loc>
+  <loc>https://chuvagames.com/orbit/</loc>
   <lastmod>2025-01-02T12:00:00+00:00</lastmod>
   <priority>0.65</priority>
   <changefreq>yearly</changefreq>

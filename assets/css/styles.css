@@ -287,11 +287,11 @@ nav {
 .hero-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  min-height: calc(100vh - 100px);
-  margin: 50px auto;
-  padding: 0 20px;
+  min-height: 80vh; /* reduzido para evitar rolagem */
+  margin: 80px auto 0 auto; /* mais espaço do topo */
+  padding: 0 10px;
 }
 
 .hero {
@@ -328,6 +328,7 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 50px;
 }
 
 .btn2 {
@@ -348,6 +349,25 @@ nav {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
   color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 0 12px; /* Espaço lateral para não encostar nas bordas */
+    box-sizing: border-box;
+  }
+  .btn2 {
+    width: 100%;
+    max-width: 340px;
+    min-width: 0;
+    margin: 0 auto;
+    font-size: 1.1em;
+    box-sizing: border-box;
+  }
 }
 
 /* ========== FOOTER ========== */
@@ -415,7 +435,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s, background-color 0.4s;
   height: 100%;
   backdrop-filter: blur(3px); /* Efeito de blur */
   border: 1.5px solid #9999994f;
@@ -423,10 +443,9 @@ footer p {
 
 .team-card:hover {
   transform: translateY(-4px);
- background-color: #ffffff;
-  transition: transform 0.5s ease;
+  background-color: #ffffff;
   border: 1.5px solid #cccccc8e;
-} 
+}
 
 .team-thumb {
   width: 120px;
@@ -441,7 +460,7 @@ footer p {
 
 .team-card:hover .team-thumb,
 .team-thumb.hovered {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .team-card-name {
@@ -450,6 +469,7 @@ footer p {
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 0.5em;
+  transition: color 0.4s;
 }
 
 .team-card-role {
@@ -458,6 +478,7 @@ footer p {
   text-align: center;
   font-weight: 600;
   font-weight: bold;
+  transition: color 0.4s;
 }
 
 .team-card:hover .team-card-name {

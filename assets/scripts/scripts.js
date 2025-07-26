@@ -590,6 +590,26 @@ const teamMembersEn = [
       { href: "https://discordapp.com/users/246455690133110784", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
     ]
   },
+      {
+    name: "Gabriel Flexa",
+    role: "Music Producer",
+    thumb: "/assets/images/team/flexa.png",
+    gif: "/assets/images/team/flexa.gif",
+    desc: `Gabriel Flexa is a music producer at CHUVA Games studio, responsible for creating emotionally driven soundtracks with rich textures in sonic narratives that range from pop/rock/hip-hop aesthetics to traditional Amazonian regional music. Originally from Belém do Pará, he began producing his own tracks during his teenage years and has since been shaping his musical style through studio work and collaborations with artists from the Brazilian independent music scene.`,
+    skills: [
+      { name: "Produção Musical", value: 100 },
+      { name: "Design", value: 80 },
+      { name: "Edição de Vídeo", value: 70 }
+    ],
+    social: [
+      { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.png", hover: "hover_behance.png", alt: "Behance" },
+      { href: "https://www.linkedin.com/in/gabrielflexa/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
+      { href: "https://open.spotify.com/playlist/6uKqxaFp5Orkn83tiGPtVm?si=a6DZNsK5RT-waPuveQbGdg", icon: "default_spotify.png", hover: "hover_spotify.png", alt: "Spotify" },
+      { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
+      { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
+      { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+    ]
+  },
   {
     name: "Edpaulo Cardoso",
     role: "Foley Artist",
@@ -789,6 +809,26 @@ const teamMembersPt = [
       { href: "https://www.instagram.com/shiro.aniclubchannel/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
       { href: "https://wa.me/5592982351719", icon: "default_whats.png", hover: "hover_whats.png", alt: "WhatsApp" },
       { href: "https://discordapp.com/users/246455690133110784", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+    ]
+  },
+    {
+    name: "Gabriel Flexa",
+    role: "Produtor Musical",
+    thumb: "/assets/images/team/flexa.png",
+    gif: "/assets/images/team/flexa.gif",
+    desc: `Gabriel Flexa é produtor musical no estúdio CHUVA Games, responsável por produzir trilhas com sentimento e texturas em narrativas sonoras que transitam entre a estética sonora pop/rock/hiphop até música regional amazonida. Natural de Belém do Pará, começou a produzir suas próprias faixas ainda na adolescência, e desde então vem moldando sua estética musical entre estúdios colaborações com artistas da cena musical independente brasileira.`,
+    skills: [
+      { name: "Produção Musical", value: 100 },
+      { name: "Design", value: 80 },
+      { name: "Produção de Vídeo", value: 70 }
+    ],
+    social: [
+      { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.png", hover: "hover_behance.png", alt: "Behance" },
+      { href: "https://www.linkedin.com/in/gabrielflexa/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
+      { href: "https://open.spotify.com/playlist/6uKqxaFp5Orkn83tiGPtVm?si=a6DZNsK5RT-waPuveQbGdg", icon: "default_spotify.png", hover: "hover_spotify.png", alt: "Spotify" },
+      { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
+      { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
+      { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
     ]
   },
   {

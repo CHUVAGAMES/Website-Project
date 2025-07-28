@@ -861,7 +861,7 @@ const teamMembersPt = [
     role: "Produtor Musical",
     thumb: "/assets/images/team/flexa.png",
     gif: "/assets/images/team/flexa.gif",
-    desc: `Gabriel Flexa é produtor musical no estúdio CHUVA Games, responsável por produzir trilhas com sentimento e texturas em narrativas sonoras que transitam entre a estética sonora pop/rock/hiphop até música regional amazonida. Natural de Belém do Pará, começou a produzir suas próprias faixas ainda na adolescência, e desde então vem moldando sua estética musical entre estúdios colaborações com artistas da cena musical independente brasileira.`,
+    desc: `Gabriel Flexa é produtor musical no estúdio CHUVA Games, responsável por produzir trilhas com sentimento e texturas em narrativas sonoras que transitam entre a estética sonora pop/rock/hiphop até música regional amazônica. Natural de Belém do Pará, começou a produzir suas próprias faixas ainda na adolescência, e desde então vem moldando sua estética musical entre estúdios colaborações com artistas da cena musical independente brasileira.`,
     skills: [
       { name: "Produção Musical", value: 100, desc: "Criação e produção de trilhas sonoras." },
       { name: "Design", value: 80, desc: "Design gráfico e visual para projetos." },

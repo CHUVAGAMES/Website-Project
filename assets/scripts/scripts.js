@@ -439,12 +439,16 @@ const teamMembersEn = [
     gif: "/assets/images/team/andrews.gif",
     desc: `Andrews Nycollas has been passionate about game development since his early teens, when he started creating and selling custom arcade fighting games at school at age 12. He has a diverse background in theater, music, film, and visual arts, enriching his creative approach to game design. A professional freelancer in the games industry since 2012, Andrews has worked extensively with the Asian games market since 2019. "I sold everything I had and came to the Philippines to meet a girl, we got married, we have a boy. Now I'm ready to become an indie game developer."`,
     skills: [
-      { name: "Narrative", value: 100 },
-      { name: "Music & Audio", value: 100 },
-      { name: "Pixel Art", value: 40 },
-      { name: "Programming", value: 60 },
-      { name: "Management", value: 80 },
-      { name: "Marketing", value: 80 }
+      { name: "Holistic Design", value: 100, desc: "Integrates sound, visuals, narrative, and interface as a cohesive emotional and functional system." },
+      { name: "Interactive Narrative", value: 100, desc: "Creation of worlds and stories that emerge from player behavior and game aesthetics." },
+      { name: "Sound Design and Music", value: 100, desc: "Composition and implementation of soundscapes that reinforce identity and emotion." },
+      { name: "Creative Direction", value: 100, desc: "Orchestrates teams and disciplines to maintain aesthetic, symbolic, and functional cohesion." },
+      { name: "Emotional UI/UX", value: 100, desc: "Interface design that communicates mechanics and lore with clarity and empathy." },
+      { name: "Illustration and Visual Storytelling", value: 100, desc: "Communicates complex ideas with simple, intuitive, and symbolic visuals." },
+      { name: "Applied Anthropology", value: 100, desc: "Translates cultural and behavioral references into playable experiences." },
+      { name: "System Gamification", value: 100, desc: "Transforms routines, interfaces, and narratives into playful and meaningful systems." },
+      { name: "Modular Prototyping", value: 100, desc: "Rapid creation and iteration of systems and assets focused on clarity and scalability." },
+      { name: "Ethical and Collaborative Management", value: 100, desc: "Project coordination with transparency, active listening, and creative respect." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/andrews-nycollas-a80271251/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -465,10 +469,10 @@ const teamMembersEn = [
     gif: "/assets/images/team/marcos.gif",
     desc: `Marcos Genú has worked since 2012 with concept art, 2D animation, and asset creation for games. He has contributed to several projects, including Tap Tap Beer and games developed for major companies such as VALE and the Government of Pará. His work also includes internationally awarded games like Ghostein, recognized at Game Jam+, and a project that secured sixth place at the global BGJam. "Hi, I'm Marcos."`,
     skills: [
-      { name: "Pixel Art", value: 100 },
-      { name: "Illustration", value: 100 },
-      { name: "Animation", value: 60 },
-      { name: "3D", value: 20 }
+      { name: "Pixel Art", value: 100, desc: "Creation of pixelated art focused on detail and symbolism." },
+      { name: "Illustration", value: 100, desc: "Communication of complex ideas through simple, intuitive, and symbolic lines." },
+      { name: "Animation", value: 60, desc: "Creation of fluid and expressive animations for games." },
+      { name: "3D", value: 20, desc: "3D modeling and animation for games and applications." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/markcg/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -483,11 +487,11 @@ const teamMembersEn = [
     gif: "/assets/images/team/mohamed.gif",
     desc: `Graduated in Game Development in 2015, but only now, with Andrews' invitation (a longtime friend), am I having the opportunity to work in the field. "I feel excited, as the essence of the game brings back a nostalgic memory. It's authentic."`,
     skills: [
-      { name: "Game Developer", value: 50 },
-      { name: "Behavior Designer", value: 80 },
-      { name: "Level Designer", value: 80 },
-      { name: "Tester", value: 80 },
-      { name: "Programmer", value: 40 }
+      { name: "Game Developer", value: 50, desc: "Creation of a game from scratch." },
+      { name: "Behavior Designer", value: 80, desc: "Designing the behavior of characters and elements within the game." },
+      { name: "Level Designer", value: 80, desc: "Creating engaging and balanced levels for players." },
+      { name: "Tester", value: 80, desc: "Testing the game for bugs and ensuring a smooth player experience." },
+      { name: "Programmer", value: 40, desc: "Writing code to implement game features and mechanics." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/mohamed-capistrano-0a475279/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -503,8 +507,8 @@ const teamMembersEn = [
     gif: "/assets/images/team/rick.gif",
     desc: `Rick Galasio, an autistic man with over half a century of life. After years dedicated to family and work, he can finally honor the autistic child who still lives inside him and fulfill his dream of becoming an indie game developer. "I'm just an old autistic guy."`,
     skills: [
-      { name: "Linux", value: 100 },
-      { name: "Acting", value: 200 }
+      { name: "Linux", value: 100, desc: "Expertise in Linux operating systems and server management." },
+      { name: "Acting", value: 200, desc: "Voice acting for characters in games and animations." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -520,9 +524,15 @@ const teamMembersEn = [
     gif: "/assets/images/team/tuta.gif",
     desc: `André, known as Tutankhamal, is passionate about technology and music. Neurodivergent (autistic and ADHD), he has experience in Front-end development, community management, and customer support. A self-taught learner, he turns his passion for video games and computers into technical knowledge.`,
     skills: [
-      { name: "Community Manager", value: 100 },
-      { name: "Front-End Development", value: 80 },
-      { name: "Sound Designer", value: 50 }
+      { name: "Community Management", value: 100, desc: "Building and managing online communities." },
+      { name: "Web Development", value: 100, desc: "Creating and maintaining websites and web applications." },
+      { name: "Front-End Development", value: 100, desc: "Creating user-friendly interfaces for web applications." },
+      { name: "Content Management", value: 100, desc: "Managing and organizing digital content." },
+      { name: "UI/UX", value: 90, desc: "Designing user interfaces and enhancing user experiences." },
+      { name: "Responsive Design", value: 90, desc: "Ensuring websites are accessible and usable on all devices." },
+      { name: "Performance Optimization", value: 90, desc: "Improving website speed and efficiency." },
+      { name: "Image Editing", value: 70, desc: "Creating and manipulating images for web and print materials." },      
+      { name: "SEO", value: 100, desc: "Optimizing websites for search engines." }
     ],
     social: [
       { href: "https://tutankhamal.com", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
@@ -545,10 +555,10 @@ const teamMembersEn = [
     gif: "/assets/images/team/camila.gif",
     desc: `Graduated in Game Development since 2017 and currently pursuing a postgraduate degree in Digital Animation. I discovered the world of drawing in childhood, like many artists, starting with Dragon Ball sketches. I grew up and dedicated myself to various forms of drawing and painting, from pencil and paper to canvas painting. In 2020, I bought my first graphics tablet and started exploring Digital Painting, soon after starting to study 2D Digital Animation. Art, in general, has always been my escape, and returning to the game industry will be challenging but exciting.`,
     skills: [
-      { name: "2D Illustration", value: 100 },
-      { name: "Character Concept", value: 100 },
-      { name: "2D Animation", value: 60 },
-      { name: "Storyboard", value: 60 }
+      { name: "2D Illustration", value: 100, desc: "Creating detailed and expressive 2D illustrations." },
+      { name: "Character Concept", value: 100, desc: "Designing unique and engaging characters for games." },
+      { name: "2D Animation", value: 60, desc: "Bringing characters and scenes to life through animation." },
+      { name: "Storyboard", value: 60, desc: "Planning and visualizing the narrative flow of a game." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/camila-sales-4b135a231", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -562,11 +572,11 @@ const teamMembersEn = [
     gif: "/assets/images/team/richard.gif",
     desc: `He has worked in marketing for seven years, starting his career at major advertising agencies in São Paulo. A few years ago, he moved to Asia, where he has been active in the Asian games market, focusing on digital advertising. Passionate about reading and games, he draws inspiration from these interests to fuel his creativity and professional endeavors.`,
     skills: [
-      { name: "Social Media Manager", value: 100 },
-      { name: "Digital Marketing", value: 100 },
-      { name: "Prompt Engineer", value: 80 },
-      { name: "Video Editor", value: 70 },
-      { name: "SEO/SEM", value: 60 }
+      { name: "Social Media Manager", value: 100, desc: "Managing social media platforms and engaging with the community." },
+      { name: "Digital Marketing", value: 100, desc: "Creating and implementing online marketing strategies." },
+      { name: "Prompt Engineer", value: 80, desc: "Designing effective prompts for AI interactions." },
+      { name: "Video Editor", value: 70, desc: "Editing video content for promotional materials." },
+      { name: "SEO/SEM", value: 60, desc: "Optimizing content for search engines and managing ad campaigns." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/richard-de-leon-534123144", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -581,8 +591,8 @@ const teamMembersEn = [
     gif: "/assets/images/team/angel.gif",
     desc: `Miguel, better known as Angel, has loved games since childhood. He has always been interested in game development, especially in how games can go beyond entertainment to convey emotions, knowledge, and unique challenges. Recently, he turned this passion into practice by improving his art and developing projects in GameMaker. He is constantly seeking to improve his skills and contribute to creating experiences that engage CHUVA's members.`,
     skills: [
-      { name: "Game Maker Language (GML)", value: 60 },
-      { name: "Apprentice", value: 100 }
+      { name: "Game Maker Language (GML)", value: 60, desc: "Proficient in using GML for game development." },
+      { name: "Apprentice", value: 100, desc: "Eager to learn and grow in the field of game development." }
     ],
     social: [
       { href: "https://www.youtube.com/@AngelinoJollie", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
@@ -600,12 +610,12 @@ const teamMembersEn = [
     gif: "/assets/images/team/teles.gif",
     desc: `Digital artist focused on 3D modeling, concept art, illustration, and basic 2D/3D animation for digital games and graphic materials. Experienced in projects such as Matemagos, Holobeast Academy, Thunder Riders, and Amazon Quest, contributing to visual development and supporting the artistic consistency and creative direction of the productions. Passionate about storytelling through stylized and engaging visuals.`,
     skills: [
-      { name: "Illustration / Concept Art", value: 90 },
-      { name: "3D Modeling", value: 80 },
-      { name: "2D Animation Frame-to-Frame", value: 60 },
-      { name: "3D Animation", value: 60 },
-      { name: "Video Editing", value: 50 },
-      { name: "UI/UX", value: 40 }
+      { name: "Illustration / Concept Art", value: 90, desc: "Creating visually compelling illustrations and concept art." },
+      { name: "3D Modeling", value: 80, desc: "Building detailed 3D models for games and animations." },
+      { name: "2D Animation Frame-to-Frame", value: 60, desc: "Animating 2D characters and elements frame by frame." },
+      { name: "3D Animation", value: 60, desc: "Animating 3D models and scenes." },
+      { name: "Video Editing", value: 50, desc: "Editing video content for trailers and promotional materials." },
+      { name: "UI/UX", value: 40, desc: "Designing user interfaces and experiences for games." }
     ],
     social: [
       { href: "https://www.artstation.com/teles_design", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
@@ -622,9 +632,9 @@ const teamMembersEn = [
     gif: "/assets/images/team/flexa.gif",
     desc: `Gabriel Flexa is a music producer at CHUVA Games studio, responsible for creating emotionally driven soundtracks with rich textures in sonic narratives that range from pop/rock/hip-hop aesthetics to traditional Amazonian regional music. Originally from Belém do Pará, he began producing his own tracks during his teenage years and has since been shaping his musical style through studio work and collaborations with artists from the Brazilian independent music scene.`,
     skills: [
-      { name: "Produção Musical", value: 100 },
-      { name: "Design", value: 80 },
-      { name: "Edição de Vídeo", value: 70 }
+      { name: "Music Production", value: 100, desc: "Creating and producing music tracks for various media." },
+      { name: "Design", value: 80, desc: "Designing visual elements for music projects." },
+      { name: "Video Editing", value: 70, desc: "Editing video content for music videos and promotional materials." }
     ],
     social: [
       { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.png", hover: "hover_behance.png", alt: "Behance" },
@@ -642,7 +652,7 @@ const teamMembersEn = [
     gif: "/assets/images/team/ed.gif",
     desc: `Edpaulo Cardoso is a foley artist at CHUVA Games, bringing immersive experiences to life through sound. A graffiti artist, body piercer, and tattooist, he expresses his creativity in many forms. In his free time, he rides the winds as a kiterider across the rivers of the Amazon, in Pará, Brazil.`,
     skills: [
-      { name: "Audio", value: 100 }
+      { name: "Audio", value: 100, desc: "Expertise in creating and manipulating audio for immersive experiences." }
     ],
     social: [
       { href: "https://www.instagram.com/edpaulocardoso", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
@@ -660,12 +670,16 @@ const teamMembersPt = [
     gif: "/assets/images/team/andrews.gif",
     desc: `Andrews Nycollas é apaixonado por desenvolvimento de jogos desde a pré-adolescência, quando começou a criar e vender jogos de luta arcade personalizados na escola, aos 12 anos. Ele tem uma formação diversificada em teatro, música, cinema e artes visuais, o que enriquece sua abordagem criativa ao design de jogos. Freelancer profissional na indústria de jogos desde 2012, Andrews tem trabalhado extensivamente com o mercado de jogos asiático desde 2019. "Vendi tudo o que tinha e vim para as Filipinas para encontrar uma garota, nos casamos, temos um menino. Agora estou pronto para me tornar um desenvolvedor de jogos independente"`,
     skills: [
-      { name: "Narrativa", value: 100 },
-      { name: "Música e Áudio", value: 100 },
-      { name: "Pixel Art", value: 40 },
-      { name: "Programação", value: 60 },
-      { name: "Gerenciamento", value: 80 },
-      { name: "Marketing", value: 80 }
+      { name: "Design Holístico", value: 100, desc: "Integra som, imagem, narrativa e interface como um sistema emocional e funcional coeso." },
+      { name: "Narrativa Interativa", value: 100, desc: "Criação de mundos e histórias que emergem do comportamento do jogador e da estética do jogo." },
+      { name: "Sonorização e Música", value: 100, desc: "Composição e implementação de paisagens sonoras que reforçam identidade e emoção."},
+      { name: "Direção Criativa", value: 100, desc: "Orquestra equipes e disciplinas para manter coesão estética, simbólica e funcional."},
+      { name: "UI/UX Emocional", value: 100, desc: "Design de interfaces que comunicam mecânica e lore com clareza e afeto."},
+      { name: "Ilustração e Visual Storytelling", value: 100, desc: "Comunicação de ideias complexas com traços simples, intuitivos e simbólicos."},
+      { name: "Antropologia Aplicadag", value: 100, desc: "Tradução de referências culturais e comportamentais em experiências jogáveis."},
+      { name: "Gamificação de Sistemas", value: 100, desc: "Transformação de rotinas, interfaces e narrativas em sistemas lúdicos e significativos."},
+      { name: "Prototipagem Modular", value: 100, desc: "Criação e iteração rápida de sistemas e assets com foco em clareza e escalabilidade."},
+      { name: "Gestão Ética e Colaborativa", value: 100, desc: "Coordenação de projetos com transparência, escuta ativa e respeito criativo."}
     ],
     social: [
       { href: "https://www.linkedin.com/in/andrews-nycollas-a80271251/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -686,10 +700,10 @@ const teamMembersPt = [
     gif: "/assets/images/team/marcos.gif",
     desc: `Marcos Genú trabalha desde 2012 com arte conceitual, animação 2D e criação de assets para jogos. Ele contribuiu para diversos projetos, incluindo Tap Tap Beer e jogos desenvolvidos para grandes empresas como VALE e o Governo do Pará. Seu trabalho também inclui jogos premiados internacionalmente, como Ghostein, que foi reconhecido na Game Jam+, e um projeto que garantiu o sexto lugar no BGJam global. "Oi, eu sou o Marcos."`,
     skills: [
-      { name: "Pixel Art", value: 100 },
-      { name: "Ilustração", value: 100 },
-      { name: "Animação", value: 60 },
-      { name: "3D", value: 20 }
+      { name: "Pixel Art", value: 100, desc: "Criação de arte pixelada, com foco em detalhes e simbologia." },
+      { name: "Ilustração", value: 100, desc: "Comunicação de ideias complexas com traços simples, intuitivos e simbólicos." },
+      { name: "Animação", value: 60, desc: "Criação de animações fluidas e expressivas para jogos." },
+      { name: "3D", value: 20, desc: "Modelagem e animação 3D para jogos e aplicações." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/markcg/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -704,11 +718,11 @@ const teamMembersPt = [
     gif: "/assets/images/team/mohamed.gif",
     desc: `Concluí minha graduação em Desenvolvimento de Jogos em 2015, mas só agora, com o convite do Andrews (um amigo de longa data), estou tendo a oportunidade de trabalhar na área. 'Sinto-me empolgado, pois a essência do jogo remete a uma memória nostálgica. "É autêntico."`,
     skills: [
-      { name: "Desenvolvedor de Jogos", value: 50 },
-      { name: "Designer de Comportamento", value: 80 },
-      { name: "Designer de Níveis", value: 80 },
-      { name: "Testador", value: 80 },
-      { name: "Programador", value: 40 }
+      { name: "Desenvolvedor de Jogos", value: 50, desc: "Desenvolvimento de jogos em várias plataformas." },
+      { name: "Designer de Comportamento", value: 80, desc: "Criação de comportamentos e interações de personagens." },
+      { name: "Designer de Níveis", value: 80, desc: "Planejamento e criação de níveis desafiadores." },
+      { name: "Testador", value: 80, desc: "Teste e garantia de qualidade em jogos." },
+      { name: "Programador", value: 40, desc: "Programação de mecânicas de jogo e sistemas." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/mohamed-capistrano-0a475279/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -724,8 +738,8 @@ const teamMembersPt = [
     gif: "/assets/images/team/rick.gif",
     desc: `Rick Galasio, um homem autista com mais de meio século de vida. Após anos dedicados à família e ao trabalho, ele finalmente pode honrar a criança autista que ainda vive dentro dele e realizar seu sonho de se tornar um desenvolvedor de jogos independente. "Eu sou só um velhinho autista."`,
     skills: [
-      { name: "Linux", value: 100 },
-      { name: "Atuação", value: 200 }
+      { name: "Linux", value: 100, desc: "Especialista em sistemas operacionais Linux." },
+      { name: "Atuação", value: 200, desc: "Atuação em projetos de jogos e animações." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -741,9 +755,15 @@ const teamMembersPt = [
     gif: "/assets/images/team/tuta.gif",
     desc: `André, conhecido como Tutankhamal, é apaixonado por tecnologia e música. Neurodivergente (autista e TDAH), ele tem experiência em desenvolvimento Front-end, gerenciamento de comunidade e suporte ao cliente. Um autodidata, ele transforma sua paixão por videogames e computadores em conhecimento técnico.`,
     skills: [
-      { name: "Gerente de Comunidade", value: 100 },
-      { name: "Desenvolvimento Front-End", value: 80 },
-      { name: "Designer de Som", value: 50 }
+      { name: "Gestão de Comunidade", value: 100, desc: "Construção e gerenciamento de comunidades online." },
+      { name: "Desenvolvimento Web", value: 100, desc: "Criação e manutenção de sites e aplicações web." },
+      { name: "Desenvolvimento Front-End", value: 100, desc: "Criação de interfaces amigáveis para aplicações web." },
+      { name: "Gestão de Conteúdo", value: 100, desc: "Gerenciamento e organização de conteúdo digital." },
+      { name: "UI/UX", value: 90, desc: "Design de interfaces e aprimoramento da experiência do usuário." },
+      { name: "Design Responsivo", value: 90, desc: "Garantia de acessibilidade e usabilidade dos sites em todos os dispositivos." },
+      { name: "Otimização de Performance", value: 90, desc: "Melhoria da velocidade e eficiência de sites." },
+      { name: "Edição de Imagem", value: 70, desc: "Criação e manipulação de imagens para materiais digitais e impressos." },
+      { name: "SEO", value: 100, desc: "Otimização de sites para mecanismos de busca." }
     ],
     social: [
       { href: "https://tutankhamal.com", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
@@ -766,10 +786,10 @@ const teamMembersPt = [
     gif: "/assets/images/team/camila.gif",
     desc: `Formada em Desenvolvimento de Jogos desde 2017 e atualmente cursando pós-graduação em Animação Digital. Descobri o mundo do desenho na infância, como muitos artistas, começando com esboços de Dragon Ball. Cresci e me dediquei a várias formas de desenho e pintura, do lápis e papel à pintura em tela. Em 2020, comprei minha primeira mesa digitalizadora e comecei a explorar a Pintura Digital, logo após começar a estudar Animação Digital 2D. A arte, em geral, sempre foi minha fuga, e retornar à indústria de jogos será desafiador, mas emocionante.`,
     skills: [
-      { name: "Ilustração 2D", value: 100 },
-      { name: "Conceito de Personagem", value: 100 },
-      { name: "Animação 2D", value: 60 },
-      { name: "Storyboard", value: 60 }
+      { name: "Ilustração 2D", value: 100, desc: "Criação de ilustrações detalhadas e expressivas em 2D." },
+      { name: "Conceito de Personagem", value: 100, desc: "Desenvolvimento de personagens e suas histórias." },
+      { name: "Animação 2D", value: 60, desc: "Criação de animações fluidas e expressivas em 2D." },
+      { name: "Storyboard", value: 60, desc: "Planejamento visual de cenas e sequências." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/camila-sales-4b135a231", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -783,11 +803,11 @@ const teamMembersPt = [
     gif: "/assets/images/team/richard.gif",
     desc: `Ele trabalhou em marketing por sete anos, iniciando sua carreira em grandes agências de publicidade em São Paulo. Há alguns anos, mudou-se para a Ásia, onde tem atuado no mercado de jogos asiático, com foco em publicidade digital. Apaixonado por leitura e jogos, ele se inspira nesses interesses para alimentar sua criatividade e empreendimentos profissionais.`,
     skills: [
-      { name: "Gerente de Redes Sociais", value: 100 },
-      { name: "Marketing Digital", value: 100 },
-      { name: "Engenheiro de Prompt", value: 80 },
-      { name: "Editor de Video", value: 70 },
-      { name: "SEO/SEM", value: 60 }
+      { name: "Gerente de Redes Sociais", value: 100, desc: "Gerenciamento de redes sociais e engajamento da comunidade." },
+      { name: "Marketing Digital", value: 100, desc: "Estratégias de marketing digital e campanhas online." },
+      { name: "Engenheiro de Prompt", value: 80, desc: "Desenvolvimento de prompts e interações para IA." },
+      { name: "Editor de Video", value: 70, desc: "Edição de vídeos promocionais e conteúdo visual." },
+      { name: "SEO/SEM", value: 60, desc: "Otimização para mecanismos de busca e marketing de busca." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/richard-de-leon-534123144", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
@@ -802,8 +822,8 @@ const teamMembersPt = [
     gif: "/assets/images/team/angel.gif",
     desc: `Miguel, mais conhecido como Angel, adora  jogos desde pequeno, a área de desenvolvimento de jogos sempre lhe interessou, principalmente como os jogos podem ir além do entretenimento, passando emoções, conhecimento e desafios únicos. Recentemente ele transformou essa paixão em prática, melhorando suas artes e desenvolvendo alguns projetos no GameMaker. Ele busca sempre melhorar suas habilidades e contribuir para a criação de experiências que engajem os jogadores da CHUVA.`,
     skills: [
-      { name: "Game Maker Language (GML)", value: 60 },
-      { name: "Aprendiz", value: 100 }
+      { name: "Game Maker Language (GML)", value: 60, desc: "Programação de jogos utilizando Game Maker Language." },
+      { name: "Aprendiz", value: 100, desc: "Disposição para aprender e se desenvolver na área." }
     ],
     social: [
       { href: "https://www.youtube.com/@AngelinoJollie", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
@@ -821,12 +841,12 @@ const teamMembersPt = [
     gif: "/assets/images/team/teles.gif",
     desc: `Artista digital com foco em modelagem 3D, concept art, ilustração e animação básica 2D/3D para jogos digitais e materiais gráficos. Experiência em projetos como Matemagos, Holobeast Academy, Thunder Riders e Amazon Quest, atuando no desenvolvimento visual e contribuindo para a consistência artística e direcionamento criativo das produções. Apaixonado por contar histórias através de visuais estilizados e envolventes.`,
     skills: [
-      { name: "Ilustração / Concept Art", value: 90 },
-      { name: "Modelagem 3D", value: 80 },
-      { name: "Animação 2D Frame-a-Frame", value: 60 },
-      { name: "Animação 3D", value: 60 },
-      { name: "Edição de Vídeo", value: 50 },
-      { name: "UI/UX", value: 40 }
+      { name: "Ilustração / Concept Art", value: 90, desc: "Criação de ilustrações e artes conceituais." },
+      { name: "Modelagem 3D", value: 80, desc: "Desenvolvimento de modelos 3D para jogos e animações." },
+      { name: "Animação 2D Frame-a-Frame", value: 60, desc: "Criação de animações 2D quadro a quadro." },
+      { name: "Animação 3D", value: 60, desc: "Desenvolvimento de animações 3D para personagens e cenários." },
+      { name: "Edição de Vídeo", value: 50, desc: "Edição de vídeos promocionais e trailers." },
+      { name: "UI/UX", value: 40, desc: "Design de interfaces e experiência do usuário." }
     ],
     social: [
       { href: "https://www.artstation.com/teles_design", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
@@ -843,9 +863,9 @@ const teamMembersPt = [
     gif: "/assets/images/team/flexa.gif",
     desc: `Gabriel Flexa é produtor musical no estúdio CHUVA Games, responsável por produzir trilhas com sentimento e texturas em narrativas sonoras que transitam entre a estética sonora pop/rock/hiphop até música regional amazonida. Natural de Belém do Pará, começou a produzir suas próprias faixas ainda na adolescência, e desde então vem moldando sua estética musical entre estúdios colaborações com artistas da cena musical independente brasileira.`,
     skills: [
-      { name: "Produção Musical", value: 100 },
-      { name: "Design", value: 80 },
-      { name: "Produção de Vídeo", value: 70 }
+      { name: "Produção Musical", value: 100, desc: "Criação e produção de trilhas sonoras." },
+      { name: "Design", value: 80, desc: "Design gráfico e visual para projetos." },
+      { name: "Produção de Vídeo", value: 70, desc: "Edição e produção de vídeos promocionais." }
     ],
     social: [
       { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.png", hover: "hover_behance.png", alt: "Behance" },
@@ -863,7 +883,7 @@ const teamMembersPt = [
     gif: "/assets/images/team/ed.gif",
     desc: `Edpaulo Cardoso é artista de foley no estúdio CHUVA Games, onde dá vida aos sons que moldam experiências imersivas. Grafiteiro, body piercer e tatuador, expressa sua arte em múltiplas formas. Nas horas vagas, desliza pelos rios da Amazônia, no Pará, como kiterider apaixonado pela liberdade e pela natureza. `,
     skills: [
-      { name: "Audio", value: 100 }
+      { name: "Audio", value: 100, desc: "Criação e edição de efeitos sonoros." }
     ],
     social: [
       { href: "https://www.instagram.com/edpaulocardoso", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
@@ -984,14 +1004,65 @@ function initTeamModal() {
       modalDesc.textContent = member.desc;
       
       // Render skills
-      modalSkills.innerHTML = member.skills.map(skill => `
-        <div class="progress-bar-container">
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: ${skill.value}%"></div>
-            <span class="progress-text">${skill.name}</span>
-          </div>
-        </div>
-      `).join('');
+// ...código que preenche o modal...
+modalSkills.innerHTML = member.skills.map(skill => `
+  <div class="progress-bar-container">
+    <div class="progress-bar" tabindex="0" data-desc="${skill.desc ? skill.desc.replace(/"/g, '&quot;') : ''}">
+      <div class="progress-fill" style="width: 0%"></div>
+      <span class="progress-text">${skill.name}</span>
+    </div>
+    <div class="skill-tooltip"></div>
+  </div>
+`).join('');
+
+// Animação das barras
+setTimeout(() => {
+  $$('.progress-bar').forEach((bar, i) => {
+    const fill = bar.querySelector('.progress-fill');
+    const skill = member.skills[i];
+    if (!fill || !skill) return;
+    fill.style.width = '0%';
+    setTimeout(() => {
+      fill.style.transition = 'width 2.2s cubic-bezier(.4,2,.6,1)';
+      fill.style.width = skill.value + '%';
+    }, 50);
+  });
+
+  // Adicione o trecho AQUI, dentro do mesmo setTimeout:
+$$('.progress-bar').forEach((bar, i) => {
+  bar.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const tooltip = bar.parentElement.querySelector('.skill-tooltip');
+    const desc = bar.getAttribute('data-desc');
+    if (!desc) return;
+
+    // Toggle: se já está ativa, fecha; senão, abre e fecha as outras
+    if (tooltip.classList.contains('active')) {
+      tooltip.classList.remove('active');
+      tooltip.textContent = '';
+      return;
+    }
+
+    // Fecha outras tooltips abertas
+    $$('.skill-tooltip').forEach(t => { t.classList.remove('active'); t.textContent = ''; });
+
+    // Abre a tooltip desta barra
+    tooltip.textContent = desc;
+    tooltip.classList.add('active');
+
+    // Fecha ao clicar fora
+    function closeTooltip(ev) {
+      if (!bar.contains(ev.target)) {
+        tooltip.classList.remove('active');
+        tooltip.textContent = '';
+        document.removeEventListener('mousedown', closeTooltip);
+      }
+    }
+    document.addEventListener('mousedown', closeTooltip);
+  });
+});
+
+}, 50);
       
       // Render social links
       modalSocial.innerHTML = member.social.map(s => `
@@ -1077,15 +1148,66 @@ function initTeamModal() {
       modalDesc.textContent = member.desc;
       
       // Render skills
-      modalSkills.innerHTML = member.skills.map(skill => `
-        <div class="progress-bar-container">
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: ${skill.value}%"></div>
-            <span class="progress-text">${skill.name}</span>
-          </div>
-        </div>
-      `).join('');
-      
+// ...código que preenche o modal...
+modalSkills.innerHTML = member.skills.map(skill => `
+  <div class="progress-bar-container">
+    <div class="progress-bar" tabindex="0" data-desc="${skill.desc ? skill.desc.replace(/"/g, '&quot;') : ''}">
+      <div class="progress-fill" style="width: 0%"></div>
+      <span class="progress-text">${skill.name}</span>
+    </div>
+    <div class="skill-tooltip"></div>
+  </div>
+`).join('');
+
+// Animação das barras
+setTimeout(() => {
+  $$('.progress-bar').forEach((bar, i) => {
+    const fill = bar.querySelector('.progress-fill');
+    const skill = member.skills[i];
+    if (!fill || !skill) return;
+    fill.style.width = '0%';
+    setTimeout(() => {
+      fill.style.transition = 'width 2s cubic-bezier(.4,2,.6,1)';
+      fill.style.width = skill.value + '%';
+    }, 50);
+  });
+
+  // Adicione o trecho AQUI, dentro do mesmo setTimeout:
+ $$('.progress-bar').forEach((bar, i) => {
+  bar.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const tooltip = bar.parentElement.querySelector('.skill-tooltip');
+    const desc = bar.getAttribute('data-desc');
+    if (!desc) return;
+
+    // Toggle: se já está ativa, fecha; senão, abre e fecha as outras
+    if (tooltip.classList.contains('active')) {
+      tooltip.classList.remove('active');
+      tooltip.textContent = '';
+      return;
+    }
+
+    // Fecha outras tooltips abertas
+    $$('.skill-tooltip').forEach(t => { t.classList.remove('active'); t.textContent = ''; });
+
+    // Abre a tooltip desta barra
+    tooltip.textContent = desc;
+    tooltip.classList.add('active');
+
+    // Fecha ao clicar fora
+    function closeTooltip(ev) {
+      if (!bar.contains(ev.target)) {
+        tooltip.classList.remove('active');
+        tooltip.textContent = '';
+        document.removeEventListener('mousedown', closeTooltip);
+      }
+    }
+    document.addEventListener('mousedown', closeTooltip);
+  });
+});
+
+}, 50);
+
       // Render social links
       modalSocial.innerHTML = member.social.map(s => `
         <a href="${s.href}" target="_blank" rel="noopener noreferrer" aria-label="${s.alt}">

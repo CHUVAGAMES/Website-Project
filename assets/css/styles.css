@@ -29,6 +29,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 /* ========== CAMADAS DE FUNDO ========== */
@@ -499,6 +500,7 @@ footer p {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(3px);
+  overflow-y: auto;
 }
 
 .team-modal-bg.active {
@@ -525,6 +527,9 @@ footer p {
   align-items: center;
   overflow-y: auto;
   animation: modalContentFadeIn 0.3s ease;
+  box-sizing: border-box;
+  margin: auto;
+  overflow-y: scroll;
 }
 
 @keyframes modalContentFadeIn {
@@ -656,6 +661,16 @@ footer p {
   line-height: 1.5;
   border: 2px solid #9e9e9e62;
   z-index: 2;  
+}
+
+.team-modal::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+.team-modal::-webkit-scrollbar-thumb {
+  background: #2196f3;
+  border-radius: 8px;
 }
 
 .skill-tooltip.active {

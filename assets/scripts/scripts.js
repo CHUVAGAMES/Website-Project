@@ -233,23 +233,23 @@ function initGameModals() {
   const gamesEn = {
     amazon: {
       title: "The Amazon Grove",
-      img: "/assets/images/games/amazongrove.jpg",
+      img: "/assets/images/games/amazongrove.webp",
       desc: "Soon"
     },
     arcane: {
       title: "Trials of the Arcane Grove",
-      img: "/assets/images/games/arcanegrove.jpg",
-      desc: "Soon"
+      img: "/assets/images/games/arcanegrove.webp",
+      desc: "Trials of the Arcane Grove is a 2D top-down action-adventure with a focus on magic, exploration, puzzles, and real-time combat. Features hand-drawn art and a mystical atmosphere."
     },
     magicless: {
       title: "Magicless Mage",
-      img: "/assets/images/games/magicless.jpg",
-      desc: "Soon"
+      img: "/assets/images/games/magicless.webp",
+      desc: "Magicless Mage is a 2D top-down action-adventure starring RAGEnaldo, a furious mage with no magic. Solve puzzles, outsmart enemies, and survive a magical world using brains and rage. Stylized visuals and comedic tone."
     },
     silent: {
       title: "The Legend of the Silent Knight",
-      img: "/assets/images/games/silentknight.jpg",
-      desc: "Soon"
+      img: "/assets/images/games/silentknight.webp",
+      desc: "The Legend of the Silent Knight is a 2D top-down action-adventure about a nonverbal autistic boy on a heroic journey. Face symbolic bosses inspired by real-life challenges, solve puzzles, and explore a heartfelt, stylized world. Emotional narrative with meaningful representation."
     }
   };
 
@@ -257,23 +257,23 @@ function initGameModals() {
   const gamesPt = {
     amazon: {
       title: "The Amazon Grove",
-      img: "/assets/images/games/amazongrove.jpg",
+      img: "/assets/images/games/amazongrove.webp",
       desc: "Em breve"
     },
     arcane: {
       title: "Trials of the Arcane Grove",
-      img: "/assets/images/games/arcanegrove.jpg",
-      desc: "Em breve"
+      img: "/assets/images/games/arcanegrove.webp",
+      desc: "Trials of the Arcane Grove é um jogo 2D de ação e aventura em visão top-down, com foco em magia, exploração, puzzles e combate em tempo real. Estilo artístico desenhado à mão e atmosfera mística."
     },
     magicless: {
       title: "Magicless Mage",
-      img: "/assets/images/games/magicless.jpg",
-      desc: "Em breve"
+      img: "/assets/images/games/magicless.webp",
+      desc: "Magicless Mage é um jogo 2D de ação e aventura em visão top-down, estrelado por RAGEnaldo, um mago furioso sem magia. Resolva puzzles, engane inimigos e sobreviva em um mundo mágico usando inteligência e raiva. Visual estilizado e tom cômico."
     },
     silent: {
       title: "The Legend of the Silent Knight",
-      img: "/assets/images/games/silentknight.jpg",
-      desc: "Em breve"
+      img: "/assets/images/games/silentknight.webp",
+      desc: "The Legend of the Silent Knight é um jogo 2D de ação e aventura em visão top-down sobre um garoto autista não verbal em uma jornada heroica. Enfrente chefes simbólicos inspirados em desafios reais, resolva puzzles e explore um mundo estilizado e comovente. Narrativa emocional com representatividade significativa."
     }
   };
 
@@ -435,8 +435,8 @@ const teamMembersEn = [
   {
     name: "Andrews Nycollas",
     role: "Creative Director / Game Designer",
-    thumb: "/assets/images/team/andrews.png",
-    gif: "/assets/images/team/andrews.gif",
+    thumb: "/assets/images/team/andrews.webp",
+    gif: "/assets/images/team/animated_andrews.webp",
     desc: `Andrews Nycollas has been passionate about game development since his early teens, when he started creating and selling custom arcade fighting games at school at age 12. He has a diverse background in theater, music, film, and visual arts, enriching his creative approach to game design. A professional freelancer in the games industry since 2012, Andrews has worked extensively with the Asian games market since 2019. "I sold everything I had and came to the Philippines to meet a girl, we got married, we have a boy. Now I'm ready to become an indie game developer."`,
     skills: [
       { name: "Holistic Design", value: 100, desc: "Integrates sound, visuals, narrative, and interface as a cohesive emotional and functional system." },
@@ -451,22 +451,22 @@ const teamMembersEn = [
       { name: "Ethical and Collaborative Management", value: 100, desc: "Project coordination with transparency, active listening, and creative respect." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/andrews-nycollas-a80271251/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.youtube.com/@andrewsnycollas3651", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://www.twitch.tv/andrewsnycollas", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/andrewsnycollas_/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/512014156161875968", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" },
-      { href: "https://steamcommunity.com/id/gmandrewsnycollas", icon: "default_steam.png", hover: "hover_steam.png", alt: "Steam" },
-      { href: "https://x.com/andrewsnycollas", icon: "default_x.png", hover: "hover_x.png", alt: "X" },
-      { href: "https://bsky.app/profile/andrewsnycollas.bsky.social", icon: "default_bsky.png", hover: "hover_bsky.png", alt: "Bluesky" },
-      { href: "https://open.spotify.com/artist/5d1B5VZbcDhWjzuXWlL1Ui?si=HU5aU9RbQsGbHnoaKKKMfQ", icon: "default_spotify.png", hover: "hover_spotify.png", alt: "Spotify" }
+      { href: "https://www.linkedin.com/in/andrews-nycollas-a80271251/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.youtube.com/@andrewsnycollas3651", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.twitch.tv/andrewsnycollas", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/andrewsnycollas_/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/512014156161875968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
+      { href: "https://steamcommunity.com/id/gmandrewsnycollas", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" },
+      { href: "https://x.com/andrewsnycollas", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
+      { href: "https://bsky.app/profile/andrewsnycollas.bsky.social", icon: "default_bsky.webp", hover: "hover_bsky.webp", alt: "Bluesky" },
+      { href: "https://open.spotify.com/artist/5d1B5VZbcDhWjzuXWlL1Ui?si=HU5aU9RbQsGbHnoaKKKMfQ", icon: "default_spotify.webp", hover: "hover_spotify.webp", alt: "Spotify" }
     ]
   },
   {
     name: "Marcos Genú",
     role: "Art Director",
-    thumb: "/assets/images/team/marcos.png",
-    gif: "/assets/images/team/marcos.gif",
+    thumb: "/assets/images/team/marcos.webp",
+    gif: "/assets/images/team/animated_marcos.webp",
     desc: `Marcos Genú has worked since 2012 with concept art, 2D animation, and asset creation for games. He has contributed to several projects, including Tap Tap Beer and games developed for major companies such as VALE and the Government of Pará. His work also includes internationally awarded games like Ghostein, recognized at Game Jam+, and a project that secured sixth place at the global BGJam. "Hi, I'm Marcos."`,
     skills: [
       { name: "Pixel Art", value: 100, desc: "Creation of pixelated art focused on detail and symbolism." },
@@ -475,16 +475,16 @@ const teamMembersEn = [
       { name: "3D", value: 20, desc: "3D modeling and animation for games and applications." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/markcg/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.instagram.com/its_mark_cg/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/532567066109149186", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/markcg/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.instagram.com/its_mark_cg/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/532567066109149186", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Mohamed Capistrano",
     role: "Producer / Behavior Designer",
-    thumb: "/assets/images/team/mohamed.png",
-    gif: "/assets/images/team/mohamed.gif",
+    thumb: "/assets/images/team/mohamed.webp",
+    gif: "/assets/images/team/animated_mohamed.webp",
     desc: `Graduated in Game Development in 2015, but only now, with Andrews' invitation (a longtime friend), am I having the opportunity to work in the field. "I feel excited, as the essence of the game brings back a nostalgic memory. It's authentic."`,
     skills: [
       { name: "Game Developer", value: 50, desc: "Creation of a game from scratch." },
@@ -494,34 +494,34 @@ const teamMembersEn = [
       { name: "Programmer", value: 40, desc: "Writing code to implement game features and mechanics." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/mohamed-capistrano-0a475279/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.twitch.tv/mokaap", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/brightersheep", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/335489284197056522", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/mohamed-capistrano-0a475279/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.twitch.tv/mokaap", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/brightersheep", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/335489284197056522", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Rick Galasio",
     role: "Linux Specialist / Voice Actor",
-    thumb: "/assets/images/team/rick.png",
-    gif: "/assets/images/team/rick.gif",
+    thumb: "/assets/images/team/rick.webp",
+    gif: "/assets/images/team/animated_rick.webp",
     desc: `Rick Galasio, an autistic man with over half a century of life. After years dedicated to family and work, he can finally honor the autistic child who still lives inside him and fulfill his dream of becoming an indie game developer. "I'm just an old autistic guy."`,
     skills: [
       { name: "Linux", value: 100, desc: "Expertise in Linux operating systems and server management." },
       { name: "Acting", value: 200, desc: "Voice acting for characters in games and animations." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.youtube.com/@ricleitetube", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.youtube.com/@ricleitetube", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "André Borba",
     role: "Web Developer / Producer / Community Manager",
-    thumb: "/assets/images/team/tuta.png",
-    gif: "/assets/images/team/tuta.gif",
+    thumb: "/assets/images/team/tuta.webp",
+    gif: "/assets/images/team/animated_tuta.webp",
     desc: `André, known as Tutankhamal, is passionate about technology and music. Neurodivergent (autistic and ADHD), he has experience in Front-end development, community management, and customer support. A self-taught learner, he turns his passion for video games and computers into technical knowledge.`,
     skills: [
       { name: "Community Management", value: 100, desc: "Building and managing online communities." },
@@ -535,24 +535,24 @@ const teamMembersEn = [
       { name: "SEO", value: 100, desc: "Optimizing websites for search engines." }
     ],
     social: [
-      { href: "https://tutankhamal.com", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
-      { href: "https://www.linkedin.com/in/tutankhamal/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://github.com/Tutankhamal", icon: "default_github.png", hover: "hover_github.png", alt: "GitHub" },
-      { href: "https://www.youtube.com/@tutankhamal", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://www.twitch.tv/tutankhamal", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/tutankhamal", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://www.tiktok.com/@tutankhamal", icon: "default_tiktok.png", hover: "hover_tiktok.png", alt: "TikTok" },
-      { href: "https://discordapp.com/users/820522746622246963", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" },
-      { href: "https://steamcommunity.com/id/Tutankhamal/", icon: "default_steam.png", hover: "hover_steam.png", alt: "Steam" },
-      { href: "https://x.com/Tutankhamal", icon: "default_x.png", hover: "hover_x.png", alt: "X" },
-      { href: "https://soundcloud.com/tutankhamal", icon: "default_soundcloud.png", hover: "hover_soundcloud.png", alt: "Soundcloud" }
+      { href: "https://tutankhamal.com", icon: "default_site.webp", hover: "hover_site.webp", alt: "Portifolio" },
+      { href: "https://www.linkedin.com/in/tutankhamal/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://github.com/Tutankhamal", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
+      { href: "https://www.youtube.com/@tutankhamal", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.twitch.tv/tutankhamal", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/tutankhamal", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://www.tiktok.com/@tutankhamal", icon: "default_tiktok.webp", hover: "hover_tiktok.webp", alt: "TikTok" },
+      { href: "https://discordapp.com/users/820522746622246963", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
+      { href: "https://steamcommunity.com/id/Tutankhamal/", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" },
+      { href: "https://x.com/Tutankhamal", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
+      { href: "https://soundcloud.com/tutankhamal", icon: "default_soundcloud.webp", hover: "hover_soundcloud.webp", alt: "Soundcloud" }
     ]
   },
   {
     name: "Camila Sales",
     role: "2D Artist",
-    thumb: "/assets/images/team/camila.png",
-    gif: "/assets/images/team/camila.gif",
+    thumb: "/assets/images/team/camila.webp",
+    gif: "/assets/images/team/animated_camila.webp",
     desc: `Graduated in Game Development since 2017 and currently pursuing a postgraduate degree in Digital Animation. I discovered the world of drawing in childhood, like many artists, starting with Dragon Ball sketches. I grew up and dedicated myself to various forms of drawing and painting, from pencil and paper to canvas painting. In 2020, I bought my first graphics tablet and started exploring Digital Painting, soon after starting to study 2D Digital Animation. Art, in general, has always been my escape, and returning to the game industry will be challenging but exciting.`,
     skills: [
       { name: "2D Illustration", value: 100, desc: "Creating detailed and expressive 2D illustrations." },
@@ -561,15 +561,15 @@ const teamMembersEn = [
       { name: "Storyboard", value: 60, desc: "Planning and visualizing the narrative flow of a game." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/camila-sales-4b135a231", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://discordapp.com/users/1064628941970755735", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/camila-sales-4b135a231", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://discordapp.com/users/1064628941970755735", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Richard de Leon",
     role: "Marketing Manager",
-    thumb: "/assets/images/team/richard.png",
-    gif: "/assets/images/team/richard.gif",
+    thumb: "/assets/images/team/richard.webp",
+    gif: "/assets/images/team/animated_richard.webp",
     desc: `He has worked in marketing for seven years, starting his career at major advertising agencies in São Paulo. A few years ago, he moved to Asia, where he has been active in the Asian games market, focusing on digital advertising. Passionate about reading and games, he draws inspiration from these interests to fuel his creativity and professional endeavors.`,
     skills: [
       { name: "Social Media Manager", value: 100, desc: "Managing social media platforms and engaging with the community." },
@@ -579,35 +579,35 @@ const teamMembersEn = [
       { name: "SEO/SEM", value: 60, desc: "Optimizing content for search engines and managing ad campaigns." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/richard-de-leon-534123144", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.instagram.com/_richarddeleon/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/1312938936120643670", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/richard-de-leon-534123144", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.instagram.com/_richarddeleon/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/1312938936120643670", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Miguel (Angel)",
     role: "Young Apprentice",
-    thumb: "/assets/images/team/angel.png",
-    gif: "/assets/images/team/angel.gif",
+    thumb: "/assets/images/team/angel.webp",
+    gif: "/assets/images/team/animated_angel.webp",
     desc: `Miguel, better known as Angel, has loved games since childhood. He has always been interested in game development, especially in how games can go beyond entertainment to convey emotions, knowledge, and unique challenges. Recently, he turned this passion into practice by improving his art and developing projects in GameMaker. He is constantly seeking to improve his skills and contribute to creating experiences that engage CHUVA's members.`,
     skills: [
       { name: "Game Maker Language (GML)", value: 60, desc: "Proficient in using GML for game development." },
       { name: "Apprentice", value: 100, desc: "Eager to learn and grow in the field of game development." }
     ],
     social: [
-      { href: "https://www.youtube.com/@AngelinoJollie", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://twitch.tv/paodeangel", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/angelinojollie/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://x.com/AngelinoJollie", icon: "default_x.png", hover: "hover_x.png", alt: "X" },
-      { href: "https://github.com/angelinojollie", icon: "default_github.png", hover: "hover_github.png", alt: "GitHub" },
-      { href: "https://discordapp.com/users/979140949185822762", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.youtube.com/@AngelinoJollie", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://twitch.tv/paodeangel", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/angelinojollie/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://x.com/AngelinoJollie", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
+      { href: "https://github.com/angelinojollie", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
+      { href: "https://discordapp.com/users/979140949185822762", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
     {
     name: "Brendo Teles",
     role: "2D / 3D / Animation Artist",
-    thumb: "/assets/images/team/teles.png",
-    gif: "/assets/images/team/teles.gif",
+    thumb: "/assets/images/team/teles.webp",
+    gif: "/assets/images/team/animated_teles.webp",
     desc: `Digital artist focused on 3D modeling, concept art, illustration, and basic 2D/3D animation for digital games and graphic materials. Experienced in projects such as Matemagos, Holobeast Academy, Thunder Riders, and Amazon Quest, contributing to visual development and supporting the artistic consistency and creative direction of the productions. Passionate about storytelling through stylized and engaging visuals.`,
     skills: [
       { name: "Illustration / Concept Art", value: 90, desc: "Creating visually compelling illustrations and concept art." },
@@ -618,18 +618,18 @@ const teamMembersEn = [
       { name: "UI/UX", value: 40, desc: "Designing user interfaces and experiences for games." }
     ],
     social: [
-      { href: "https://www.artstation.com/teles_design", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
-      { href: "https://www.linkedin.com/in/brendo-teles-082909127/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.instagram.com/shiro.aniclubchannel/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://wa.me/5592982351719", icon: "default_whats.png", hover: "hover_whats.png", alt: "WhatsApp" },
-      { href: "https://discordapp.com/users/246455690133110784", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.artstation.com/teles_design", icon: "default_site.webp", hover: "hover_site.webp", alt: "Portifolio" },
+      { href: "https://www.linkedin.com/in/brendo-teles-082909127/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.instagram.com/shiro.aniclubchannel/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://wa.me/5592982351719", icon: "default_whats.webp", hover: "hover_whats.webp", alt: "WhatsApp" },
+      { href: "https://discordapp.com/users/246455690133110784", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
       {
     name: "Gabriel Flexa",
     role: "Music Producer",
-    thumb: "/assets/images/team/flexa.png",
-    gif: "/assets/images/team/flexa.gif",
+    thumb: "/assets/images/team/flexa.webp",
+    gif: "/assets/images/team/animated_flexa.webp",
     desc: `Gabriel Flexa is a music producer at CHUVA Games studio, responsible for creating emotionally driven soundtracks with rich textures in sonic narratives that range from pop/rock/hip-hop aesthetics to traditional Amazonian regional music. Originally from Belém do Pará, he began producing his own tracks during his teenage years and has since been shaping his musical style through studio work and collaborations with artists from the Brazilian independent music scene.`,
     skills: [
       { name: "Music Production", value: 100, desc: "Creating and producing music tracks for various media." },
@@ -637,26 +637,26 @@ const teamMembersEn = [
       { name: "Video Editing", value: 70, desc: "Editing video content for music videos and promotional materials." }
     ],
     social: [
-      { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.png", hover: "hover_behance.png", alt: "Behance" },
-      { href: "https://www.linkedin.com/in/gabrielflexa/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://open.spotify.com/playlist/6uKqxaFp5Orkn83tiGPtVm?si=a6DZNsK5RT-waPuveQbGdg", icon: "default_spotify.png", hover: "hover_spotify.png", alt: "Spotify" },
-      { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.webp", hover: "hover_behance.webp", alt: "Behance" },
+      { href: "https://www.linkedin.com/in/gabrielflexa/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://open.spotify.com/playlist/6uKqxaFp5Orkn83tiGPtVm?si=a6DZNsK5RT-waPuveQbGdg", icon: "default_spotify.webp", hover: "hover_spotify.webp", alt: "Spotify" },
+      { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Edpaulo Cardoso",
     role: "Foley Artist",
-    thumb: "/assets/images/team/ed.png",
-    gif: "/assets/images/team/ed.gif",
+    thumb: "/assets/images/team/ed.webp",
+    gif: "/assets/images/team/animated_ed.webp",
     desc: `Edpaulo Cardoso is a foley artist at CHUVA Games, bringing immersive experiences to life through sound. A graffiti artist, body piercer, and tattooist, he expresses his creativity in many forms. In his free time, he rides the winds as a kiterider across the rivers of the Amazon, in Pará, Brazil.`,
     skills: [
       { name: "Audio", value: 100, desc: "Expertise in creating and manipulating audio for immersive experiences." }
     ],
     social: [
-      { href: "https://www.instagram.com/edpaulocardoso", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/1356290249990607128", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.instagram.com/edpaulocardoso", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/1356290249990607128", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   }
 ];
@@ -666,8 +666,8 @@ const teamMembersPt = [
   {
     name: "Andrews Nycollas",
     role: "Diretor Criativo / Designer de Jogos",
-    thumb: "/assets/images/team/andrews.png",
-    gif: "/assets/images/team/andrews.gif",
+    thumb: "/assets/images/team/andrews.webp",
+    gif: "/assets/images/team/animated_andrews.webp",
     desc: `Andrews Nycollas é apaixonado por desenvolvimento de jogos desde a pré-adolescência, quando começou a criar e vender jogos de luta arcade personalizados na escola, aos 12 anos. Ele tem uma formação diversificada em teatro, música, cinema e artes visuais, o que enriquece sua abordagem criativa ao design de jogos. Freelancer profissional na indústria de jogos desde 2012, Andrews tem trabalhado extensivamente com o mercado de jogos asiático desde 2019. "Vendi tudo o que tinha e vim para as Filipinas para encontrar uma garota, nos casamos, temos um menino. Agora estou pronto para me tornar um desenvolvedor de jogos independente"`,
     skills: [
       { name: "Design Holístico", value: 100, desc: "Integra som, imagem, narrativa e interface como um sistema emocional e funcional coeso." },
@@ -682,22 +682,22 @@ const teamMembersPt = [
       { name: "Gestão Ética e Colaborativa", value: 100, desc: "Coordenação de projetos com transparência, escuta ativa e respeito criativo."}
     ],
     social: [
-      { href: "https://www.linkedin.com/in/andrews-nycollas-a80271251/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.youtube.com/@andrewsnycollas3651", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://www.twitch.tv/andrewsnycollas", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/andrewsnycollas_/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/512014156161875968", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" },
-      { href: "https://steamcommunity.com/id/gmandrewsnycollas", icon: "default_steam.png", hover: "hover_steam.png", alt: "Steam" },
-      { href: "https://x.com/andrewsnycollas", icon: "default_x.png", hover: "hover_x.png", alt: "X" },
-      { href: "https://bsky.app/profile/andrewsnycollas.bsky.social", icon: "default_bsky.png", hover: "hover_bsky.png", alt: "Bluesky" },
-      { href: "https://open.spotify.com/artist/5d1B5VZbcDhWjzuXWlL1Ui?si=HU5aU9RbQsGbHnoaKKKMfQ", icon: "default_spotify.png", hover: "hover_spotify.png", alt: "Spotify" }
+      { href: "https://www.linkedin.com/in/andrews-nycollas-a80271251/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.youtube.com/@andrewsnycollas3651", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.twitch.tv/andrewsnycollas", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/andrewsnycollas_/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/512014156161875968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
+      { href: "https://steamcommunity.com/id/gmandrewsnycollas", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" },
+      { href: "https://x.com/andrewsnycollas", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
+      { href: "https://bsky.app/profile/andrewsnycollas.bsky.social", icon: "default_bsky.webp", hover: "hover_bsky.webp", alt: "Bluesky" },
+      { href: "https://open.spotify.com/artist/5d1B5VZbcDhWjzuXWlL1Ui?si=HU5aU9RbQsGbHnoaKKKMfQ", icon: "default_spotify.webp", hover: "hover_spotify.webp", alt: "Spotify" }
     ]
   },
   {
     name: "Marcos Genú",
     role: "Diretor de Arte",
-    thumb: "/assets/images/team/marcos.png",
-    gif: "/assets/images/team/marcos.gif",
+    thumb: "/assets/images/team/marcos.webp",
+    gif: "/assets/images/team/animated_marcos.webp",
     desc: `Marcos Genú trabalha desde 2012 com arte conceitual, animação 2D e criação de assets para jogos. Ele contribuiu para diversos projetos, incluindo Tap Tap Beer e jogos desenvolvidos para grandes empresas como VALE e o Governo do Pará. Seu trabalho também inclui jogos premiados internacionalmente, como Ghostein, que foi reconhecido na Game Jam+, e um projeto que garantiu o sexto lugar no BGJam global. "Oi, eu sou o Marcos."`,
     skills: [
       { name: "Pixel Art", value: 100, desc: "Criação de arte pixelada, com foco em detalhes e simbologia." },
@@ -706,16 +706,16 @@ const teamMembersPt = [
       { name: "3D", value: 20, desc: "Modelagem e animação 3D para jogos e aplicações." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/markcg/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.instagram.com/its_mark_cg/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/532567066109149186", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/markcg/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.instagram.com/its_mark_cg/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/532567066109149186", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Mohamed Capistrano",
     role: "Produtor / Designer de Comportamento",
-    thumb: "/assets/images/team/mohamed.png",
-    gif: "/assets/images/team/mohamed.gif",
+    thumb: "/assets/images/team/mohamed.webp",
+    gif: "/assets/images/team/animated_mohamed.webp",
     desc: `Concluí minha graduação em Desenvolvimento de Jogos em 2015, mas só agora, com o convite do Andrews (um amigo de longa data), estou tendo a oportunidade de trabalhar na área. 'Sinto-me empolgado, pois a essência do jogo remete a uma memória nostálgica. "É autêntico."`,
     skills: [
       { name: "Desenvolvedor de Jogos", value: 50, desc: "Desenvolvimento de jogos em várias plataformas." },
@@ -725,34 +725,34 @@ const teamMembersPt = [
       { name: "Programador", value: 40, desc: "Programação de mecânicas de jogo e sistemas." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/mohamed-capistrano-0a475279/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.twitch.tv/mokaap", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/brightersheep", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/335489284197056522", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/mohamed-capistrano-0a475279/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.twitch.tv/mokaap", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/brightersheep", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/335489284197056522", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Rick Galasio",
     role: "Especialista em Linux / Ator de Voz",
-    thumb: "/assets/images/team/rick.png",
-    gif: "/assets/images/team/rick.gif",
+    thumb: "/assets/images/team/rick.webp",
+    gif: "/assets/images/team/animated_rick.webp",
     desc: `Rick Galasio, um homem autista com mais de meio século de vida. Após anos dedicados à família e ao trabalho, ele finalmente pode honrar a criança autista que ainda vive dentro dele e realizar seu sonho de se tornar um desenvolvedor de jogos independente. "Eu sou só um velhinho autista."`,
     skills: [
       { name: "Linux", value: 100, desc: "Especialista em sistemas operacionais Linux." },
       { name: "Atuação", value: 200, desc: "Atuação em projetos de jogos e animações." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.youtube.com/@ricleitetube", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.youtube.com/@ricleitetube", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "André Borba",
     role: "Desenvolvedor Web / Produtor / Gerente de Comunidade",
-    thumb: "/assets/images/team/tuta.png",
-    gif: "/assets/images/team/tuta.gif",
+    thumb: "/assets/images/team/tuta.webp",
+    gif: "/assets/images/team/animated_tuta.webp",
     desc: `André, conhecido como Tutankhamal, é apaixonado por tecnologia e música. Neurodivergente (autista e TDAH), ele tem experiência em desenvolvimento Front-end, gerenciamento de comunidade e suporte ao cliente. Um autodidata, ele transforma sua paixão por videogames e computadores em conhecimento técnico.`,
     skills: [
       { name: "Gestão de Comunidade", value: 100, desc: "Construção e gerenciamento de comunidades online." },
@@ -766,24 +766,24 @@ const teamMembersPt = [
       { name: "SEO", value: 100, desc: "Otimização de sites para mecanismos de busca." }
     ],
     social: [
-      { href: "https://tutankhamal.com", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
-      { href: "https://www.linkedin.com/in/tutankhamal/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://github.com/Tutankhamal", icon: "default_github.png", hover: "hover_github.png", alt: "GitHub" },
-      { href: "https://www.youtube.com/@tutankhamal", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://www.twitch.tv/tutankhamal", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/tutankhamal", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://www.tiktok.com/@tutankhamal", icon: "default_tiktok.png", hover: "hover_tiktok.png", alt: "TikTok" },
-      { href: "https://discordapp.com/users/820522746622246963", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" },
-      { href: "https://steamcommunity.com/id/Tutankhamal/", icon: "default_steam.png", hover: "hover_steam.png", alt: "Steam" },
-      { href: "https://x.com/Tutankhamal", icon: "default_x.png", hover: "hover_x.png", alt: "X" },
-      { href: "https://soundcloud.com/tutankhamal", icon: "default_soundcloud.png", hover: "hover_soundcloud.png", alt: "Soundcloud" }
+      { href: "https://tutankhamal.com", icon: "default_site.webp", hover: "hover_site.webp", alt: "Portifolio" },
+      { href: "https://www.linkedin.com/in/tutankhamal/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://github.com/Tutankhamal", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
+      { href: "https://www.youtube.com/@tutankhamal", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.twitch.tv/tutankhamal", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/tutankhamal", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://www.tiktok.com/@tutankhamal", icon: "default_tiktok.webp", hover: "hover_tiktok.webp", alt: "TikTok" },
+      { href: "https://discordapp.com/users/820522746622246963", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
+      { href: "https://steamcommunity.com/id/Tutankhamal/", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" },
+      { href: "https://x.com/Tutankhamal", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
+      { href: "https://soundcloud.com/tutankhamal", icon: "default_soundcloud.webp", hover: "hover_soundcloud.webp", alt: "Soundcloud" }
     ]
   },
   {
     name: "Camila Sales",
     role: "Artista 2D",
-    thumb: "/assets/images/team/camila.png",
-    gif: "/assets/images/team/camila.gif",
+    thumb: "/assets/images/team/camila.webp",
+    gif: "/assets/images/team/animated_camila.webp",
     desc: `Formada em Desenvolvimento de Jogos desde 2017 e atualmente cursando pós-graduação em Animação Digital. Descobri o mundo do desenho na infância, como muitos artistas, começando com esboços de Dragon Ball. Cresci e me dediquei a várias formas de desenho e pintura, do lápis e papel à pintura em tela. Em 2020, comprei minha primeira mesa digitalizadora e comecei a explorar a Pintura Digital, logo após começar a estudar Animação Digital 2D. A arte, em geral, sempre foi minha fuga, e retornar à indústria de jogos será desafiador, mas emocionante.`,
     skills: [
       { name: "Ilustração 2D", value: 100, desc: "Criação de ilustrações detalhadas e expressivas em 2D." },
@@ -792,15 +792,15 @@ const teamMembersPt = [
       { name: "Storyboard", value: 60, desc: "Planejamento visual de cenas e sequências." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/camila-sales-4b135a231", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://discordapp.com/users/1064628941970755735", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/camila-sales-4b135a231", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://discordapp.com/users/1064628941970755735", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Richard de Leon",
     role: "Gerente de Marketing",
-    thumb: "/assets/images/team/richard.png",
-    gif: "/assets/images/team/richard.gif",
+    thumb: "/assets/images/team/richard.webp",
+    gif: "/assets/images/team/animated_richard.webp",
     desc: `Ele trabalhou em marketing por sete anos, iniciando sua carreira em grandes agências de publicidade em São Paulo. Há alguns anos, mudou-se para a Ásia, onde tem atuado no mercado de jogos asiático, com foco em publicidade digital. Apaixonado por leitura e jogos, ele se inspira nesses interesses para alimentar sua criatividade e empreendimentos profissionais.`,
     skills: [
       { name: "Gerente de Redes Sociais", value: 100, desc: "Gerenciamento de redes sociais e engajamento da comunidade." },
@@ -810,35 +810,35 @@ const teamMembersPt = [
       { name: "SEO/SEM", value: 60, desc: "Otimização para mecanismos de busca e marketing de busca." }
     ],
     social: [
-      { href: "https://www.linkedin.com/in/richard-de-leon-534123144", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.instagram.com/_richarddeleon/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/1312938936120643670", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.linkedin.com/in/richard-de-leon-534123144", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.instagram.com/_richarddeleon/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/1312938936120643670", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Miguel (Angel)",
     role: "Menor Aprendiz",
-    thumb: "/assets/images/team/angel.png",
-    gif: "/assets/images/team/angel.gif",
+    thumb: "/assets/images/team/angel.webp",
+    gif: "/assets/images/team/animated_angel.webp",
     desc: `Miguel, mais conhecido como Angel, adora  jogos desde pequeno, a área de desenvolvimento de jogos sempre lhe interessou, principalmente como os jogos podem ir além do entretenimento, passando emoções, conhecimento e desafios únicos. Recentemente ele transformou essa paixão em prática, melhorando suas artes e desenvolvendo alguns projetos no GameMaker. Ele busca sempre melhorar suas habilidades e contribuir para a criação de experiências que engajem os jogadores da CHUVA.`,
     skills: [
       { name: "Game Maker Language (GML)", value: 60, desc: "Programação de jogos utilizando Game Maker Language." },
       { name: "Aprendiz", value: 100, desc: "Disposição para aprender e se desenvolver na área." }
     ],
     social: [
-      { href: "https://www.youtube.com/@AngelinoJollie", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://twitch.tv/paodeangel", icon: "default_twitch.png", hover: "hover_twitch.png", alt: "Twitch" },
-      { href: "https://www.instagram.com/angelinojollie/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://x.com/AngelinoJollie", icon: "default_x.png", hover: "hover_x.png", alt: "X" },
-      { href: "https://github.com/angelinojollie", icon: "default_github.png", hover: "hover_github.png", alt: "GitHub" },
-      { href: "https://discordapp.com/users/979140949185822762", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.youtube.com/@AngelinoJollie", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://twitch.tv/paodeangel", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
+      { href: "https://www.instagram.com/angelinojollie/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://x.com/AngelinoJollie", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
+      { href: "https://github.com/angelinojollie", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
+      { href: "https://discordapp.com/users/979140949185822762", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Brendo Teles",
     role: "Artista 2D / 3D e Animação",
-    thumb: "/assets/images/team/teles.png",
-    gif: "/assets/images/team/teles.gif",
+    thumb: "/assets/images/team/teles.webp",
+    gif: "/assets/images/team/animated_teles.webp",
     desc: `Artista digital com foco em modelagem 3D, concept art, ilustração e animação básica 2D/3D para jogos digitais e materiais gráficos. Experiência em projetos como Matemagos, Holobeast Academy, Thunder Riders e Amazon Quest, atuando no desenvolvimento visual e contribuindo para a consistência artística e direcionamento criativo das produções. Apaixonado por contar histórias através de visuais estilizados e envolventes.`,
     skills: [
       { name: "Ilustração / Concept Art", value: 90, desc: "Criação de ilustrações e artes conceituais." },
@@ -849,18 +849,18 @@ const teamMembersPt = [
       { name: "UI/UX", value: 40, desc: "Design de interfaces e experiência do usuário." }
     ],
     social: [
-      { href: "https://www.artstation.com/teles_design", icon: "default_site.png", hover: "hover_site.png", alt: "Portifolio" },
-      { href: "https://www.linkedin.com/in/brendo-teles-082909127/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://www.instagram.com/shiro.aniclubchannel/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://wa.me/5592982351719", icon: "default_whats.png", hover: "hover_whats.png", alt: "WhatsApp" },
-      { href: "https://discordapp.com/users/246455690133110784", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.artstation.com/teles_design", icon: "default_site.webp", hover: "hover_site.webp", alt: "Portifolio" },
+      { href: "https://www.linkedin.com/in/brendo-teles-082909127/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://www.instagram.com/shiro.aniclubchannel/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://wa.me/5592982351719", icon: "default_whats.webp", hover: "hover_whats.webp", alt: "WhatsApp" },
+      { href: "https://discordapp.com/users/246455690133110784", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
     {
     name: "Gabriel Flexa",
     role: "Produtor Musical",
-    thumb: "/assets/images/team/flexa.png",
-    gif: "/assets/images/team/flexa.gif",
+    thumb: "/assets/images/team/flexa.webp",
+    gif: "/assets/images/team/animated_flexa.webp",
     desc: `Gabriel Flexa é produtor musical no estúdio CHUVA Games, responsável por produzir trilhas com sentimento e texturas em narrativas sonoras que transitam entre a estética sonora pop/rock/hiphop até música regional amazônica. Natural de Belém do Pará, começou a produzir suas próprias faixas ainda na adolescência, e desde então vem moldando sua estética musical entre estúdios colaborações com artistas da cena musical independente brasileira.`,
     skills: [
       { name: "Produção Musical", value: 100, desc: "Criação e produção de trilhas sonoras." },
@@ -868,26 +868,26 @@ const teamMembersPt = [
       { name: "Produção de Vídeo", value: 70, desc: "Edição e produção de vídeos promocionais." }
     ],
     social: [
-      { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.png", hover: "hover_behance.png", alt: "Behance" },
-      { href: "https://www.linkedin.com/in/gabrielflexa/", icon: "default_linkedin.png", hover: "hover_linkedin.png", alt: "LinkedIn" },
-      { href: "https://open.spotify.com/playlist/6uKqxaFp5Orkn83tiGPtVm?si=a6DZNsK5RT-waPuveQbGdg", icon: "default_spotify.png", hover: "hover_spotify.png", alt: "Spotify" },
-      { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.png", hover: "hover_youtube.png", alt: "YouTube" },
-      { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.behance.net/gabriel-flexa", icon: "default_behance.webp", hover: "hover_behance.webp", alt: "Behance" },
+      { href: "https://www.linkedin.com/in/gabrielflexa/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
+      { href: "https://open.spotify.com/playlist/6uKqxaFp5Orkn83tiGPtVm?si=a6DZNsK5RT-waPuveQbGdg", icon: "default_spotify.webp", hover: "hover_spotify.webp", alt: "Spotify" },
+      { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   },
   {
     name: "Edpaulo Cardoso",
     role: "Artista de Foley",
-    thumb: "/assets/images/team/ed.png",
-    gif: "/assets/images/team/ed.gif",
+    thumb: "/assets/images/team/ed.webp",
+    gif: "/assets/images/team/animated_ed.webp",
     desc: `Edpaulo Cardoso é artista de foley no estúdio CHUVA Games, onde dá vida aos sons que moldam experiências imersivas. Grafiteiro, body piercer e tatuador, expressa sua arte em múltiplas formas. Nas horas vagas, desliza pelos rios da Amazônia, no Pará, como kiterider apaixonado pela liberdade e pela natureza. `,
     skills: [
       { name: "Audio", value: 100, desc: "Criação e edição de efeitos sonoros." }
     ],
     social: [
-      { href: "https://www.instagram.com/edpaulocardoso", icon: "default_insta.png", hover: "hover_insta.png", alt: "Instagram" },
-      { href: "https://discordapp.com/users/1356290249990607128", icon: "default_discord.png", hover: "hover_discord.png", alt: "Discord" }
+      { href: "https://www.instagram.com/edpaulocardoso", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/1356290249990607128", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
   }
 ];
@@ -994,7 +994,7 @@ function initTeamModal() {
       if (!member) return;
       
       // Fill modal with member data
-      modalImg.src = member.thumb;
+      modalImg.src = member.gif; // já exibe o gif animado
       modalImg.setAttribute('data-original-src', member.thumb);
       modalImg.setAttribute('data-hover-src', member.gif);
       modalImg.alt = member.name;
@@ -1083,15 +1083,15 @@ $$('.progress-bar').forEach((bar, i) => {
       document.body.style.overflow = 'hidden';
       
       // Add hover effect for modal image
-      modalImg.addEventListener('mouseover', function() {
-        this.src = this.getAttribute('data-hover-src');
-        this.classList.add('hovered');
-      });
+//      modalImg.addEventListener('mouseover', function() {
+//        this.src = this.getAttribute('data-hover-src');
+//        this.classList.add('hovered');
+//      });
       
-      modalImg.addEventListener('mouseout', function() {
-        this.src = this.getAttribute('data-original-src');
-        this.classList.remove('hovered');
-      });
+//      modalImg.addEventListener('mouseout', function() {
+//        this.src = this.getAttribute('data-original-src');
+//        this.classList.remove('hovered');
+//      });
     });
     
     // Close modal functions
@@ -1138,7 +1138,7 @@ $$('.progress-bar').forEach((bar, i) => {
       if (!member) return;
       
       // Fill modal with member data
-      modalImg.src = member.thumb;
+      modalImg.src = member.gif; // já exibe o gif animado
       modalImg.setAttribute('data-original-src', member.thumb);
       modalImg.setAttribute('data-hover-src', member.gif);
       modalImg.alt = member.name;
@@ -1227,15 +1227,15 @@ setTimeout(() => {
       document.body.style.overflow = 'hidden';
       
       // Add hover effect for modal image
-      modalImg.addEventListener('mouseover', function() {
-        this.src = this.getAttribute('data-hover-src');
-        this.classList.add('hovered');
-      });
+//      modalImg.addEventListener('mouseover', function() {
+//        this.src = this.getAttribute('data-hover-src');
+//        this.classList.add('hovered');
+//      });
       
-      modalImg.addEventListener('mouseout', function() {
-        this.src = this.getAttribute('data-original-src');
-        this.classList.remove('hovered');
-      });
+//      modalImg.addEventListener('mouseout', function() {
+//        this.src = this.getAttribute('data-original-src');
+//        this.classList.remove('hovered');
+//      });
     });
     
     // Close modal functions

@@ -508,7 +508,10 @@ const teamMembersEn = [
     desc: `Rick Galasio, an autistic man with over half a century of life. After years dedicated to family and work, he can finally honor the autistic child who still lives inside him and fulfill his dream of becoming an indie game developer. "I'm just an old autistic guy."`,
     skills: [
       { name: "Linux", value: 100, desc: "Expertise in Linux operating systems and server management." },
-      { name: "Acting", value: 200, desc: "Voice acting for characters in games and animations." }
+      { name: "Acting", value: 200, desc: "Voice acting for characters in games and animations." },
+      { name: "2D Artist – Pixel Art", value: 200, desc: "Creating pixel art assets for games." },
+      { name: "Programmer", value: 200, desc: "Writing code to implement features and mechanics." },
+      { name: "Software Portability Specialist", value: 200, desc: "Ensuring software runs smoothly on various platforms." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
@@ -525,7 +528,6 @@ const teamMembersEn = [
     desc: `André, known as Tutankhamal, is passionate about technology and music. Neurodivergent (autistic and ADHD), he has experience in Front-end development, community management, and customer support. A self-taught learner, he turns his passion for video games and computers into technical knowledge.`,
     skills: [
       { name: "Community Management", value: 100, desc: "Building and managing online communities." },
-      { name: "Web Development", value: 100, desc: "Creating and maintaining websites and web applications." },
       { name: "Front-End Development", value: 100, desc: "Creating user-friendly interfaces for web applications." },
       { name: "Content Management", value: 100, desc: "Managing and organizing digital content." },
       { name: "UI/UX", value: 90, desc: "Designing user interfaces and enhancing user experiences." },
@@ -738,8 +740,11 @@ const teamMembersPt = [
     gif: "/assets/images/team/animated_rick.webp",
     desc: `Rick Galasio, um homem autista com mais de meio século de vida. Após anos dedicados à família e ao trabalho, ele finalmente pode honrar a criança autista que ainda vive dentro dele e realizar seu sonho de se tornar um desenvolvedor de jogos independente. "Eu sou só um velhinho autista."`,
     skills: [
-      { name: "Linux", value: 100, desc: "Especialista em sistemas operacionais Linux." },
-      { name: "Atuação", value: 200, desc: "Atuação em projetos de jogos e animações." }
+      { name: "Linux", value: 100, desc: "Especialização em sistemas operacionais Linux e gerenciamento de servidores." },
+      { name: "Atuação", value: 200, desc: "Dublagem de personagens em jogos e animações." },
+      { name: "Artista 2D – Pixel Art", value: 200, desc: "Criação de assets em pixel art para jogos." },
+      { name: "Programador", value: 200, desc: "Escrita de código para implementar funcionalidades e mecânicas." },
+      { name: "Especialista em Portabilidade de Software", value: 200, desc: "Garantir que o software funcione corretamente em várias plataformas." }
     ],
     social: [
       { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
@@ -756,7 +761,6 @@ const teamMembersPt = [
     desc: `André, conhecido como Tutankhamal, é apaixonado por tecnologia e música. Neurodivergente (autista e TDAH), ele tem experiência em desenvolvimento Front-end, gerenciamento de comunidade e suporte ao cliente. Um autodidata, ele transforma sua paixão por videogames e computadores em conhecimento técnico.`,
     skills: [
       { name: "Gestão de Comunidade", value: 100, desc: "Construção e gerenciamento de comunidades online." },
-      { name: "Desenvolvimento Web", value: 100, desc: "Criação e manutenção de sites e aplicações web." },
       { name: "Desenvolvimento Front-End", value: 100, desc: "Criação de interfaces amigáveis para aplicações web." },
       { name: "Gestão de Conteúdo", value: 100, desc: "Gerenciamento e organização de conteúdo digital." },
       { name: "UI/UX", value: 90, desc: "Design de interfaces e aprimoramento da experiência do usuário." },

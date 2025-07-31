@@ -657,7 +657,7 @@ footer p {
   font-size: 0.98em;
   box-shadow: 0 4px 16px rgba(0,0,0,0.18);
   animation: fadeInTooltip 0.2s;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
   border: 2px solid #9e9e9e62;
   z-index: 2;  

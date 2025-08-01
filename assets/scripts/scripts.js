@@ -191,7 +191,7 @@ function initCopyEmail() {
   copyBtn.addEventListener('click', function(e) {
     e.preventDefault();
     
-    const email = 'andrewsnycollas@chuvagames.com';
+    const email = 'contato@chuvagames.com';
     
     navigator.clipboard.writeText(email)
       .then(() => {

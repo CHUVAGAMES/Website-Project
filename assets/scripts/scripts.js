@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
   initTeamCards();
   initTeamModal();
   initNavbarScroll();
+  renderProfileSkillbars();
+  renderProfileSocial();
 });
 
 // Navbar: hide on scroll down, show on scroll up
@@ -434,6 +436,7 @@ function shuffleArray(array) {
 const teamMembersEn = [
   {
     name: "Andrews Nycollas",
+    slug: "andrews-nycollas",
     role: "Creative Director / Game Designer",
     thumb: "/assets/images/team/andrews.webp",
     gif: "/assets/images/team/animated_andrews.webp",
@@ -464,6 +467,7 @@ const teamMembersEn = [
   },
   {
     name: "Marcos Genú",
+    slug: "marcos-genu",
     role: "Art Director",
     thumb: "/assets/images/team/marcos.webp",
     gif: "/assets/images/team/animated_marcos.webp",
@@ -482,6 +486,7 @@ const teamMembersEn = [
   },
   {
     name: "Mohamed Capistrano",
+    slug: "mohamed-capistrano",
     role: "Producer / Behavior Designer",
     thumb: "/assets/images/team/mohamed.webp",
     gif: "/assets/images/team/animated_mohamed.webp",
@@ -502,6 +507,7 @@ const teamMembersEn = [
   },
   {
     name: "Rick Galasio",
+    slug: "rick-galasio",
     role: "Linux Specialist / Voice Actor",
     thumb: "/assets/images/team/rick.webp",
     gif: "/assets/images/team/animated_rick.webp",
@@ -522,6 +528,7 @@ const teamMembersEn = [
   },
   {
     name: "André Borba",
+    slug: "andre-borba",
     role: "Web Developer / Producer / Community Manager",
     thumb: "/assets/images/team/tuta.webp",
     gif: "/assets/images/team/animated_tuta.webp",
@@ -552,6 +559,7 @@ const teamMembersEn = [
   },
   {
     name: "Camila Sales",
+    slug: "camila-sales",
     role: "2D Artist",
     thumb: "/assets/images/team/camila.webp",
     gif: "/assets/images/team/animated_camila.webp",
@@ -569,6 +577,7 @@ const teamMembersEn = [
   },
   {
     name: "Richard de Leon",
+    slug: "richard-de-leon",
     role: "Marketing Manager",
     thumb: "/assets/images/team/richard.webp",
     gif: "/assets/images/team/animated_richard.webp",
@@ -588,6 +597,7 @@ const teamMembersEn = [
   },
   {
     name: "Miguel (Angel)",
+    slug: "miguel-angel",
     role: "Young Apprentice",
     thumb: "/assets/images/team/angel.webp",
     gif: "/assets/images/team/animated_angel.webp",
@@ -607,6 +617,7 @@ const teamMembersEn = [
   },
     {
     name: "Brendo Teles",
+    slug: "brendo-teles",
     role: "2D / 3D / Animation Artist",
     thumb: "/assets/images/team/teles.webp",
     gif: "/assets/images/team/animated_teles.webp",
@@ -629,6 +640,7 @@ const teamMembersEn = [
   },
       {
     name: "Gabriel Flexa",
+    slug: "gabriel-flexa",
     role: "Music Producer",
     thumb: "/assets/images/team/flexa.webp",
     gif: "/assets/images/team/animated_flexa.webp",
@@ -649,6 +661,7 @@ const teamMembersEn = [
   },
   {
     name: "Edpaulo Cardoso",
+    slug: "edpaulo-cardoso",
     role: "Foley Artist",
     thumb: "/assets/images/team/ed.webp",
     gif: "/assets/images/team/animated_ed.webp",
@@ -667,6 +680,7 @@ const teamMembersEn = [
 const teamMembersPt = [
   {
     name: "Andrews Nycollas",
+    slug: "andrews-nycollas",
     role: "Diretor Criativo / Designer de Jogos",
     thumb: "/assets/images/team/andrews.webp",
     gif: "/assets/images/team/animated_andrews.webp",
@@ -697,6 +711,7 @@ const teamMembersPt = [
   },
   {
     name: "Marcos Genú",
+    slug: "marcos-genu",
     role: "Diretor de Arte",
     thumb: "/assets/images/team/marcos.webp",
     gif: "/assets/images/team/animated_marcos.webp",
@@ -715,6 +730,7 @@ const teamMembersPt = [
   },
   {
     name: "Mohamed Capistrano",
+    slug: "mohamed-capistrano",
     role: "Produtor / Designer de Comportamento",
     thumb: "/assets/images/team/mohamed.webp",
     gif: "/assets/images/team/animated_mohamed.webp",
@@ -735,6 +751,7 @@ const teamMembersPt = [
   },
   {
     name: "Rick Galasio",
+    slug: "rick-galasio",
     role: "Especialista em Linux / Ator de Voz",
     thumb: "/assets/images/team/rick.webp",
     gif: "/assets/images/team/animated_rick.webp",
@@ -755,6 +772,7 @@ const teamMembersPt = [
   },
   {
     name: "André Borba",
+    slug: "andre-borba",
     role: "Desenvolvedor Web / Produtor / Gerente de Comunidade",
     thumb: "/assets/images/team/tuta.webp",
     gif: "/assets/images/team/animated_tuta.webp",
@@ -785,6 +803,7 @@ const teamMembersPt = [
   },
   {
     name: "Camila Sales",
+    slug: "camila-sales",
     role: "Artista 2D",
     thumb: "/assets/images/team/camila.webp",
     gif: "/assets/images/team/animated_camila.webp",
@@ -802,6 +821,7 @@ const teamMembersPt = [
   },
   {
     name: "Richard de Leon",
+    slug: "richard-de-leon",
     role: "Gerente de Marketing",
     thumb: "/assets/images/team/richard.webp",
     gif: "/assets/images/team/animated_richard.webp",
@@ -821,6 +841,7 @@ const teamMembersPt = [
   },
   {
     name: "Miguel (Angel)",
+    slug: "miguel-angel",
     role: "Menor Aprendiz",
     thumb: "/assets/images/team/angel.webp",
     gif: "/assets/images/team/animated_angel.webp",
@@ -840,6 +861,7 @@ const teamMembersPt = [
   },
   {
     name: "Brendo Teles",
+    slug: "brendo-teles",
     role: "Artista 2D / 3D e Animação",
     thumb: "/assets/images/team/teles.webp",
     gif: "/assets/images/team/animated_teles.webp",
@@ -862,6 +884,7 @@ const teamMembersPt = [
   },
     {
     name: "Gabriel Flexa",
+    slug: "gabriel-flexa",
     role: "Produtor Musical",
     thumb: "/assets/images/team/flexa.webp",
     gif: "/assets/images/team/animated_flexa.webp",
@@ -882,6 +905,7 @@ const teamMembersPt = [
   },
   {
     name: "Edpaulo Cardoso",
+    slug: "edpaulo-cardoso",
     role: "Artista de Foley",
     thumb: "/assets/images/team/ed.webp",
     gif: "/assets/images/team/animated_ed.webp",
@@ -982,6 +1006,7 @@ function initTeamModal() {
     const modalDesc = $('#teamModalDescEn');
     const modalSkills = $('#teamModalSkillsEn');
     const modalSocial = $('#teamModalSocialEn');
+    const modalProfileButton = $('#teamModalProfileButtonEn');
     const modalClose = $('#teamModalCloseEn');
     
     if (!grid || !modalBg || !modal || !modalImg || !modalTitle || 
@@ -1008,31 +1033,30 @@ function initTeamModal() {
       modalDesc.textContent = member.desc;
       
       // Render skills
-// ...código que preenche o modal...
-modalSkills.innerHTML = member.skills.map(skill => `
-  <div class="progress-bar-container">
-    <div class="progress-bar" tabindex="0" data-desc="${skill.desc ? skill.desc.replace(/"/g, '&quot;') : ''}">
-      <div class="progress-fill" style="width: 0%"></div>
-      <span class="progress-text">${skill.name}</span>
-    </div>
-    <div class="skill-tooltip"></div>
-  </div>
-`).join('');
+      modalSkills.innerHTML = member.skills.map(skill => `
+        <div class="progress-bar-container">
+          <div class="progress-bar" tabindex="0" data-desc="${skill.desc ? skill.desc.replace(/"/g, '&quot;') : ''}">
+            <div class="progress-fill" style="width: 0%"></div>
+            <span class="progress-text">${skill.name}</span>
+          </div>
+          <div class="skill-tooltip"></div>
+        </div>
+      `).join('');
 
-// Animação das barras
-setTimeout(() => {
-  $$('.progress-bar').forEach((bar, i) => {
-    const fill = bar.querySelector('.progress-fill');
-    const skill = member.skills[i];
-    if (!fill || !skill) return;
-    fill.style.width = '0%';
-    setTimeout(() => {
-      fill.style.transition = 'width 2.2s cubic-bezier(.4,2,.6,1)';
-      fill.style.width = skill.value + '%';
-    }, 50);
-  });
+      // Animação das barras
+      setTimeout(() => {
+        $$('.progress-bar').forEach((bar, i) => {
+          const fill = bar.querySelector('.progress-fill');
+          const skill = member.skills[i];
+          if (!fill || !skill) return;
+          fill.style.width = '0%';
+          setTimeout(() => {
+            fill.style.transition = 'width 2.2s cubic-bezier(.4,2,.6,1)';
+            fill.style.width = skill.value + '%';
+          }, 50);
+        });
 
-  // Adicione o trecho AQUI, dentro do mesmo setTimeout:
+        // Adicione o trecho AQUI, dentro do mesmo setTimeout:
 $$('.progress-bar').forEach((bar, i) => {
   bar.addEventListener('click', function(e) {
     e.stopPropagation();
@@ -1081,21 +1105,14 @@ $$('.progress-bar').forEach((bar, i) => {
           >
         </a>
       `).join('');
+
+      if (modalProfileButton) {
+        modalProfileButton.innerHTML = `<a href="/eng/team/${member.slug}.html" class="team-modal-profile-btn">Full Profile</a>`;
+      }
       
       // Show modal
       modalBg.classList.add('active');
       document.body.style.overflow = 'hidden';
-      
-      // Add hover effect for modal image
-//      modalImg.addEventListener('mouseover', function() {
-//        this.src = this.getAttribute('data-hover-src');
-//        this.classList.add('hovered');
-//      });
-      
-//      modalImg.addEventListener('mouseout', function() {
-//        this.src = this.getAttribute('data-original-src');
-//        this.classList.remove('hovered');
-//      });
     });
     
     // Close modal functions
@@ -1126,6 +1143,7 @@ $$('.progress-bar').forEach((bar, i) => {
     const modalDesc = $('#teamModalDesc');
     const modalSkills = $('#teamModalSkills');
     const modalSocial = $('#teamModalSocial');
+    const modalProfileButton = $('#teamModalProfileButton');
     const modalClose = $('#teamModalClose');
     
     if (!grid || !modalBg || !modal || !modalImg || !modalTitle || 
@@ -1152,31 +1170,30 @@ $$('.progress-bar').forEach((bar, i) => {
       modalDesc.textContent = member.desc;
       
       // Render skills
-// ...código que preenche o modal...
-modalSkills.innerHTML = member.skills.map(skill => `
-  <div class="progress-bar-container">
-    <div class="progress-bar" tabindex="0" data-desc="${skill.desc ? skill.desc.replace(/"/g, '&quot;') : ''}">
-      <div class="progress-fill" style="width: 0%"></div>
-      <span class="progress-text">${skill.name}</span>
-    </div>
-    <div class="skill-tooltip"></div>
-  </div>
-`).join('');
+      modalSkills.innerHTML = member.skills.map(skill => `
+        <div class="progress-bar-container">
+          <div class="progress-bar" tabindex="0" data-desc="${skill.desc ? skill.desc.replace(/"/g, '&quot;') : ''}">
+            <div class="progress-fill" style="width: 0%"></div>
+            <span class="progress-text">${skill.name}</span>
+          </div>
+          <div class="skill-tooltip"></div>
+        </div>
+      `).join('');
 
-// Animação das barras
-setTimeout(() => {
-  $$('.progress-bar').forEach((bar, i) => {
-    const fill = bar.querySelector('.progress-fill');
-    const skill = member.skills[i];
-    if (!fill || !skill) return;
-    fill.style.width = '0%';
-    setTimeout(() => {
-      fill.style.transition = 'width 2s cubic-bezier(.4,2,.6,1)';
-      fill.style.width = skill.value + '%';
-    }, 50);
-  });
+      // Animação das barras
+      setTimeout(() => {
+        $$('.progress-bar').forEach((bar, i) => {
+          const fill = bar.querySelector('.progress-fill');
+          const skill = member.skills[i];
+          if (!fill || !skill) return;
+          fill.style.width = '0%';
+          setTimeout(() => {
+            fill.style.transition = 'width 2s cubic-bezier(.4,2,.6,1)';
+            fill.style.width = skill.value + '%';
+          }, 50);
+        });
 
-  // Adicione o trecho AQUI, dentro do mesmo setTimeout:
+        // Adicione o trecho AQUI, dentro do mesmo setTimeout:
  $$('.progress-bar').forEach((bar, i) => {
   bar.addEventListener('click', function(e) {
     e.stopPropagation();
@@ -1225,21 +1242,14 @@ setTimeout(() => {
           >
         </a>
       `).join('');
+
+      if (modalProfileButton) {
+        modalProfileButton.innerHTML = `<a href="/pt-br/team/${member.slug}.html" class="team-modal-profile-btn">Perfil Completo</a>`;
+      }
       
       // Show modal
       modalBg.classList.add('active');
       document.body.style.overflow = 'hidden';
-      
-      // Add hover effect for modal image
-//      modalImg.addEventListener('mouseover', function() {
-//        this.src = this.getAttribute('data-hover-src');
-//        this.classList.add('hovered');
-//      });
-      
-//      modalImg.addEventListener('mouseout', function() {
-//        this.src = this.getAttribute('data-original-src');
-//        this.classList.remove('hovered');
-//      });
     });
     
     // Close modal functions
@@ -1282,42 +1292,144 @@ const modal = document.querySelector('#modal-jogos');
 const modalImage = document.querySelector('.modal-image');
 const closeButton = document.querySelector('.close');
 
-gameContainer.addEventListener('click', () => {
-  modal.style.display = 'block';
-  const fullSrc = gameContainer.querySelector('.game').getAttribute('data-full-src');
-  modalImage.src = fullSrc;
-  const imageWidth = modalImage.width;
-  const imageHeight = modalImage.height;
-  const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
-  if (imageWidth > screenWidth) {
-    modalImage.style.width = `${screenWidth}px`;
-    modalImage.style.height = `${(imageHeight / imageWidth) * screenWidth}px`;
-  } else if (imageHeight > screenHeight) {
-    modalImage.style.height = `${screenHeight}px`;
-    modalImage.style.width = `${(imageWidth / imageHeight) * screenHeight}px`;
-  }
-  // ajuste a posição do X para fechar
-  const modalContent = modal.querySelector('.modal-content');
-  const modalContentWidth = modalContent.offsetWidth;
-  const modalContentHeight = modalContent.offsetHeight;
-  if (modalContentWidth > modalContentHeight) {
-    closeButton.style.top = `${(modalContentHeight - 30) / 2}px`;
-    closeButton.style.right = '10px';
-  } else {
-    closeButton.style.top = '10px';
-    closeButton.style.right = `${(modalContentWidth - 30) / 2}px`;
-  }
-});
+if (gameContainer) {
+    gameContainer.addEventListener('click', () => {
+      modal.style.display = 'block';
+      const fullSrc = gameContainer.querySelector('.game').getAttribute('data-full-src');
+      modalImage.src = fullSrc;
+      const imageWidth = modalImage.width;
+      const imageHeight = modalImage.height;
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      if (imageWidth > screenWidth) {
+        modalImage.style.width = `${screenWidth}px`;
+        modalImage.style.height = `${(imageHeight / imageWidth) * screenWidth}px`;
+      } else if (imageHeight > screenHeight) {
+        modalImage.style.height = `${screenHeight}px`;
+        modalImage.style.width = `${(imageWidth / imageHeight) * screenHeight}px`;
+      }
+      // ajuste a posição do X para fechar
+      const modalContent = modal.querySelector('.modal-content');
+      const modalContentWidth = modalContent.offsetWidth;
+      const modalContentHeight = modalContent.offsetHeight;
+      if (modalContentWidth > modalContentHeight) {
+        closeButton.style.top = `${(modalContentHeight - 30) / 2}px`;
+        closeButton.style.right = '10px';
+      } else {
+        closeButton.style.top = '10px';
+        closeButton.style.right = `${(modalContentWidth - 30) / 2}px`;
+      }
+    });
+}
 
-closeButton.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
+if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+}
 
 // adicione esse evento para fechar o modal ao clicar fora da imagem ou dentro da imagem
-document.addEventListener('click', (e) => {
-  if (e.target === modal || e.target === modalImage) {
-    modal.style.display = 'none';
-  }
-});
+if (modal) {
+    document.addEventListener('click', (e) => {
+      if (e.target === modal || e.target === modalImage) {
+        modal.style.display = 'none';
+      }
+    });
+}
 
+function renderProfileSocial() {
+    const socialContainer = document.getElementById('teamModalSocial') || document.getElementById('teamModalSocialEn');
+    if (!socialContainer) return;
+
+    const memberName = document.querySelector('.team-modal-title').textContent.trim();
+    const lang = document.documentElement.lang || 'en';
+    const teamMembers = lang.startsWith('pt') ? teamMembersPt : teamMembersEn;
+    const member = teamMembers.find(m => m.name === memberName);
+
+    if (!member) return;
+
+    socialContainer.innerHTML = member.social.map(s => `
+        <a href="${s.href}" target="_blank" rel="noopener noreferrer" aria-label="${s.alt}">
+          <img 
+            src="/assets/images/icons/default/${s.icon}"
+        data-original-src="/assets/images/icons/default/${s.icon}"
+        data-hover-src="/assets/images/icons/hover/${s.hover}" 
+            alt="${s.alt}"
+            class="social-icon-hover"
+            loading="lazy"
+          >
+        </a>
+      `).join('');
+}
+
+// Renderiza skillbars animadas e tooltips na página de perfil individual
+function renderProfileSkillbars() {
+    const skillsContainer = document.getElementById('teamModalSkills') || document.getElementById('teamModalSkillsEn');
+    if (!skillsContainer) return;
+
+    const memberName = document.querySelector('.team-modal-title').textContent.trim();
+    const lang = document.documentElement.lang || 'en';
+    const teamMembers = lang.startsWith('pt') ? teamMembersPt : teamMembersEn;
+    const member = teamMembers.find(m => m.name === memberName);
+
+    if (!member) return;
+
+    skillsContainer.innerHTML = member.skills.map(skill => `
+        <div class="progress-bar-container">
+            <div class="progress-bar" tabindex="0" data-desc="${skill.desc.replace(/"/g, '&quot;')}">
+                <div class="progress-fill" style="width: 0%"></div>
+                <span class="progress-text">${skill.name}</span>
+            </div>
+            <div class="skill-tooltip"></div>
+        </div>
+    `).join('');
+
+    // Animação das barras
+    setTimeout(() => {
+        skillsContainer.querySelectorAll('.progress-bar').forEach((bar, i) => {
+            const fill = bar.querySelector('.progress-fill');
+            const skill = member.skills[i];
+            if (!fill || !skill) return;
+            fill.style.width = '0%';
+            setTimeout(() => {
+                fill.style.transition = 'width 1.2s cubic-bezier(.4,2,.6,1)';
+                fill.style.width = skill.value + '%';
+            }, 50);
+        });
+
+        // Tooltips
+        skillsContainer.querySelectorAll('.progress-bar').forEach((bar, i) => {
+            bar.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const tooltip = bar.parentElement.querySelector('.skill-tooltip');
+                const desc = bar.getAttribute('data-desc');
+                if (!desc) return;
+                if (tooltip.classList.contains('active')) {
+                    tooltip.classList.remove('active');
+                    tooltip.textContent = '';
+                    return;
+                }
+                document.querySelectorAll('.skill-tooltip').forEach(t => {
+                    t.classList.remove('active');
+                    t.textContent = '';
+                });
+                tooltip.textContent = desc;
+                tooltip.classList.add('active');
+
+                function closeTooltip(ev) {
+                    if (!bar.contains(ev.target)) {
+                        tooltip.classList.remove('active');
+                        tooltip.textContent = '';
+                        document.removeEventListener('mousedown', closeTooltip);
+                    }
+                }
+                document.addEventListener('mousedown', closeTooltip);
+            });
+        });
+    }, 50);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // ...existing inits...
+  renderProfileSkillbars();
+});

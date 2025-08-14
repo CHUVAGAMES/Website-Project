@@ -1,3 +1,93 @@
+/* Perfil individual do membro da equipe */
+.team-profile-card, .team-modal {
+  background: rgb(255, 255, 255);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(33,150,243,0.08);
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  max-width: 700px;
+  margin: 2.5rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.team-modal-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2196f3;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+.team-modal-role {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.team-modal-desc {
+  color: #222;
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+.team-modal-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #fff;
+  margin-bottom: 0.7em;
+  box-shadow: 0 2px 12px rgba(33,150,243,0.10);
+}
+.team-modal-skills {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.team-modal-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+.team-modal-social a img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #e3f2fd;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-modal-social a img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 2px 8px #2196f3a0;
+}
+
+@media (max-width: 600px) {
+  .team-profile-card, .team-modal {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .team-modal-img {
+    width: 100px;
+    height: 100px;
+  }
+  .team-modal-title {
+    font-size: 1.2rem;
+  }
+  .team-modal-role {
+    font-size: 1em;
+  }
+  .team-modal-desc {
+    font-size: 0.95em;
+  }
+  .team-modal-social a img {
+    width: 30px;
+    height: 30px;
+  }
+}
 /* ========== RESET E ESTILOS GERAIS ========== */
 * {
   margin: 0;
@@ -1280,4 +1370,29 @@ footer p {
 .h2, h2 {
     font-size: calc(1.325rem + .9vw);
     text-align: center;
+}
+
+.team-modal-profile-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.team-modal-profile-btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #00b1e9;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.team-modal-profile-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  color: #ffffff;
 }

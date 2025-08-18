@@ -660,6 +660,27 @@ const teamMembersEn = [
     ]
   },
   {
+    name: "Rene Ballesteros",
+    slug: "rene-ballesteros",
+    role: "Senior Full-Stack Developer",
+    thumb: "/assets/images/team/rene.webp",
+    gif: "/assets/images/team/animated_rene.webp",
+    desc: `With over 40 years of experience, Rene is a true programming veteran. His journey began in the golden age of microcomputers, porting games to classics like the MSX and TK2000. This solid foundation in logic and optimization has propelled him through decades of technological evolution. Today, he remains at the forefront, specializing in Python and Artificial Intelligence, proving that a true passion for problem-solving and creating innovative solutions transcends time. "From the 8-bit era to artificial intelligence, the passion for creating never gets old."`,
+    skills: [
+      { name: "Full-Stack Development", value: 100, desc: "Architecting and developing complete applications, from back-end to front-end." },
+      { name: "Python & AI", value: 100, desc: "Specializing in Python for developing Artificial Intelligence and Machine Learning solutions." },
+      { name: "System Architecture", value: 100, desc: "Designing robust, scalable, and efficient systems for complex applications." },
+      { name: "Legacy Porting", value: 100, desc: "Vast experience in adapting and modernizing legacy systems, including classic platforms like MSX and TK2000." },
+      { name: "Database Management", value: 100, desc: "Modeling, optimizing, and managing relational and NoSQL databases." }
+    ],
+    social: [
+      { href: "https://github.com/renejr", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
+      { href: "https://www.instagram.com/renebmjr/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/1117568428547506227", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
+      { href: "https://steamcommunity.com/profiles/76561198435321249", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" }
+    ]
+  },
+  {
     name: "Edpaulo Cardoso",
     slug: "edpaulo-cardoso",
     role: "Foley Artist",
@@ -901,6 +922,27 @@ const teamMembersPt = [
       { href: "https://www.instagram.com/@gvflexa/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
       { href: "https://www.youtube.com/@bandaverene", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
       { href: "https://discordapp.com/users/663418867871121439", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
+    ]
+  },
+  {
+    name: "Rene Ballesteros",
+    slug: "rene-ballesteros",
+    role: "Desenvolvedor Full-Stack Sênior",
+    thumb: "/assets/images/team/rene.webp",
+    gif: "/assets/images/team/animated_rene.webp",
+    desc: `Com mais de 40 anos de experiência, Rene é um verdadeiro veterano da programação. Sua jornada começou na era de ouro dos microcomputadores, portando jogos para clássicos como o MSX e o TK2000. Essa base sólida em lógica e otimização o impulsionou por décadas de evolução tecnológica. Hoje, ele continua na vanguarda, especializando-se em Python e Inteligência Artificial, demonstrando que a verdadeira paixão por resolver problemas e criar soluções inovadoras transcende o tempo. "Da era dos 8-bits à inteligência artificial, a paixão por criar nunca envelhece."`,
+    skills: [
+      { name: "Desenvolvimento Full-Stack", value: 100, desc: "Arquitetura e desenvolvimento de aplicações completas, do back-end ao front-end." },
+      { name: "Python & IA", value: 100, desc: "Especialização em Python para desenvolvimento de soluções de Inteligência Artificial e Machine Learning." },
+      { name: "Arquitetura de Sistemas", value: 100, desc: "Projetando sistemas robustos, escaláveis e eficientes para aplicações complexas." },
+      { name: "Portabilidade de Legado", value: 100, desc: "Vasta experiência em adaptar e modernizar sistemas legados, incluindo plataformas clássicas como MSX e TK2000." },
+      { name: "Gerenciamento de Banco de Dados", value: 100, desc: "Modelagem, otimização e gerenciamento de bancos de dados relacionais e NoSQL." }
+    ],
+    social: [
+      { href: "https://github.com/renejr", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
+      { href: "https://www.instagram.com/renebmjr/", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
+      { href: "https://discordapp.com/users/1117568428547506227", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
+      { href: "https://steamcommunity.com/profiles/76561198435321249", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" }
     ]
   },
   {
@@ -1377,57 +1419,51 @@ function renderProfileSkillbars() {
     skillsContainer.innerHTML = member.skills.map(skill => `
         <div class="progress-bar-container">
             <div class="progress-bar" tabindex="0" data-desc="${skill.desc.replace(/"/g, '&quot;')}">
-                <div class="progress-fill" style="width: 0%"></div>
+                <div class="progress-fill" style="width: ${skill.value}%"></div>
                 <span class="progress-text">${skill.name}</span>
             </div>
             <div class="skill-tooltip"></div>
         </div>
     `).join('');
 
-    // Animação das barras
-    setTimeout(() => {
-        skillsContainer.querySelectorAll('.progress-bar').forEach((bar, i) => {
-            const fill = bar.querySelector('.progress-fill');
-            const skill = member.skills[i];
-            if (!fill || !skill) return;
-            fill.style.width = '0%';
-            setTimeout(() => {
-                fill.style.transition = 'width 1.2s cubic-bezier(.4,2,.6,1)';
-                fill.style.width = skill.value + '%';
-            }, 50);
-        });
+    // Adiciona eventos de tooltip para cada barra imediatamente
+    skillsContainer.querySelectorAll('.progress-bar').forEach(bar => {
+        bar.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const tooltip = bar.parentElement.querySelector('.skill-tooltip');
+            const desc = bar.getAttribute('data-desc');
+            if (!desc) return;
+            
+            // Toggle tooltip
+            if (tooltip.classList.contains('active')) {
+                tooltip.classList.remove('active');
+                tooltip.textContent = '';
+                return;
+            }
 
-        // Tooltips
-        skillsContainer.querySelectorAll('.progress-bar').forEach((bar, i) => {
-            bar.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const tooltip = bar.parentElement.querySelector('.skill-tooltip');
-                const desc = bar.getAttribute('data-desc');
-                if (!desc) return;
-                if (tooltip.classList.contains('active')) {
+            // Fecha outras tooltips
+            document.querySelectorAll('.skill-tooltip').forEach(t => {
+                t.classList.remove('active');
+                t.textContent = '';
+            });
+
+            // Mostra tooltip atual
+            tooltip.textContent = desc;
+            tooltip.classList.add('active');
+
+            // Fecha ao clicar fora
+            function closeTooltip(ev) {
+                if (!bar.contains(ev.target)) {
                     tooltip.classList.remove('active');
                     tooltip.textContent = '';
-                    return;
+                    document.removeEventListener('mousedown', closeTooltip);
                 }
-                document.querySelectorAll('.skill-tooltip').forEach(t => {
-                    t.classList.remove('active');
-                    t.textContent = '';
-                });
-                tooltip.textContent = desc;
-                tooltip.classList.add('active');
-
-                function closeTooltip(ev) {
-                    if (!bar.contains(ev.target)) {
-                        tooltip.classList.remove('active');
-                        tooltip.textContent = '';
-                        document.removeEventListener('mousedown', closeTooltip);
-                    }
-                }
-                document.addEventListener('mousedown', closeTooltip);
-            });
+            }
+            document.addEventListener('mousedown', closeTooltip);
         });
-    }, 50);
+    });
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
   // ...existing inits...

@@ -23,6 +23,69 @@
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/59d276c3c3.js" crossorigin="anonymous"></script>
+    
+    <!-- Responsive CSS -->
+    <style>
+        /* Responsive Trophy Grid */
+        @media (max-width: 768px) {
+            .trophy-grid {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+            
+            /* Responsive Controls Grid */
+            .controls-grid {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+            }
+            
+            /* Responsive Game Container */
+            .game-container {
+                margin: 10px 0 !important;
+                padding: 0 10px !important;
+            }
+            
+            #javatari-screen {
+                min-width: 300px !important;
+                min-height: 200px !important;
+                width: 100% !important;
+                height: 50vh !important;
+            }
+            
+            /* Responsive Text */
+            h1, h2, h3 {
+                font-size: 1.2em !important;
+            }
+            
+            .team-modal-title {
+                font-size: 1.3em !important;
+            }
+            
+            /* Responsive Padding */
+            .team-profile-card {
+                padding: 15px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .trophy-grid > div {
+                padding: 15px !important;
+            }
+            
+            .trophy-grid h4 {
+                font-size: 1em !important;
+            }
+            
+            .trophy-grid p {
+                font-size: 0.8em !important;
+            }
+            
+            #javatari-screen {
+                min-width: 280px !important;
+                min-height: 180px !important;
+            }
+        }
+    </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRWZQD1FGH"></script>
 <script>
@@ -119,7 +182,7 @@
       </div>
       
       <!-- Function Keys -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;" class="controls-grid">
         <div style="background: rgba(76,175,80,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(76,175,80,0.08);">
           <div style="background: #4caf50; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(76,175,80,0.3);">F11</div>
           <p style="color: #555; margin: 0; font-size: 0.9em;"><strong>Dificuldade</strong><br>Fácil (9 vidas) / Normal (7 vidas)</p>
@@ -153,7 +216,7 @@
       <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-trophy" style="margin-right: 8px;"></i>Sistema de Troféus</h3>
       
       <!-- Trophy Grid -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; align-items: stretch;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; align-items: stretch;" class="trophy-grid">
         
         <!-- Gold Trophy -->
         <div style="background: rgba(255, 215, 0, 0.08); padding: 20px; border-radius: 20px; box-shadow: 0 4px 24px rgba(255, 215, 0, 0.15); text-align: center; border: 2px solid rgba(255, 215, 0, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 32px rgba(255, 215, 0, 0.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 24px rgba(255, 215, 0, 0.15)';">

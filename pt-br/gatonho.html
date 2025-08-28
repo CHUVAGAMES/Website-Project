@@ -148,40 +148,75 @@
                     console.log("ROM data type:", typeof romData, "Length:", romData.length);
                     
                     // Check if Javatari is available and has the room object
-                    if (typeof jt !== 'undefined' && jt.room) {
-                        console.log("Javatari room found, loading cartridge...");
-                        
-                        // Try to load the cartridge directly
-                        try {
-                            jt.room.cartridgeSocket.insert(romData, true);
-                            console.log("Cartridge inserted successfully!");
-                            
-                            // Power on the console
-                            setTimeout(() => {
-                                if (jt.room.console && jt.room.console.powerOn) {
-                                    jt.room.console.powerOn();
-                                    console.log("Console powered on!");
-                                } else {
-                                    console.log("Console power on method not found");
-                                }
-                            }, 500);
-                            
-                        } catch (error) {
-                            console.error("Error inserting cartridge:", error);
-                            
-                            // Fallback: try using CARTRIDGE_URL
-                            console.log("Trying fallback method with CARTRIDGE_URL...");
-                            Javatari.CARTRIDGE_URL = romURL;
-                            if (jt.room.console && jt.room.console.powerOn) {
-                                jt.room.console.powerOn();
-                            }
-                        }
-                    } else {
-                        console.log("Javatari room not ready, using CARTRIDGE_URL method...");
-                        Javatari.CARTRIDGE_URL = romURL;
-                        Javatari.AUTO_START = true;
-                        Javatari.AUTO_POWER_ON_DELAY = 1000;
-                    }
+                     if (typeof jt !== 'undefined' && jt.room) {
+                         console.log("Javatari room found, loading cartridge...");
+                         
+                         // Try to load the cartridge directly
+                         try {
+                             jt.room.cartridgeSocket.insert(romData, true);
+                             console.log("Cartridge inserted successfully!");
+                             
+                             // Auto-click the cartridge and start the game
+                             setTimeout(() => {
+                                 // Try to find and click the cartridge button
+                                 var cartridgeButton = document.querySelector('.jt-cartridge-item');
+                                 if (!cartridgeButton) {
+                                     // Try alternative selectors
+                                     cartridgeButton = document.querySelector('[data-cartridge]') || 
+                                                     document.querySelector('.cartridge-button') ||
+                                                     document.querySelector('button[title*="ring_quest"]');
+                                 }
+                                 
+                                 if (cartridgeButton) {
+                                     console.log("Auto-clicking cartridge button...");
+                                     cartridgeButton.click();
+                                 } else {
+                                     console.log("Cartridge button not found, trying power on...");
+                                 }
+                                 
+                                 // Power on the console
+                                 setTimeout(() => {
+                                     if (jt.room.console && jt.room.console.powerOn) {
+                                         jt.room.console.powerOn();
+                                         console.log("Console powered on!");
+                                     } else {
+                                         console.log("Console power on method not found");
+                                     }
+                                 }, 500);
+                             }, 1000);
+                             
+                         } catch (error) {
+                             console.error("Error inserting cartridge:", error);
+                             
+                             // Fallback: try using CARTRIDGE_URL with auto-start
+                             console.log("Trying fallback method with CARTRIDGE_URL...");
+                             Javatari.CARTRIDGE_URL = romURL;
+                             Javatari.AUTO_START = true;
+                             Javatari.AUTO_POWER_ON_DELAY = 1500;
+                             
+                             if (jt.room.console && jt.room.console.powerOn) {
+                                 setTimeout(() => {
+                                     jt.room.console.powerOn();
+                                 }, 2000);
+                             }
+                         }
+                     } else {
+                         console.log("Javatari room not ready, using CARTRIDGE_URL method...");
+                         Javatari.CARTRIDGE_URL = romURL;
+                         Javatari.AUTO_START = true;
+                         Javatari.AUTO_POWER_ON_DELAY = 1500;
+                         
+                         // Try to auto-click after delay
+                         setTimeout(() => {
+                             var cartridgeButton = document.querySelector('.jt-cartridge-item') || 
+                                                 document.querySelector('[data-cartridge]') ||
+                                                 document.querySelector('button[title*="ring_quest"]');
+                             if (cartridgeButton) {
+                                 console.log("Auto-clicking cartridge button (fallback)...");
+                                 cartridgeButton.click();
+                             }
+                         }, 3000);
+                     }
                 })
                 .catch(error => {
                     console.error("ROM fetch failed:", error);

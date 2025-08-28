@@ -82,7 +82,7 @@ Tecle F11 para selecionar Fácil (9 vidas) ou Normal (7 vidas) e tecle F12 para 
 
 O Gatonho é um gatinho fofo que nasceu sem bracinhos, mas é cheio de coragem! Um vilão, um Slime rosa que imita o Prince Jackson, usando seu chapéu preto e sapatilhas de dança, roubou a "Taça dos Anéis" - o campeonato de futebol mais importante do Morro do Bigato. Gatonho foi correndo atrás dele, mas virou na rua errada e se perdeu no Morro do Fundão, um lugar com ruas que parecem um labirinto. Neste bairro desconhecido, todos querem treta com os habitantes do Morro do Bigato, e Gatonho vai ter que abrir caminho dando chutes poderosos até recuperar a preciosa Taça dos Anéis!
 
-Este jogo é feito para rodar no Videogame Atari 2600. Aqui está funcionando graças ao emulador Jatari.js.
+Este jogo é feito para rodar no Videogame Atari 2600. Aqui está funcionando graças ao emulador Javatari.js.
 
 FAQ
 Pergunta: -O jogo tem fim ou é só por pontuação?

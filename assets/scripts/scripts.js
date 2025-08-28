@@ -239,9 +239,9 @@ function initGameModals() {
       desc: "Soon"
     },
     arcane: {
-      title: "Trials of the Arcane Grove",
+      title: "TAG: Trials of The Arcane Grove",
       img: "/assets/images/games/arcanegrove.webp",
-      desc: "Trials of the Arcane Grove is a 2D top-down action-adventure with a focus on magic, exploration, puzzles, and real-time combat. Features hand-drawn art and a mystical atmosphere."
+      desc: "TAG: Trials of The Arcane Grove is a 2D top-down action-adventure with a focus on magic, exploration, puzzles, and real-time combat. Features hand-drawn art and a mystical atmosphere."
     },
     magicless: {
       title: "Magicless Mage",
@@ -263,9 +263,9 @@ function initGameModals() {
       desc: "Em breve"
     },
     arcane: {
-      title: "Trials of the Arcane Grove",
+      title: "TAG: Trials of The Arcane Grove",
       img: "/assets/images/games/arcanegrove.webp",
-      desc: "Trials of the Arcane Grove é um jogo 2D de ação e aventura em visão top-down, com foco em magia, exploração, puzzles e combate em tempo real. Estilo artístico desenhado à mão e atmosfera mística."
+      desc: "TAG: Trials of The Arcane Grove é um jogo 2D de ação e aventura em visão top-down, com foco em magia, exploração, puzzles e combate em tempo real. Estilo artístico desenhado à mão e atmosfera mística."
     },
     magicless: {
       title: "Magicless Mage",

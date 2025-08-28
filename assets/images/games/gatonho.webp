@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background gradient -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </radialGradient>
+    <linearGradient id="catGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF6347"/>
+    </linearGradient>
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0080FF" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  
+  <!-- Street/maze pattern -->
+  <g opacity="0.3">
+    <rect x="50" y="50" width="300" height="20" fill="#333"/>
+    <rect x="50" y="100" width="150" height="20" fill="#333"/>
+    <rect x="250" y="100" width="100" height="20" fill="#333"/>
+    <rect x="50" y="150" width="100" height="20" fill="#333"/>
+    <rect x="200" y="150" width="150" height="20" fill="#333"/>
+    <rect x="100" y="200" width="200" height="20" fill="#333"/>
+    <rect x="50" y="250" width="120" height="20" fill="#333"/>
+    <rect x="220" y="250" width="130" height="20" fill="#333"/>
+    <rect x="80" y="300" width="240" height="20" fill="#333"/>
+  </g>
+  
+  <!-- Cat character (Gatonho) -->
+  <g transform="translate(200,200)">
+    <!-- Cat body -->
+    <ellipse cx="0" cy="20" rx="35" ry="45" fill="url(#catGradient)"/>
+    
+    <!-- Cat head -->
+    <circle cx="0" cy="-20" r="30" fill="url(#catGradient)"/>
+    
+    <!-- Cat ears -->
+    <polygon points="-20,-35 -10,-50 -5,-35" fill="url(#catGradient)"/>
+    <polygon points="5,-35 10,-50 20,-35" fill="url(#catGradient)"/>
+    <polygon points="-17,-38 -12,-45 -8,-38" fill="#FF1493"/>
+    <polygon points="8,-38 12,-45 17,-38" fill="#FF1493"/>
+    
+    <!-- Cat face -->
+    <circle cx="-8" cy="-25" r="3" fill="#000"/>
+    <circle cx="8" cy="-25" r="3" fill="#000"/>
+    <polygon points="0,-15 -3,-10 3,-10" fill="#FF1493"/>
+    <path d="M -8,-8 Q 0,-5 8,-8" stroke="#000" stroke-width="2" fill="none"/>
+    
+    <!-- Cat tail with ring -->
+    <path d="M 25,10 Q 45,0 40,-20 Q 35,-35 45,-40" stroke="url(#catGradient)" stroke-width="8" fill="none"/>
+    <circle cx="42" cy="-25" r="8" fill="url(#ringGlow)" opacity="0.8"/>
+    <circle cx="42" cy="-25" r="5" fill="none" stroke="#00FFFF" stroke-width="2"/>
+    
+    <!-- Cat legs -->
+    <ellipse cx="-15" cy="55" rx="8" ry="15" fill="url(#catGradient)"/>
+    <ellipse cx="15" cy="55" rx="8" ry="15" fill="url(#catGradient)"/>
+    
+    <!-- Glowing aura (showing kick power) -->
+    <circle cx="0" cy="0" r="50" fill="url(#ringGlow)" opacity="0.2"/>
+  </g>
+  
+  <!-- Four rings around the scene -->
+  <circle cx="80" cy="80" r="12" fill="none" stroke="#0080FF" stroke-width="3" opacity="0.8"/>
+  <circle cx="320" cy="80" r="12" fill="none" stroke="#FF0000" stroke-width="3" opacity="0.8"/>
+  <circle cx="80" cy="320" r="12" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+  <circle cx="320" cy="320" r="12" fill="none" stroke="#00FF00" stroke-width="3" opacity="0.8"/>
+  
+  <!-- Square ball (Gatonho's dream) -->
+  <g transform="translate(120,300)">
+    <rect x="-8" y="-8" width="16" height="16" fill="#FFFFFF" stroke="#000" stroke-width="2" rx="2"/>
+    <circle cx="0" cy="0" r="15" fill="url(#ringGlow)" opacity="0.3"/>
+  </g>
+  
+  <!-- Title text -->
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" stroke="#000" stroke-width="1">GATONHO</text>
+  <text x="200" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFD700">Quest 4 Rings</text>
+</svg>

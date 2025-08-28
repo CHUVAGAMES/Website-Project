@@ -914,9 +914,8 @@ footer p {
   border-radius: 20px;
   max-width: 95vw;
   max-height: 90vh;
-  width: 90vw;
+  width: auto;
   height: auto;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   padding: 0;
   position: relative;
   display: flex;
@@ -927,14 +926,15 @@ footer p {
 
 .game-modal-img,
 #modal-jogos .modal-image {
-  width: 90%;
-  max-width: 350px;
-  height: auto;
+  width: auto;
+  max-width: 90vw;
+  height: 75vh;
+  max-height: 75vh;
   object-fit: contain;
   border-radius: 20px;
   background: transparent;
   display: block;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -942,13 +942,14 @@ footer p {
   #modal-jogos .modal-content {
     width: 95vw;
     max-width: 98vw;
-    padding: 1.2rem 0.5rem;
+    padding: 0;
   }
   .game-modal-img,
   #modal-jogos .modal-image {
-    max-width: 90vw;
-    width: 100%;
+    width: 75vw;
+    max-width: 75vw;
     height: auto;
+    max-height: 75vh;
   }
 }
 
@@ -1315,43 +1316,7 @@ footer p {
   font-weight: normal;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* adicionado estilo de fundo transparente */
-  backdrop-filter: blur(5px);
-}
-
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background-color: #00000000; /* estilo de fundo branco para o conteúdo do modal */
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.modal-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
+/* CSS do modal removido - usando apenas o CSS do #modal-jogos acima */
 
 /* adicionado media query para dispositivos móveis */
 @media only screen and (max-width: 768px) {

@@ -292,20 +292,23 @@ function initGameModals() {
 
   if (!modalBg || !modal || !modalImg || !modalTitle || !modalDesc || !modalClose) return;
 
-  // Open modal when clicking on a game card
+  // Redirect to individual game pages when clicking on a game card
   $$('.game-cloud-card, .game-highlight-card').forEach(card => {
     card.addEventListener('click', () => {
       const key = card.getAttribute('data-game');
-      const game = games[key];
-      if (!game) return;
-
-      modalImg.src = game.img;
-      modalImg.alt = game.title;
-      modalTitle.textContent = game.title;
-      modalDesc.textContent = game.desc;
-
-      modalBg.classList.add('active');
-      document.body.style.overflow = 'hidden';
+      
+      // Define the URLs for each game based on current language
+      const gameUrls = {
+        'arcane': lang.startsWith('pt') ? '/pt-br/trialsofthearcanegrove.html' : '/eng/trialsofthearcanegrove.html',
+        'magicless': lang.startsWith('pt') ? '/pt-br/magiclessmage.html' : '/eng/magiclessmage.html',
+        'silent': lang.startsWith('pt') ? '/pt-br/thelegendofthesilentknight.html' : '/eng/thelegendofthesilentknight.html',
+        'gatonho': lang.startsWith('pt') ? '/pt-br/gatonho.html' : '/eng/gatonho.html'
+      };
+      
+      const gameUrl = gameUrls[key];
+      if (gameUrl) {
+        window.location.href = gameUrl;
+      }
     });
   });
 
@@ -1329,54 +1332,44 @@ document.addEventListener('mouseout', function(e) {
   }
 });
 
-const gameContainer = document.querySelector('.game-container');
-const modal = document.querySelector('#modal-jogos');
-const modalImage = document.querySelector('.modal-image');
-const closeButton = document.querySelector('.close');
+// Initialize individual game page modal
+function initIndividualGameModal() {
+  const gameContainer = document.querySelector('.game-container');
+  const modal = document.querySelector('#modal-jogos');
+  const modalImage = document.querySelector('.modal-image');
+  const closeButton = document.querySelector('.close');
 
-if (gameContainer) {
-    gameContainer.addEventListener('click', () => {
-      modal.style.display = 'block';
-      const fullSrc = gameContainer.querySelector('.game').getAttribute('data-full-src');
-      modalImage.src = fullSrc;
-      const imageWidth = modalImage.width;
-      const imageHeight = modalImage.height;
-      const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
-      if (imageWidth > screenWidth) {
-        modalImage.style.width = `${screenWidth}px`;
-        modalImage.style.height = `${(imageHeight / imageWidth) * screenWidth}px`;
-      } else if (imageHeight > screenHeight) {
-        modalImage.style.height = `${screenHeight}px`;
-        modalImage.style.width = `${(imageWidth / imageHeight) * screenHeight}px`;
-      }
-      // ajuste a posição do X para fechar
-      const modalContent = modal.querySelector('.modal-content');
-      const modalContentWidth = modalContent.offsetWidth;
-      const modalContentHeight = modalContent.offsetHeight;
-      if (modalContentWidth > modalContentHeight) {
-        closeButton.style.top = `${(modalContentHeight - 30) / 2}px`;
-        closeButton.style.right = '10px';
-      } else {
-        closeButton.style.top = '10px';
-        closeButton.style.right = `${(modalContentWidth - 30) / 2}px`;
-      }
-    });
-}
+  if (!gameContainer || !modal || !modalImage || !closeButton) return;
 
-if (closeButton) {
-    closeButton.addEventListener('click', () => {
-      modal.style.display = 'none';
-    });
-}
+  // Open modal when clicking on game image
+  gameContainer.addEventListener('click', () => {
+    modal.classList.add('active');
+    modal.style.display = 'flex';
+    const fullSrc = gameContainer.querySelector('.game').getAttribute('data-full-src');
+    modalImage.src = fullSrc;
+    document.body.style.overflow = 'hidden';
+  });
 
-// adicione esse evento para fechar o modal ao clicar fora da imagem ou dentro da imagem
-if (modal) {
-    document.addEventListener('click', (e) => {
-      if (e.target === modal || e.target === modalImage) {
-        modal.style.display = 'none';
-      }
-    });
+  // Close modal functions
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  closeButton.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 }
 
 function renderProfileSocial() {
@@ -1468,4 +1461,5 @@ function renderProfileSkillbars() {
 document.addEventListener('DOMContentLoaded', function() {
   // ...existing inits...
   renderProfileSkillbars();
+  initIndividualGameModal();
 });

@@ -318,167 +318,18 @@
 
     <!-- Scripts -->
     <script>
-        // Configure Javatari emulator settings
-        window.Javatari = window.Javatari || {};
-        Javatari.SCREEN_ELEMENT_ID = "javatari-screen";
-        Javatari.AUTO_START = true;
-        Javatari.AUTO_POWER_ON_DELAY = 2000; // Increased delay
-        Javatari.SCREEN_CONSOLE_PANEL_DISABLED = false;
-        Javatari.CARTRIDGE_SHOW_RECENT = false;
-        Javatari.CARTRIDGE_CHANGE_DISABLED = false;
+        // Configure Javatari BEFORE loading the script
+        window.Javatari = {
+            SCREEN_ELEMENT_ID: "javatari-screen",
+            CARTRIDGE_URL: "https://chuvagames.com/assets/roms/ring_quest_v6.bin",
+            AUTO_START: true,
+            AUTO_POWER_ON_DELAY: 1200,
+            CARTRIDGE_SHOW_RECENT: false,
+            CARTRIDGE_CHANGE_DISABLED: false,
+            SCREEN_CONSOLE_PANEL_DISABLED: false
+        };
         
-        // Initialize Javatari object if not exists
-        window.Javatari = window.Javatari || {};
-        
-        // Configure Javatari settings
-        Javatari.SCREEN_ELEMENT_ID = "javatari-screen";
-        Javatari.AUTO_START = true; // Enable auto start
-        Javatari.AUTO_POWER_ON_DELAY = 2000; // Auto power on after 2 seconds
-        Javatari.SCREEN_CONSOLE_PANEL_DISABLED = false;
-        Javatari.CARTRIDGE_SHOW_RECENT = false;
-        Javatari.CARTRIDGE_CHANGE_DISABLED = false;
-        
-        // ROM URL - Production URL for automatic loading
-        var romURL = "https://chuvagames.com/assets/roms/ring_quest_v6.bin";
-        
-        console.log("=== GATONHO ROM LOADING DEBUG ===");
-        console.log("ROM URL:", romURL);
-        
-        // Function to load ROM after Javatari is ready
-        function loadGatonhoROM() {
-            console.log("Attempting to load Gatonho ROM...");
-            
-            // Test ROM accessibility first
-            fetch(romURL)
-                .then(response => {
-                    console.log("ROM fetch - Status:", response.status);
-                    console.log("ROM fetch - OK:", response.ok);
-                    console.log("ROM fetch - Content-Type:", response.headers.get('content-type'));
-                    
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.arrayBuffer();
-                })
-                .then(arrayBuffer => {
-                    console.log("ROM loaded successfully - Size:", arrayBuffer.byteLength, "bytes");
-                    
-                    // Convert to Uint8Array
-                    var romData = new Uint8Array(arrayBuffer);
-                    console.log("ROM data type:", typeof romData, "Length:", romData.length);
-                    
-                    // Set the ROM URL for Javatari to load automatically
-                     Javatari.CARTRIDGE_URL = romURL;
-                     console.log("ROM URL set for Javatari:", Javatari.CARTRIDGE_URL);
-                     
-                     // Function to auto-select and start the cartridge
-                     function autoStartGame() {
-                         console.log("Attempting to auto-start game...");
-                         
-                         // Multiple attempts to find and click the cartridge
-                         var attempts = 0;
-                         var maxAttempts = 10;
-                         
-                         var clickInterval = setInterval(() => {
-                             attempts++;
-                             console.log(`Auto-start attempt ${attempts}/${maxAttempts}`);
-                             
-                             // Try multiple selectors for the cartridge button
-                             var selectors = [
-                                 '.jt-cartridge-item',
-                                 '[data-cartridge]',
-                                 '.cartridge-button',
-                                 'button[title*="ring_quest"]',
-                                 'div[title*="ring_quest"]',
-                                 '.jt-cartridge-list .jt-cartridge-item',
-                                 '[onclick*="cartridge"]',
-                                 '.jt-bar-cartridge .jt-cartridge-item'
-                             ];
-                             
-                             var cartridgeButton = null;
-                             for (var i = 0; i < selectors.length; i++) {
-                                 cartridgeButton = document.querySelector(selectors[i]);
-                                 if (cartridgeButton) {
-                                     console.log(`Found cartridge button with selector: ${selectors[i]}`);
-                                     break;
-                                 }
-                             }
-                             
-                             if (cartridgeButton) {
-                                 console.log("Auto-clicking cartridge button...");
-                                 
-                                 // Try multiple click methods
-                                 cartridgeButton.click();
-                                 cartridgeButton.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-                                 cartridgeButton.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
-                                 cartridgeButton.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
-                                 
-                                 clearInterval(clickInterval);
-                                 
-                                 // Power on console after clicking cartridge
-                                 setTimeout(() => {
-                                     if (typeof jt !== 'undefined' && jt.room && jt.room.console) {
-                                         if (jt.room.console.powerOn) {
-                                             jt.room.console.powerOn();
-                                             console.log("Console powered on!");
-                                         } else if (jt.room.console.power) {
-                                             jt.room.console.power(true);
-                                             console.log("Console powered on (alternative method)!");
-                                         }
-                                     }
-                                 }, 1000);
-                                 
-                             } else if (attempts >= maxAttempts) {
-                                 console.log("Max attempts reached, stopping auto-click attempts");
-                                 clearInterval(clickInterval);
-                                 
-                                 // Force power on as last resort
-                                 setTimeout(() => {
-                                     if (typeof jt !== 'undefined' && jt.room && jt.room.console) {
-                                         if (jt.room.console.powerOn) {
-                                             jt.room.console.powerOn();
-                                             console.log("Force powered on console!");
-                                         }
-                                     }
-                                 }, 1000);
-                             }
-                         }, 500);
-                     }
-                     
-                     // Start auto-start attempts after a delay
-                     setTimeout(autoStartGame, 2000);
-                })
-                .catch(error => {
-                    console.error("ROM fetch failed:", error);
-                    alert("Error loading ROM: " + error.message);
-                });
-        }
-        
-        // Wait for Javatari to be fully loaded
-        window.addEventListener('load', function() {
-            console.log("Window loaded, waiting for Javatari...");
-            
-            // Check if Javatari is ready
-            var checkJavatari = setInterval(function() {
-                if (typeof jt !== 'undefined') {
-                    console.log("Javatari object found:", jt);
-                    clearInterval(checkJavatari);
-                    
-                    // Wait a bit more for full initialization
-                    setTimeout(loadGatonhoROM, 1000);
-                }
-            }, 100);
-            
-            // Fallback timeout
-            setTimeout(function() {
-                if (typeof jt === 'undefined') {
-                    console.log("Javatari not loaded after timeout, trying CARTRIDGE_URL method...");
-                    Javatari.CARTRIDGE_URL = romURL;
-                    Javatari.AUTO_START = true;
-                    Javatari.AUTO_POWER_ON_DELAY = 1000;
-                }
-            }, 5000);
-        });
+        console.log("Javatari configured with ROM:", Javatari.CARTRIDGE_URL);
     </script>
     <script src="/javatari.js"></script>
     <script src="/assets/scripts/scripts.js"></script>

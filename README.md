@@ -10,7 +10,7 @@ Site oficial do estúdio brasileiro de jogos independentes CHUVA Games, desenvol
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Funcionalidades Principais](#-funcionalidades-principais)
 - [Sistema de Cards da Equipe](#-sistema-de-cards-da-equipe)
-- [Estrutura de Arquivos](#-estrutura-de-arquivos)
+- [Configuração do Emulador Javatari](#-configuração-do-emulador-javatari)
 - [Configuração e Instalação](#-configuração-e-instalação)
 - [Manutenção](#-manutenção)
 - [Contribuição](#-contribuição)
@@ -20,38 +20,88 @@ Site oficial do estúdio brasileiro de jogos independentes CHUVA Games, desenvol
 
 ```
 chuvagames/
-├── 📁 assets/                    # Recursos estáticos
+├── 📁 .vscode/                  # Configurações do VS Code
+│   └── settings.json
+├── 📁 assets/                   # Recursos estáticos
 │   ├── 📁 css/
-│   │   └── styles.css            # Estilos principais
-│   ├── 📁 images/               # Imagens do site
-│   │   ├── 📁 background/       # Imagens de fundo
-│   │   ├── 📁 banners/          # Banners promocionais
-│   │   ├── 📁 games/            # Screenshots dos jogos
-│   │   ├── 📁 icons/            # Ícones e favicons
-│   │   ├── 📁 logos/            # Logotipos
-│   │   └── 📁 team/             # Fotos da equipe
-│   └── 📁 scripts/              # Scripts JavaScript
-│       ├── scripts.js           # Script principal
-│       └── team-en.js           # Script específico da equipe (EN)
-├── 📁 eng/                      # Versão em inglês
-│   ├── index.html
-│   ├── team.html
-│   ├── games.html
+│   │   └── styles.css           # Estilos principais
+│   ├── 📁 images/              # Imagens do site
+│   │   ├── 📁 background/      # Imagens de fundo
+│   │   ├── 📁 banners/         # Banners promocionais
+│   │   ├── 📁 games/           # Screenshots dos jogos
+│   │   ├── 📁 icons/           # Ícones e favicons
+│   │   ├── 📁 logos/           # Logotipos
+│   │   └── 📁 team/            # Fotos da equipe
+│   ├── 📁 roms/                # ROMs dos jogos Atari 2600
+│   │   └── gatonho.bin         # ROM do jogo Gatonho
+│   └── 📁 scripts/             # Scripts JavaScript
+│       └── scripts.js          # Script principal
+├── 📁 eng/                     # Versão em inglês
+│   ├── 📁 team/                # Páginas individuais da equipe
+│   │   ├── andre-borba.html
+│   │   ├── andrews-nycollas.html
+│   │   ├── brendo-teles.html
+│   │   ├── camila-sales.html
+│   │   ├── edpaulo-cardoso.html
+│   │   ├── gabriel-flexa.html
+│   │   ├── marcos-genu.html
+│   │   ├── miguel-angel.html
+│   │   ├── mohamed-capistrano.html
+│   │   ├── rene-ballesteros.html
+│   │   ├── richard-de-leon.html
+│   │   └── rick-galasio.html
 │   ├── contact.html
-│   └── [páginas dos jogos].html
-├── 📁 pt-br/                    # Versão em português
-│   ├── index.html
-│   ├── team.html
 │   ├── games.html
+│   ├── gatonho.html            # Página do jogo Gatonho (Atari 2600)
+│   ├── index.html
+│   ├── magiclessmage.html      # Página do jogo Magicless Mage
+│   ├── team.html
+│   ├── theamazongrove.html     # Página do jogo The Amazon Grove
+│   ├── thelegendofthesilentknight.html # Página do jogo The Legend of the Silent Knight
+│   └── trialsofthearcanegrove.html # Página do jogo Trials of the Arcane Grove
+├── 📁 pt-br/                   # Versão em português
+│   ├── 📁 team/                # Páginas individuais da equipe
+│   │   ├── andre-borba.html
+│   │   ├── andrews-nycollas.html
+│   │   ├── brendo-teles.html
+│   │   ├── camila-sales.html
+│   │   ├── edpaulo-cardoso.html
+│   │   ├── gabriel-flexa.html
+│   │   ├── marcos-genu.html
+│   │   ├── miguel-angel.html
+│   │   ├── mohamed-capistrano.html
+│   │   ├── rene-ballesteros.html
+│   │   ├── richard-de-leon.html
+│   │   └── rick-galasio.html
 │   ├── contact.html
-│   └── [páginas dos jogos].html
-├── 📁 Kuadrika/                 # Jogo embarcado Kuadrika
-├── 📁 orbit/                    # Jogo embarcado Orbit
-├── index.html                   # Página de seleção de idioma
-├── robots.txt                   # Configurações para crawlers
-├── sitemap.xml                  # Mapa do site
-├── CNAME                        # Configuração de domínio
-└── README.md                    # Este arquivo
+│   ├── games.html
+│   ├── gatonho.html            # Página do jogo Gatonho (Atari 2600)
+│   ├── index.html
+│   ├── magiclessmage.html      # Página do jogo Magicless Mage
+│   ├── team.html
+│   ├── theamazongrove.html     # Página do jogo The Amazon Grove
+│   ├── thelegendofthesilentknight.html # Página do jogo The Legend of the Silent Knight
+│   └── trialsofthearcanegrove.html # Página do jogo Trials of the Arcane Grove
+├── 📁 javatari.js-master/      # Emulador Atari 2600 (Javatari)
+│   ├── 📁 doc/                 # Documentação do Javatari
+│   ├── 📁 release/             # Versões estáveis
+│   ├── 📁 src/                 # Código fonte
+│   ├── 📁 test/                # Testes e ROMs de exemplo
+│   ├── README.md
+│   ├── package.json
+│   └── [outros arquivos]
+├── .htaccess                   # Configurações do servidor Apache
+├── 404.html                    # Página de erro 404
+├── CNAME                       # Configuração de domínio
+├── LICENSE.md                  # Licença do projeto
+├── README.md                   # Este arquivo
+├── SEO-OPTIMIZATIONS.md        # Documentação de otimizações SEO
+├── index.html                  # Página de seleção de idioma
+├── javatari.js                 # Script principal do emulador Atari 2600
+├── robots.txt                  # Configurações para crawlers
+├── sitemap.xml                 # Mapa do site
+├── tast.md                     # Arquivo de teste
+└── text.md                     # Arquivo de texto
 ```
 
 ## 🛠️ Tecnologias Utilizadas
@@ -64,15 +114,22 @@ chuvagames/
 - **Font Awesome** - Biblioteca de ícones
 - **Google Fonts** - Tipografia (Open Sans)
 
+### Emulação de Jogos
+- **Javatari 5.0.4** - Emulador Atari 2600 para web
+- **WebAssembly** - Performance otimizada para emulação
+- **HTML5 Canvas** - Renderização de gráficos dos jogos
+- **Web Audio API** - Sistema de áudio dos jogos
+
 ### Hospedagem
 - **GitHub Pages** - Hospedagem estática
-- **Domínio personalizado** - chuvagames.co
+- **Domínio personalizado** - chuvagames.com
 
 ### SEO e Performance
 - **Meta tags otimizadas** - Open Graph, Twitter Cards
 - **Sitemap XML** - Indexação pelos motores de busca
 - **Robots.txt** - Controle de crawling
 - **Lazy loading** - Carregamento otimizado de imagens
+- **Google Analytics** - Monitoramento de tráfego
 
 ## ⭐ Funcionalidades Principais
 
@@ -93,9 +150,20 @@ chuvagames/
 - **Modais responsivos** - Para equipe e jogos
 
 ### 🎮 Jogos Embarcados
-- **Kuadrika** - Jogo de quebra-cabeça
-- **Orbit** - Jogo de ação
-- Integração direta no site
+- **Gatonho: Quest 4 Rings** - Jogo Atari 2600 via emulador Javatari
+- **Magicless Mage** - RPG narrativo
+- **The Amazon Grove** - Aventura na floresta
+- **The Legend of the Silent Knight** - Jogo de ação medieval
+- **Trials of the Arcane Grove** - Jogo de magia e mistério
+- Integração direta no site com emulador web
+
+### 🕹️ Emulador Atari 2600 (Javatari)
+- **Emulação completa** - Console Atari 2600 no navegador
+- **Controles responsivos** - Suporte a touch em dispositivos móveis
+- **Carregamento automático** - ROMs carregadas automaticamente
+- **Interface otimizada** - Layout limpo focado no jogo
+- **Performance otimizada** - 60 FPS estáveis
+- **Compatibilidade total** - Funciona em todos os navegadores modernos
 
 ## 👥 Sistema de Cards da Equipe
 
@@ -229,6 +297,199 @@ const teamMembersEn = [
      ]
    }
    ```
+
+## 🕹️ Configuração do Emulador Javatari
+
+### Estrutura de Arquivos
+
+```
+javatari-integration/
+├── javatari.js                 # Script principal do emulador
+├── assets/roms/               # Diretório de ROMs
+│   └── gatonho.bin           # ROM do jogo Gatonho
+└── [páginas dos jogos].html   # Páginas com emulador integrado
+```
+
+### Configuração Básica
+
+Cada página de jogo contém a configuração do Javatari antes do carregamento do script:
+
+```javascript
+// Configure Javatari BEFORE loading the script
+window.Javatari = {
+    SCREEN_ELEMENT_ID: "javatari-screen",
+    CARTRIDGE_URL: "https://chuvagames.com/assets/roms/gatonho.bin",
+    AUTO_START: true,
+    AUTO_POWER_ON_DELAY: 1200,
+    CARTRIDGE_SHOW_RECENT: false,
+    CARTRIDGE_CHANGE_DISABLED: false,
+    SCREEN_CONSOLE_PANEL_DISABLED: false
+};
+```
+
+### Parâmetros de Configuração
+
+| Parâmetro | Descrição | Valor Padrão |
+|-----------|-----------|-------------|
+| `SCREEN_ELEMENT_ID` | ID do elemento HTML onde o emulador será renderizado | `"javatari-screen"` |
+| `CARTRIDGE_URL` | URL da ROM a ser carregada automaticamente | `""` |
+| `AUTO_START` | Inicia o emulador automaticamente | `true` |
+| `AUTO_POWER_ON_DELAY` | Delay em ms antes de ligar o console | `1200` |
+| `CARTRIDGE_SHOW_RECENT` | Mostra ROMs recentes | `false` |
+| `CARTRIDGE_CHANGE_DISABLED` | Desabilita troca de cartuchos | `false` |
+| `SCREEN_CONSOLE_PANEL_DISABLED` | Desabilita painel do console | `false` |
+
+### Estrutura HTML do Emulador
+
+```html
+<div class="javatari-container">
+    <div id="javatari-screen" style="
+        width: 100%; 
+        height: 400px; 
+        max-width: 640px; 
+        margin: 0 auto; 
+        border-radius: 8px; 
+        overflow: hidden;
+    "></div>
+</div>
+```
+
+### Estilos CSS Responsivos
+
+```css
+/* Responsive Javatari Container */
+.javatari-container {
+    margin: 10px 0 !important;
+    padding: 0 10px !important;
+}
+
+@media (max-width: 768px) {
+    .javatari-container {
+        margin: 10px 0 !important;
+        padding: 0 10px !important;
+    }
+    
+    #javatari-screen {
+        height: 300px !important;
+    }
+}
+```
+
+### ROMs Disponíveis
+
+- **gatonho.bin** - Gatonho: Quest 4 Rings (Atari 2600)
+  - Tamanho: ~8KB
+  - Formato: Binário Atari 2600
+  - Localização: `/assets/roms/gatonho.bin`
+
+### Correções Implementadas
+
+#### Problema de Loop de Carregamento
+**Problema**: O emulador entrava em loop ao tentar carregar ROMs inexistentes.
+
+**Solução**: Correção da URL do `CARTRIDGE_URL` nos arquivos:
+- `eng/gatonho.html`: Alterado de `ring_quest_v6.bin` para `gatonho.bin`
+- `pt-br/gatonho.html`: Alterado de `ring_quest_v6.bin` para `gatonho.bin`
+
+#### Otimizações de Layout
+- Remoção do background preto do contêiner
+- Ajuste das cores de texto de loading
+- Otimização das dimensões (largura, altura)
+- Melhorias no layout (espaçamento, centralização)
+- Remoção de sombras e bordas desnecessárias
+- Ajuste de border-radius para melhor integração visual
+- Responsividade aprimorada com media queries específicas
+
+### Páginas de Jogos Individuais
+
+Cada jogo possui páginas dedicadas em ambos os idiomas com estrutura consistente:
+
+#### 🎮 Gatonho: Quest 4 Rings
+- **Arquivos**: `eng/gatonho.html`, `pt-br/gatonho.html`
+- **Tipo**: Jogo Atari 2600 com emulador Javatari integrado
+- **Características**:
+  - Emulador responsivo com controles touch
+  - Sistema de troféus e conquistas
+  - Guia de controles interativo
+  - História e lore do jogo
+  - FAQ integrado
+
+#### 📚 Magicless Mage
+- **Arquivos**: `eng/magiclessmage.html`, `pt-br/magiclessmage.html`
+- **Tipo**: Action-Adventure Top-Down View
+- **Características**:
+  - Página informativa com trailer
+  - Descrição detalhada da história
+  - Screenshots e artwork
+  - Links para plataformas de distribuição
+
+#### 🌳 The Amazon Grove
+- **Arquivos**: `eng/theamazongrove.html`, `pt-br/theamazongrove.html`
+- **Tipo**: Action-Adventure Top-Down View
+- **Características**:
+  - Ambientação temática
+  - Galeria de imagens
+  - Informações sobre desenvolvimento
+
+#### ⚔️ The Legend of the Silent Knight
+- **Arquivos**: `eng/thelegendofthesilentknight.html`, `pt-br/thelegendofthesilentknight.html`
+- **Tipo**: Action-Adventure Top-Down View
+- **Características**:
+  - Design medieval autêntico
+  - Sistema de personagens
+  - Mecânicas de combate explicadas
+
+#### 🔮 Trials of the Arcane Grove
+- **Arquivos**: `eng/trialsofthearcanegrove.html`, `pt-br/trialsofthearcanegrove.html`
+- **Tipo**: Action-Adventure Top-Down View
+- **Características**:
+  - Elementos místicos e mágicos
+  - Sistema de puzzles
+  - Progressão de habilidades
+
+### Estrutura Padrão das Páginas de Jogos
+
+```html
+<!DOCTYPE html>
+<html lang="en/pt-br">
+<head>
+    <!-- Meta tags otimizadas para SEO -->
+    <!-- Open Graph e Twitter Cards -->
+    <!-- Estilos responsivos -->
+</head>
+<body>
+    <!-- Header com navegação -->
+    <!-- Seção principal do jogo -->
+    <!-- Informações e características -->
+    <!-- Footer com redes sociais -->
+    <!-- Scripts (incluindo Javatari se aplicável) -->
+</body>
+</html>
+```
+
+### Páginas Individuais da Equipe
+
+Cada membro da equipe possui uma página individual em `eng/team/` e `pt-br/team/`:
+
+- `andre-borba.html`
+- `andrews-nycollas.html`
+- `brendo-teles.html`
+- `camila-sales.html`
+- `edpaulo-cardoso.html`
+- `gabriel-flexa.html`
+- `marcos-genu.html`
+- `miguel-angel.html`
+- `mohamed-capistrano.html`
+- `rene-ballesteros.html`
+- `richard-de-leon.html`
+- `rick-galasio.html`
+
+**Características das páginas da equipe**:
+- Biografia detalhada
+- Portfolio de trabalhos
+- Redes sociais e contatos
+- Habilidades e especializações
+- Projetos em que participou
 
 ## 🔧 Configuração e Instalação
 

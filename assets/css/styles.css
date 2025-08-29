@@ -1271,6 +1271,7 @@ footer p {
   }
 }
 
+/* Container para cards de jogos na página games.html */
 .game-container {
   position: relative;
   margin-top: 20px;
@@ -1283,6 +1284,17 @@ footer p {
   cursor: pointer;
   border-radius: 20px;
   max-width: 500px;
+}
+
+/* Container específico para o emulador Javatari */
+.javatari-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin: 10px 0 30px 0;
+  padding: 0;
 }
 
 .game {
@@ -1318,10 +1330,20 @@ footer p {
 
 /* CSS do modal removido - usando apenas o CSS do #modal-jogos acima */
 
-/* adicionado media query para dispositivos móveis */
+/* Media queries para containers de jogos */
 @media only screen and (max-width: 768px) {
   .game-container {
     width: 90vw; /* largura da imagem agora é 90% da largura da tela */
+  }
+  
+  .javatari-container {
+    margin: 5px 0 20px 0;
+    padding: 0 10px;
+  }
+  
+  #javatari-screen {
+    max-width: 100% !important;
+    min-height: 300px !important;
   }
 }
 

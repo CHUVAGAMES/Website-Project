@@ -9,7 +9,7 @@ Javatari = {
     PRESETS:                        "",                         // Configuration Presets to apply. See Presets Configuration
 
     // Full or relative URL of Media files to load
-    CARTRIDGE_URL:                  "https://chuvagames.com/assets/roms/ring_quest_v6.bin",
+    CARTRIDGE_URL:                  "https://chuvagames.com/assets/roms/gatonho.bin",
     AUTODETECT_URL:                 "",
     STATE_URL:                      "",
 

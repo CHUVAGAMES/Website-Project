@@ -8,14 +8,32 @@
 
 ## 🏢 Propriedade Intelectual
 
-Este projeto, incluindo mas não limitado a:
-- Código fonte (HTML, CSS, JavaScript)
-- Design e layout
-- Imagens, logos e assets visuais
-- Conteúdo textual e narrativo
-- Estrutura e arquitetura do site
+Este projeto é de **uso privado, exclusivo e restrito da CHUVA Games**, um estúdio brasileiro de desenvolvimento de jogos independentes (indie), incluindo mas não limitado a:
 
-É **propriedade exclusiva da CHUVA Games**, um estúdio brasileiro de desenvolvimento de jogos independentes.
+- 💻 **Código fonte** (HTML5, CSS3, JavaScript ES6+)
+- 🎨 **Design e layout** responsivo
+- 🖼️ **Imagens, logos e assets visuais** proprietários
+- 📝 **Conteúdo textual e narrativo** original
+- 🏗️ **Estrutura e arquitetura do site**
+- 🎮 **Jogos embarcados e ROMs**
+- 🔧 **Configurações do emulador Javatari**
+- 📊 **Sistema de analytics e SEO**
+
+### 👨‍💻 Desenvolvimento
+
+O website oficial da CHUVA Games foi desenvolvido por:
+
+**André "Tutankhamal" Borba**
+- 🌐 **Portfolio**: [tutankhamal.com](https://tutankhamal.com)
+- 👤 **Função**: Desenvolvedor Full-Stack
+- 🏢 **Membro da equipe**: CHUVA Games
+- 📅 **Período**: 2024-2025
+
+### 🌍 Filosofia de Compartilhamento
+
+> *"Nos dias de hoje o mundo está carente de amor e conhecimento e saturado de ódio e cinzas."*
+
+Por essa razão, embora o projeto seja de **propriedade exclusiva da CHUVA Games**, o código fonte está disponível para **fins educacionais e de estudo**, contribuindo para a disseminação do conhecimento na comunidade de desenvolvimento.
 
 ---
 
@@ -73,25 +91,56 @@ Você **NÃO PODE**:
 
 ### Bibliotecas e Frameworks
 
-Este projeto utiliza as seguintes bibliotecas de terceiros:
+Este projeto utiliza as seguintes bibliotecas e tecnologias de terceiros:
 
 #### Bootstrap 5.3.3
 - **Licença**: MIT License
 - **Copyright**: Copyright (c) 2011-2025 The Bootstrap Authors
 - **URL**: https://getbootstrap.com/
-- **Uso**: Framework CSS para responsividade
+- **Uso**: Framework CSS para responsividade e componentes UI
 
 #### Font Awesome
 - **Licença**: Font Awesome Free License
 - **Copyright**: Fonticons, Inc.
 - **URL**: https://fontawesome.com/
-- **Uso**: Biblioteca de ícones
+- **Uso**: Biblioteca de ícones vetoriais
 
 #### Google Fonts (Open Sans)
 - **Licença**: Apache License 2.0
 - **Copyright**: Google Inc.
 - **URL**: https://fonts.google.com/
 - **Uso**: Tipografia principal do site
+
+#### Javatari.js (Emulador Atari 2600)
+- **Licença**: MIT License
+- **Copyright**: Copyright (c) Paulo Augusto Peccin
+- **URL**: https://github.com/ppeccin/javatari.js
+- **Versão**: 5.0.4
+- **Uso**: Emulação de jogos Atari 2600 no navegador
+
+#### HTML5 Canvas API
+- **Licença**: W3C Software License
+- **Copyright**: World Wide Web Consortium (W3C)
+- **URL**: https://www.w3.org/TR/2dcontext/
+- **Uso**: Renderização gráfica dos jogos embarcados
+
+#### Web Audio API
+- **Licença**: W3C Software License
+- **Copyright**: World Wide Web Consortium (W3C)
+- **URL**: https://www.w3.org/TR/webaudio/
+- **Uso**: Processamento de áudio dos jogos
+
+#### WebAssembly (WASM)
+- **Licença**: Apache License 2.0
+- **Copyright**: WebAssembly Community Group
+- **URL**: https://webassembly.org/
+- **Uso**: Execução de código nativo no navegador para emulação
+
+#### Google Analytics
+- **Licença**: Google Terms of Service
+- **Copyright**: Google LLC
+- **URL**: https://analytics.google.com/
+- **Uso**: Análise de tráfego e comportamento do usuário
 
 ### Texto das Licenças
 
@@ -116,7 +165,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-#### Apache License 2.0 (Google Fonts)
+#### Apache License 2.0 (Google Fonts, WebAssembly)
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -131,17 +180,77 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+#### MIT License (Javatari.js)
+```
+Copyright (c) Paulo Augusto Peccin
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+#### W3C Software License (Web APIs)
+```
+Copyright © World Wide Web Consortium, (Massachusetts Institute of Technology,
+European Research Consortium for Informatics and Mathematics, Keio University).
+All Rights Reserved.
+
+This work is distributed under the W3C® Software License in the hope that it
+will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
 ---
 
 ## 🎮 Assets dos Jogos
 
-### Jogos Embarcados
+### Jogos Autorais da CHUVA Games
 
-Os jogos **Kuadrika** e **Orbit** incluídos neste website são:
-- Propriedade exclusiva da CHUVA Games
-- Protegidos por direitos autorais
-- Não podem ser extraídos ou redistribuídos
-- Disponíveis apenas através do website oficial
+Todos os jogos desenvolvidos pela CHUVA Games são **propriedade intelectual exclusiva** do estúdio:
+
+#### 🎯 Jogos Comerciais (Protegidos por Direitos de Marca)
+- **Magicless Mage**: RPG narrativo - © CHUVA Games
+- **The Amazon Grove**: Aventura na floresta - © CHUVA Games  
+- **The Legend of the Silent Knight**: Ação medieval - © CHUVA Games
+- **Trials of the Arcane Grove**: Magia e mistério - © CHUVA Games
+
+#### 🕹️ Jogos Embarcados
+- **Kuadrika**: Puzzle game - © CHUVA Games
+- **Orbit**: Jogo espacial - © CHUVA Games
+- **Gatonho: Quest 4 Rings**: Jogo Atari 2600 - © Ricardo Galasio
+
+### Proteção Legal
+
+Todos os jogos listados são:
+- ✅ **Propriedade exclusiva da CHUVA Games**
+- ✅ **Protegidos por direitos autorais brasileiros e internacionais**
+- ✅ **Registrados como marca comercial**
+- ❌ **Não podem ser extraídos, modificados ou redistribuídos**
+- ❌ **Uso comercial não autorizado é crime**
+- ✅ **Disponíveis apenas através de canais oficiais**
+
+### ROMs e Assets
+
+#### Gatonho: Quest 4 Rings (ROM Atari 2600)
+- **Arquivo**: `gatonho.bin`
+- **Formato**: ROM Atari 2600 original
+- **Tamanho**: 4KB (padrão Atari 2600)
+- **Proteção**: Criptografia proprietária
+- **Uso**: Exclusivo para emulação no site oficial
 
 ### Imagens e Screenshots
 
@@ -197,9 +306,10 @@ A CHUVA Games reserva-se o direito de modificar estes termos a qualquer momento.
 
 Para solicitações de licenciamento comercial ou uso além dos termos aqui especificados, entre em contato:
 
-- **Email**: contato@chuvagames.co
+- **Email**: contato@chuvagames.com
 - **Discord**: [Servidor Oficial](https://discord.gg/Py6nAHGcDX)
-- **Website**: [chuvagames.co](https://chuvagames.com)
+- **Website**: [chuvagames.com](https://chuvagames.com)
+- **Desenvolvedor**: [André Borba - tutankhamal.com](https://tutankhamal.com)
 
 ### Licenciamento Comercial
 
@@ -215,11 +325,19 @@ Para uso comercial, oferecemos:
 
 ## 🔄 Histórico de Versões
 
-### Versão 1.0 (Janeiro 2025)
+### Versão 2.0 (Janeiro 2025)
+- Atualização completa da licença
+- Inclusão de todas as tecnologias utilizadas
+- Documentação dos jogos autorais
+- Créditos ao desenvolvedor André Borba
+- Filosofia de compartilhamento educacional
+- Proteção legal aprimorada
+
+### Versão 1.0 (2024)
 - Licença inicial
-- Termos de uso educacional
+- Termos de uso educacional básicos
 - Restrições comerciais
-- Licenças de terceiros
+- Licenças de terceiros básicas
 
 ---
 
@@ -240,7 +358,9 @@ Para uso comercial, oferecemos:
   
 **© 2025 CHUVA Games - Todos os direitos reservados**
 
-*Este documento foi atualizado em Agosto de 2025*
+*Este documento foi atualizado em Janeiro de 2025*
+
+**Desenvolvido com ❤️ por André "Tutankhamal" Borba para CHUVA Games**
 
 **"Protegendo nossa criatividade, compartilhando conhecimento"**
 

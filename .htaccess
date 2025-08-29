@@ -1,5 +1,8 @@
 # CHUVA Games - Apache Configuration
 # Performance and SEO Optimizations
+# 
+# Developed by: André 'Tutankhamal' Borba
+# Portfolio: https://tutankhamal.com
 
 # Enable mod_rewrite
 RewriteEngine On

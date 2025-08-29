@@ -1,6 +1,12 @@
 /**
  * CHUVA Games - Main JavaScript
  * Handles navigation, animations, and interactive elements for both English and Portuguese versions
+ * 
+ * Developed by: André 'Tutankhamal' Borba
+ * Portfolio: https://tutankhamal.com
+ * 
+ * This script contains all the interactive functionality for the CHUVA Games website,
+ * including navigation, animations, team member data, and multilingual support.
  */
 
 // Utility function to safely get DOM elements
@@ -511,11 +517,12 @@ const teamMembersEn = [
   {
     name: "Rick Galasio",
     slug: "rick-galasio",
-    role: "Linux Specialist / Voice Actor",
+    role: "Game Developer / Linux Specialist / Voice Actor",
     thumb: "/assets/images/team/rick.webp",
     gif: "/assets/images/team/animated_rick.webp",
     desc: `Rick Galasio, an autistic man with over half a century of life. After years dedicated to family and work, he can finally honor the autistic child who still lives inside him and fulfill his dream of becoming an indie game developer. "I'm just an old autistic guy."`,
     skills: [
+      { name: "Game Developer", value: 100, desc: "Developing indie games with passion and creativity, bringing unique gaming experiences to life." },
       { name: "Linux", value: 100, desc: "Expertise in Linux operating systems and server management." },
       { name: "Acting", value: 200, desc: "Voice acting for characters in games and animations." },
       { name: "2D Artist – Pixel Art", value: 200, desc: "Creating pixel art assets for games." },
@@ -776,11 +783,12 @@ const teamMembersPt = [
   {
     name: "Rick Galasio",
     slug: "rick-galasio",
-    role: "Especialista em Linux / Ator de Voz",
+    role: "Desenvolvedor de Jogos / Especialista em Linux / Ator de Voz",
     thumb: "/assets/images/team/rick.webp",
     gif: "/assets/images/team/animated_rick.webp",
     desc: `Rick Galasio, um homem autista com mais de meio século de vida. Após anos dedicados à família e ao trabalho, ele finalmente pode honrar a criança autista que ainda vive dentro dele e realizar seu sonho de se tornar um desenvolvedor de jogos independente. "Eu sou só um velhinho autista."`,
     skills: [
+      { name: "Desenvolvedor de Jogos", value: 100, desc: "Desenvolvimento de jogos independentes com paixão e criatividade, criando experiências únicas de jogabilidade." },
       { name: "Linux", value: 100, desc: "Especialização em sistemas operacionais Linux e gerenciamento de servidores." },
       { name: "Atuação", value: 200, desc: "Dublagem de personagens em jogos e animações." },
       { name: "Artista 2D – Pixel Art", value: 200, desc: "Criação de assets em pixel art para jogos." },

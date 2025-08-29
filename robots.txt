@@ -1,3 +1,7 @@
+# CHUVA Games - Robots.txt
+# Developed by: André 'Tutankhamal' Borba
+# Portfolio: https://tutankhamal.com
+
 User-agent: *
 Disallow: /private/
 Allow: /

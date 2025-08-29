@@ -1,3 +1,11 @@
+/*
+ * CHUVA Games Website Styles
+ * Developed by: André 'Tutankhamal' Borba
+ * Portfolio: https://tutankhamal.com
+ * 
+ * This stylesheet contains all the custom styles for the CHUVA Games website.
+ */
+
 /* Perfil individual do membro da equipe */
 .team-profile-card, .team-modal {
   background: rgb(255, 255, 255);

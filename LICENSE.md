@@ -231,7 +231,7 @@ Todos os jogos desenvolvidos pela CHUVA Games são **propriedade intelectual exc
 #### 🕹️ Jogos Embarcados
 - **Kuadrika**: Puzzle game - © CHUVA Games
 - **Orbit**: Jogo espacial - © CHUVA Games
-- **Gatonho: Quest 4 Rings**: Jogo Atari 2600 - © Ricardo Galasio
+- **Gatonho: Quest 4 Rings**: Jogo Atari 2600 - © CHUVA Games
 
 ### Proteção Legal
 
@@ -248,7 +248,7 @@ Todos os jogos listados são:
 #### Gatonho: Quest 4 Rings (ROM Atari 2600)
 - **Arquivo**: `gatonho.bin`
 - **Formato**: ROM Atari 2600 original
-- **Tamanho**: 8KB (padrão Atari 2600)
+- **Tamanho**: 4KB (padrão Atari 2600)
 - **Proteção**: Criptografia proprietária
 - **Uso**: Exclusivo para emulação no site oficial
 
@@ -358,9 +358,9 @@ Para uso comercial, oferecemos:
   
 **© 2025 CHUVA Games - Todos os direitos reservados**
 
-*Este documento foi atualizado em Agosto de 2025*
+*Este documento foi atualizado em Janeiro de 2025*
 
-**Desenvolvido por André "Tutankhamal" Borba para CHUVA Games**
+**Desenvolvido com ❤️ por André "Tutankhamal" Borba para CHUVA Games**
 
 **"Protegendo nossa criatividade, compartilhando conhecimento"**
 

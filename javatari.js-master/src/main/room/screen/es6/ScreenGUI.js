@@ -108,9 +108,7 @@ jt.ScreenGUI.css = function() {
     -ms-user-select: none;
     user-select: none;
     -webkit-touch-callout: none;
-    touch-callout: none;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="canonical" href="https://chuvagames.com/games/gatonho-quest-4-rings">
@@ -338,7 +338,35 @@
     <script src="/javatari.js"></script>
     <script src="/assets/scripts/scripts.js"></script>
     
-
+    <!-- FAQ Accordion Script -->
+    <script>
+        /**
+         * Configura o comportamento de accordion para a seção FAQ
+         * Garante que apenas um elemento details fique aberto por vez
+         */
+        function setupFAQAccordion() {
+            // Seleciona todos os elementos details da página
+            const faqDetails = document.querySelectorAll('details');
+            
+            // Adiciona event listener para cada elemento details
+            faqDetails.forEach(detail => {
+                detail.addEventListener('toggle', function() {
+                    // Se este details foi aberto
+                    if (this.open) {
+                        // Fecha todos os outros details que estão abertos
+                        faqDetails.forEach(otherDetail => {
+                            if (otherDetail !== this && otherDetail.open) {
+                                otherDetail.open = false;
+                            }
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Executa a função quando o DOM estiver carregado
+        document.addEventListener('DOMContentLoaded', setupFAQAccordion);
+    </script>
 
 </body>
 </html>

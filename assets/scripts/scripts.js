@@ -1246,39 +1246,43 @@ $$('.progress-bar').forEach((bar, i) => {
           }, 50);
         });
 
-        // Adicione o trecho AQUI, dentro do mesmo setTimeout:
- $$('.progress-bar').forEach((bar, i) => {
-  bar.addEventListener('click', function(e) {
-    e.stopPropagation();
-    const tooltip = bar.parentElement.querySelector('.skill-tooltip');
-    const desc = bar.getAttribute('data-desc');
-    if (!desc) return;
+        // Adiciona eventos de tooltip para cada barra nos modais
+        $$('.progress-bar').forEach((bar, i) => {
+          bar.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const tooltip = bar.parentElement.querySelector('.skill-tooltip');
+            const desc = bar.getAttribute('data-desc');
+            if (!desc) return;
 
-    // Toggle: se já está ativa, fecha; senão, abre e fecha as outras
-    if (tooltip.classList.contains('active')) {
-      tooltip.classList.remove('active');
-      tooltip.textContent = '';
-      return;
-    }
+            // Verifica se esta tooltip específica já estava ativa ANTES de qualquer manipulação
+            const thisTooltipWasActive = tooltip.classList.contains('active');
 
-    // Fecha outras tooltips abertas
-    $$('.skill-tooltip').forEach(t => { t.classList.remove('active'); t.textContent = ''; });
+            // Fecha todas as tooltips primeiro
+            $$('.skill-tooltip').forEach(t => { 
+              t.classList.remove('active'); 
+              t.textContent = ''; 
+            });
 
-    // Abre a tooltip desta barra
-    tooltip.textContent = desc;
-    tooltip.classList.add('active');
+            // Usa setTimeout para garantir que o DOM seja atualizado antes de abrir a nova tooltip
+            setTimeout(() => {
+              // Se esta tooltip específica não estava ativa, abre ela
+              if (!thisTooltipWasActive) {
+                tooltip.textContent = desc;
+                tooltip.classList.add('active');
 
-    // Fecha ao clicar fora
-    function closeTooltip(ev) {
-      if (!bar.contains(ev.target)) {
-        tooltip.classList.remove('active');
-        tooltip.textContent = '';
-        document.removeEventListener('mousedown', closeTooltip);
-      }
-    }
-    document.addEventListener('mousedown', closeTooltip);
-  });
-});
+                // Fecha ao clicar fora
+                function closeTooltip(ev) {
+                  if (!bar.contains(ev.target)) {
+                    tooltip.classList.remove('active');
+                    tooltip.textContent = '';
+                    document.removeEventListener('mousedown', closeTooltip);
+                  }
+                }
+                document.addEventListener('mousedown', closeTooltip);
+              }
+            }, 10);
+          });
+        });
 
 }, 50);
 
@@ -1435,32 +1439,33 @@ function renderProfileSkillbars() {
             const desc = bar.getAttribute('data-desc');
             if (!desc) return;
             
-            // Toggle tooltip
-            if (tooltip.classList.contains('active')) {
-                tooltip.classList.remove('active');
-                tooltip.textContent = '';
-                return;
-            }
-
-            // Fecha outras tooltips
+            // Verifica se esta tooltip específica já estava ativa ANTES de qualquer manipulação
+            const thisTooltipWasActive = tooltip.classList.contains('active');
+            
+            // Fecha todas as tooltips primeiro
             document.querySelectorAll('.skill-tooltip').forEach(t => {
                 t.classList.remove('active');
                 t.textContent = '';
             });
 
-            // Mostra tooltip atual
-            tooltip.textContent = desc;
-            tooltip.classList.add('active');
+            // Usa setTimeout para garantir que o DOM seja atualizado antes de abrir a nova tooltip
+            setTimeout(() => {
+                // Se esta tooltip específica não estava ativa, mostra ela
+                if (!thisTooltipWasActive) {
+                    tooltip.textContent = desc;
+                    tooltip.classList.add('active');
 
-            // Fecha ao clicar fora
-            function closeTooltip(ev) {
-                if (!bar.contains(ev.target)) {
-                    tooltip.classList.remove('active');
-                    tooltip.textContent = '';
-                    document.removeEventListener('mousedown', closeTooltip);
+                    // Fecha ao clicar fora
+                    function closeTooltip(ev) {
+                        if (!bar.contains(ev.target)) {
+                            tooltip.classList.remove('active');
+                            tooltip.textContent = '';
+                            document.removeEventListener('mousedown', closeTooltip);
+                        }
+                    }
+                    document.addEventListener('mousedown', closeTooltip);
                 }
-            }
-            document.addEventListener('mousedown', closeTooltip);
+            }, 10);
         });
     });
 }

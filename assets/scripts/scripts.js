@@ -532,6 +532,7 @@ const teamMembersEn = [
     social: [
       { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
       { href: "https://www.youtube.com/@ricleitetube", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.twitch.tv/rickgalasio", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
       { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
       { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]
@@ -798,6 +799,7 @@ const teamMembersPt = [
     social: [
       { href: "https://www.linkedin.com/in/ricardo-leite-a5467a38/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
       { href: "https://www.youtube.com/@ricleitetube", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
+      { href: "https://www.twitch.tv/rickgalasio", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
       { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
       { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
     ]

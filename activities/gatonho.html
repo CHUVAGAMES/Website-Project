@@ -175,41 +175,42 @@
         </div>
     </div>
 
-    <script src="../javatari.js"></script>
+    <script src="javatari.js-master/release/stable/5.0/embedded/javatari.js"></script>
     <script>
-        // Configuração do Javatari para Discord Activity
+        // Configuração prévia do Javatari para Discord Activity
+        window.JAVATARI_AUTO_START = true;
+        window.JAVATARI_CARTRIDGE_URL = "assets/roms/gatonho.bin";
+        window.JAVATARI_SCREEN_ELEMENT_ID = "javatari-screen";
+        window.JAVATARI_ALLOW_URL_PARAMETERS = false;
+        window.JAVATARI_SCREEN_RESIZE_DISABLED = false;
+        window.JAVATARI_SCREEN_FULLSCREEN_MODE = 1;
+        window.JAVATARI_SCREEN_CRT_MODE = 1;
+        window.JAVATARI_AUDIO_MONITOR_BUFFER_SIZE = 1024;
+        // Desabilitar elementos desnecessários para Discord
+        window.JAVATARI_SCREEN_CONTROL_BAR = 0;
+        window.JAVATARI_SCREEN_CONSOLE_PANEL = 0;
+        window.JAVATARI_PADDLES_MODE = 0;
+        window.JAVATARI_TOUCH_MODE = 0;
+        
+        // Inicialização automática do Javatari
+        function initJavatari() {
+            try {
+                // O Javatari embedded inicia automaticamente quando configurado
+                console.log('Javatari configurado para inicialização automática');
+            } catch (error) {
+                console.error('Erro na configuração do Javatari:', error);
+            }
+        }
+        
         window.addEventListener('load', function() {
-            // Aguarda um pouco para garantir que o Javatari foi carregado
+            // Remove a mensagem de loading após um tempo
             setTimeout(function() {
-                try {
-                    // Remove a mensagem de loading
-                    const loadingDiv = document.querySelector('.loading');
-                    if (loadingDiv) {
-                        loadingDiv.remove();
-                    }
-                    
-                    // Configurações específicas para Discord Activity
-                    if (window.Javatari) {
-                        // Configurações otimizadas para ambiente Discord
-                        window.Javatari.SCREEN_ELEMENT_ID = "javatari-screen";
-                        window.Javatari.AUTO_START = true;
-                        window.Javatari.CARTRIDGE_URL = "../assets/roms/gatonho.bin";
-                        window.Javatari.SCREEN_FULLSCREEN_MODE = 0; // Desabilita fullscreen
-                        window.Javatari.SCREEN_CONTROL_BAR = 0; // Oculta barra de controle
-                        window.Javatari.CARTRIDGE_CHANGE_DISABLED = true; // Desabilita troca de cartucho
-                        window.Javatari.SCREEN_CONSOLE_PANEL_DISABLED = true; // Desabilita painel do console
-                        
-                        // Inicializa o emulador
-                        if (window.jt && window.jt.Launcher) {
-                            window.jt.Launcher.go();
-                        }
-                    }
-                } catch (error) {
-                    console.error('Erro ao inicializar Javatari:', error);
-                    document.getElementById('javatari-screen').innerHTML = 
-                        '<div class="loading">Erro ao carregar o jogo. Verifique se os arquivos estão disponíveis.</div>';
+                const loadingDiv = document.querySelector('.loading');
+                if (loadingDiv) {
+                    loadingDiv.remove();
                 }
-            }, 1000);
+                initJavatari();
+            }, 2000);
         });
         
         // Função para redimensionar o emulador responsivamente

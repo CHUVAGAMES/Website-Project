@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatonho: Quest 4 Rings - Discord Activity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2f3136;
+            color: #dcddde;
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #36393f;
+            padding: 16px 20px;
+            border-bottom: 1px solid #40444b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+        }
+
+        .title {
+            color: #cdd755;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .game-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #2f3136;
+        }
+
+        .emulator-wrapper {
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            max-height: 600px;
+            background-color: #40444b;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+            display: flex;
+            flex-direction: column;
+        }
+
+        #javatari-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            background-color: #000;
+            min-height: 400px;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #b9bbbe;
+            font-size: 14px;
+        }
+
+        .controls-info {
+            margin-top: 12px;
+            padding: 12px;
+            background-color: #36393f;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #b9bbbe;
+            text-align: center;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+            }
+            
+            .title {
+                font-size: 16px;
+            }
+            
+            .logo {
+                width: 28px;
+                height: 28px;
+            }
+            
+            .game-container {
+                padding: 12px;
+            }
+            
+            .emulator-wrapper {
+                padding: 12px;
+                max-height: none;
+                height: calc(100vh - 120px);
+            }
+            
+            #javatari-screen {
+                min-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 8px 12px;
+            }
+            
+            .title {
+                font-size: 14px;
+            }
+            
+            .logo {
+                width: 24px;
+                height: 24px;
+            }
+            
+            .game-container {
+                padding: 8px;
+            }
+            
+            .emulator-wrapper {
+                padding: 8px;
+                height: calc(100vh - 100px);
+            }
+            
+            #javatari-screen {
+                min-height: 250px;
+            }
+            
+            .controls-info {
+                font-size: 11px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="chuvamain.webp" alt="Chuva Games" class="logo">
+        <h1 class="title">Gatonho: Quest 4 Rings</h1>
+    </div>
+    
+    <div class="game-container">
+        <div class="emulator-wrapper">
+            <div id="javatari-screen">
+                <div class="loading">Carregando emulador...</div>
+            </div>
+            <div class="controls-info">
+                Use as setas do teclado para mover e a barra de espaço para ação
+            </div>
+        </div>
+    </div>
+
+    <script src="../javatari.js"></script>
+    <script>
+        // Configuração do Javatari para Discord Activity
+        window.addEventListener('load', function() {
+            // Aguarda um pouco para garantir que o Javatari foi carregado
+            setTimeout(function() {
+                try {
+                    // Remove a mensagem de loading
+                    const loadingDiv = document.querySelector('.loading');
+                    if (loadingDiv) {
+                        loadingDiv.remove();
+                    }
+                    
+                    // Configurações específicas para Discord Activity
+                    if (window.Javatari) {
+                        // Configurações otimizadas para ambiente Discord
+                        window.Javatari.SCREEN_ELEMENT_ID = "javatari-screen";
+                        window.Javatari.AUTO_START = true;
+                        window.Javatari.CARTRIDGE_URL = "../assets/roms/gatonho.bin";
+                        window.Javatari.SCREEN_FULLSCREEN_MODE = 0; // Desabilita fullscreen
+                        window.Javatari.SCREEN_CONTROL_BAR = 0; // Oculta barra de controle
+                        window.Javatari.CARTRIDGE_CHANGE_DISABLED = true; // Desabilita troca de cartucho
+                        window.Javatari.SCREEN_CONSOLE_PANEL_DISABLED = true; // Desabilita painel do console
+                        
+                        // Inicializa o emulador
+                        if (window.jt && window.jt.Launcher) {
+                            window.jt.Launcher.go();
+                        }
+                    }
+                } catch (error) {
+                    console.error('Erro ao inicializar Javatari:', error);
+                    document.getElementById('javatari-screen').innerHTML = 
+                        '<div class="loading">Erro ao carregar o jogo. Verifique se os arquivos estão disponíveis.</div>';
+                }
+            }, 1000);
+        });
+        
+        // Função para redimensionar o emulador responsivamente
+        function resizeEmulator() {
+            const screen = document.getElementById('javatari-screen');
+            const wrapper = document.querySelector('.emulator-wrapper');
+            
+            if (screen && wrapper) {
+                const wrapperRect = wrapper.getBoundingClientRect();
+                const controlsHeight = document.querySelector('.controls-info').offsetHeight;
+                const availableHeight = wrapperRect.height - controlsHeight - 32; // 32px para padding
+                
+                screen.style.height = availableHeight + 'px';
+            }
+        }
+        
+        // Redimensiona quando a janela muda de tamanho
+        window.addEventListener('resize', resizeEmulator);
+        
+        // Redimensiona após o carregamento
+        window.addEventListener('load', function() {
+            setTimeout(resizeEmulator, 1500);
+        });
+        
+        // Previne comportamentos indesejados em Discord Activity
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Foca no jogo quando clicado
+        document.getElementById('javatari-screen').addEventListener('click', function() {
+            this.focus();
+        });
+    </script>
+</body>
+</html>

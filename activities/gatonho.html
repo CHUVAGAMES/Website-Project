@@ -165,7 +165,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="chuvamain.webp" alt="Chuva Games" class="logo">
+        <img src="/activities/chuvamain.webp" alt="Chuva Games" class="logo">
         <h1 class="title">Gatonho: Quest 4 Rings</h1>
     </div>
     
@@ -191,8 +191,8 @@
             PRESETS:                        "",                         // Configuration Presets to apply. See Presets Configuration
             
             // Full or relative URL of Media files to load
-            CARTRIDGE_URL:                  "../assets/roms/gatonho.bin",
-            AUTODETECT_URL:                 "",
+            CARTRIDGE_URL:                  "/assets/roms/gatonho.bin",
+            AUTODETECT_URL:                 "/assets/roms/gatonho.bin",
             STATE_URL:                      "",
             
             // Forcing ROM formats
@@ -243,13 +243,49 @@
         jt = window.jt || {};                                           // Namespace for all classes and objects
     </script>
     
-    <script src="javatari.js-master/release/stable/5.0/embedded/javatari.js"></script>
+    <script src="/activities/javatari.js-master/release/stable/5.0/embedded/javatari.js"></script>
     <script>
+        /*
+         * CONFIGURAÇÕES PARA DISCORD ACTIVITIES
+         * 
+         * Para funcionar corretamente no Discord, configure no Developer Portal:
+         * 1. URL Mappings (se necessário):
+         *    - /assets -> seu-dominio.com/assets
+         *    - /activities -> seu-dominio.com/activities
+         * 
+         * 2. Todas as URLs devem ser:
+         *    - Relativas (como /assets/roms/gatonho.bin)
+         *    - Ou usar formato completo: https://{clientId}.discordsays.com/path
+         * 
+         * 3. Recursos externos bloqueados por padrão (CSP)
+         * 4. Cookies precisam: SameSite=None Partitioned
+         */
+        
+        // Configurações específicas para Discord Activities
+        const isDiscordActivity = window.location.hostname.includes('discordsays.com');
+        const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        
+        // Configuração de segurança para Discord Activities
+        if (isDiscordActivity) {
+            // Configurações específicas para ambiente de produção do Discord
+            console.log('Executando como Discord Activity');
+            
+            // Desabilita funcionalidades que podem não funcionar no Discord
+            if (window.Javatari) {
+                Javatari.SCREEN_FULLSCREEN_MODE = -2; // Desabilita fullscreen no Discord
+                Javatari.NETPLAY_JOIN = ""; // Desabilita NetPlay no Discord por segurança
+            }
+        }
+        
         // Inicialização automática do Javatari
         function initJavatari() {
             try {
                 // O Javatari embedded inicia automaticamente quando configurado
                 console.log('Javatari configurado para inicialização automática');
+                
+                if (isDiscordActivity) {
+                    console.log('Configurações do Discord Activity aplicadas');
+                }
             } catch (error) {
                 console.error('Erro na configuração do Javatari:', error);
             }

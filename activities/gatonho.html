@@ -165,7 +165,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="/activities/chuvamain.webp" alt="Chuva Games" class="logo">
+        <img src="chuvamain.webp" alt="Chuva Games" class="logo">
         <h1 class="title">Gatonho: Quest 4 Rings</h1>
     </div>
     
@@ -191,8 +191,8 @@
             PRESETS:                        "",                         // Configuration Presets to apply. See Presets Configuration
             
             // Full or relative URL of Media files to load
-            CARTRIDGE_URL:                  "/assets/roms/gatonho.bin",
-            AUTODETECT_URL:                 "/assets/roms/gatonho.bin",
+            CARTRIDGE_URL:                  "../assets/roms/gatonho.bin",
+            AUTODETECT_URL:                 "../assets/roms/gatonho.bin",
             STATE_URL:                      "",
             
             // Forcing ROM formats
@@ -204,7 +204,7 @@
             
             // General configuration
             AUTO_START:                     true,
-            AUTO_POWER_ON_DELAY:            1200,                       // -1: no auto Power-ON; >= 0: wait specified milliseconds before Power-ON
+            AUTO_POWER_ON_DELAY:            100,                        // -1: no auto Power-ON; >= 0: wait specified milliseconds before Power-ON
             CARTRIDGE_SHOW_RECENT:          true,
             CARTRIDGE_CHANGE_DISABLED:      false,
             CARTRIDGE_LABEL_COLORS:         "",                         // Space-separated colors for Label, Background, Border. e.g. "#f00 #000 transparent". Leave "" for defaults
@@ -243,7 +243,9 @@
         jt = window.jt || {};                                           // Namespace for all classes and objects
     </script>
     
-    <script src="/activities/javatari.js-master/release/stable/5.0/embedded/javatari.js"></script>
+    <script src="javatari.js"></script>
+    <script>
+    </script>
     <script>
         /*
          * CONFIGURAÇÕES PARA DISCORD ACTIVITIES
@@ -277,17 +279,15 @@
             }
         }
         
-        // Inicialização automática do Javatari
+        // Inicialização do Javatari
         function initJavatari() {
-            try {
-                // O Javatari embedded inicia automaticamente quando configurado
-                console.log('Javatari configurado para inicialização automática');
-                
-                if (isDiscordActivity) {
-                    console.log('Configurações do Discord Activity aplicadas');
-                }
-            } catch (error) {
-                console.error('Erro na configuração do Javatari:', error);
+            if (typeof Javatari === 'undefined') {
+                console.error('Javatari não foi carregado!');
+                return;
+            }
+            
+            if (isDiscordActivity) {
+                console.log('Configurações do Discord Activity aplicadas');
             }
         }
         
@@ -299,7 +299,7 @@
                     loadingDiv.remove();
                 }
                 initJavatari();
-            }, 2000);
+            }, 1000);
         });
         
         // Função para redimensionar o emulador responsivamente

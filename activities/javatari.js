@@ -9,8 +9,8 @@ Javatari = {
     PRESETS:                        "",                         // Configuration Presets to apply. See Presets Configuration
 
     // Full or relative URL of Media files to load
-    CARTRIDGE_URL:                  "/assets/roms/gatonho.bin",
-    AUTODETECT_URL:                 "/assets/roms/gatonho.bin",
+    CARTRIDGE_URL:                  "",
+    AUTODETECT_URL:                 "",
     STATE_URL:                      "",
 
     // Forcing ROM formats

@@ -1,338 +1,373 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
+    <link rel="canonical" href="https://chuvagames.com/games/gatonho-quest-4-rings">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gatonho - Chuva Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <title>Gatonho: Quest 4 Rings</title>
+    <meta name="author" content="Andre 'Tutankhamal' Borba">
+    <meta name="developer" content="Andre 'Tutankhamal' Borba - https://tutankhamal.com">
+    <meta name="designer" content="Andre 'Tutankhamal' Borba">
+    <!-- Website desenvolvido por Andre 'Tutankhamal' Borba - https://tutankhamal.com -->
     
-    <script>
-        JavatariFullScreenSetup = { apply: function fullScreenSetup() { /* Setup Basic full-screen CSS*/ if (!this.cssApplied) { var style = document.createElement('style'); style.type = 'text/css'; style.innerHTML = this.css; document.head.appendChild(style); this.cssApplied = true; } /* Apply Standalone mode full-screen basic styles to html and body immediately if needed*/ document.documentElement.classList.toggle("jt-full-screen", this.shouldStartInFullScreen()); }, shouldStartInFullScreen: function () { return window.Javatari ? Javatari.SCREEN_FULLSCREEN_MODE === 1 || (Javatari.SCREEN_FULLSCREEN_MODE === -1 && this.isBrowserStandaloneMode()) : this.isBrowserStandaloneMode(); }, isBrowserStandaloneMode: function () { return navigator.standalone || window.matchMedia("(display-mode: standalone)").matches; }, css: '' + 'html.jt-full-screen, html.jt-full-screen body {' + '   background: black;' + '}' + 'html.jt-full-screen .jt-full-screen-hidden {' + '   display: none;' + '}' + 'html:not(.jt-full-screen) .jt-full-screen-only {' + '   display: none;' + '}'}; JavatariFullScreenSetup.apply();
-    </script>
+    <!-- Fonts and Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" href="/assets/images/icons/favicon.ico" type="image/x-icon">
     
+    <!-- Meta Tags -->
+    <meta name="description" content="Gatonho: Quest 4 Rings - Acompanhe as aventuras de Gatonho em sua busca pelos 4 anéis mágicos em uma jornada épica cheia de desafios e mistérios.">
+    <meta property="og:title" content="Gatonho: Quest 4 Rings - CHUVA Games">
+    <meta property="og:description" content="Acompanhe as aventuras de Gatonho em sua busca pelos 4 anéis mágicos em uma jornada épica cheia de desafios e mistérios.">
+    <meta property="og:image" content="https://i.imgur.com/647OnDx.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://i.imgur.com/647OnDx.png">
+    <meta property="og:url" content="https://chuvagames.com/games/gatonho-quest-4-rings">
+    <meta property="og:type" content="website">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/59d276c3c3.js" crossorigin="anonymous"></script>
+    
+    <!-- Responsive CSS -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #2f3136;
-            color: #dcddde;
-            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .header {
-            background-color: #36393f;
-            padding: 16px 20px;
-            border-bottom: 1px solid #40444b;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            flex-shrink: 0;
-        }
-
-        .logo {
-            width: 32px;
-            height: 32px;
-            border-radius: 6px;
-        }
-
-        .title {
-            color: #cdd755;
-            font-size: 18px;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .game-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background-color: #2f3136;
-        }
-
-        .emulator-wrapper {
-            width: 100%;
-            max-width: 800px;
-            height: 100%;
-            max-height: 600px;
-            background-color: #40444b;
-            border-radius: 8px;
-            padding: 16px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
-            display: flex;
-            flex-direction: column;
-        }
-
-        #javatari-screen {
-            width: 100%;
-            height: 100%;
-            border-radius: 4px;
-            background-color: #000;
-            min-height: 400px;
-        }
-
-        .loading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            color: #b9bbbe;
-            font-size: 14px;
-        }
-
-        .controls-info {
-            margin-top: 12px;
-            padding: 12px;
-            background-color: #36393f;
-            border-radius: 4px;
-            font-size: 12px;
-            color: #b9bbbe;
-            text-align: center;
-        }
-
-        /* Responsividade */
+        /* Responsive Trophy Grid */
         @media (max-width: 768px) {
-            .header {
-                padding: 12px 16px;
+            .trophy-grid {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
             }
             
-            .title {
-                font-size: 16px;
+            /* Responsive Controls Grid */
+            .controls-grid {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
             }
             
-            .logo {
-                width: 28px;
-                height: 28px;
-            }
-            
-            .game-container {
-                padding: 12px;
-            }
-            
-            .emulator-wrapper {
-                padding: 12px;
-                max-height: none;
-                height: calc(100vh - 120px);
+            /* Responsive Javatari Container */
+            .javatari-container {
+                margin: 10px 0 !important;
+                padding: 0 10px !important;
             }
             
             #javatari-screen {
-                min-height: 300px;
+                min-width: 300px !important;
+                min-height: 200px !important;
+                width: 100% !important;
+                height: 50vh !important;
+            }
+            
+            /* Responsive Text */
+            h1, h2, h3 {
+                font-size: 1.2em !important;
+            }
+            
+            .team-modal-title {
+                font-size: 1.3em !important;
+            }
+            
+            /* Responsive Padding */
+            .team-profile-card {
+                padding: 15px !important;
             }
         }
-
+        
         @media (max-width: 480px) {
-            .header {
-                padding: 8px 12px;
+            .trophy-grid > div {
+                padding: 15px !important;
             }
             
-            .title {
-                font-size: 14px;
+            .trophy-grid h4 {
+                font-size: 1em !important;
             }
             
-            .logo {
-                width: 24px;
-                height: 24px;
-            }
-            
-            .game-container {
-                padding: 8px;
-            }
-            
-            .emulator-wrapper {
-                padding: 8px;
-                height: calc(100vh - 100px);
+            .trophy-grid p {
+                font-size: 0.8em !important;
             }
             
             #javatari-screen {
-                min-height: 250px;
-            }
-            
-            .controls-info {
-                font-size: 11px;
-                padding: 8px;
+                min-width: 280px !important;
+                min-height: 180px !important;
             }
         }
     </style>
-</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HRWZQD1FGH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HRWZQD1FGH');
+</script>
+
+  </head>
 <body>
-    <div class="header">
-        <img src="chuvamain.webp" alt="Chuva Games" class="logo">
-        <h1 class="title">Gatonho: Quest 4 Rings</h1>
-    </div>
+    <!-- Header with Navigation -->
+<header class="header">
+    <!--<nav>
+                <ul class="nav-menu">
+            <li>
+                <a href="index.html">
+                    <img src="/assets/images/logos/xsmall-logo.webp" alt="CHUVA Games Logo" class="nav-logo">
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="games.html" class="dropdown-toggle3 navselect"><b>Jogos</b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="trialsofthearcanegrove.html">TAG: Trials of The Arcane Grove</a></li>
+                    <li><a href="magiclessmage.html">Magicless Mage</a></li>
+                    <li><a href="thelegendofthesilentknight.html">The Legend of the Silent Knight</a></li>
+                    <li><a href="gatonho.html" class="navselect"><b>Gatonho: Quest 4 Rings</b></a></li>
+                </ul>
+            </li>
+            <li><a href="team.html">Equipe</a></li>
+            <li><a href="contact.html">Contato</a></li>
+            <li>
+                <a href="/eng/gatonho.html" aria-label="English version">
+                    <img src="/assets/images/icons/PTBR.webp" alt="Portuguese Icon" style="width: 25px; height: 25px; vertical-align: middle;">
+                </a>
+            </li>
+        </ul>
+    </nav>-->
+</header>
+
+    <!-- Game Detail Section -->
+        <section class="team" style="text-align: center;">
+        <h1><b>Gatonho: Quest 4 Rings</b></h1>
+    </section>
     
-    <div class="game-container">
-        <div class="emulator-wrapper">
-            <div id="javatari-screen">
-                <div class="loading">Carregando emulador...</div>
+
+<div class="javatari-container">
+  <div id="javatari-screen" style="width: 100%; max-width: 800px; height: auto; min-height: 400px; border-radius: 8px; display: block; margin: 0 auto;">
+    <div style="text-align: center; padding: 20px; color: #666; font-family: Arial, sans-serif;">
+      <h3 style="margin: 0 0 10px 0; color: #333;">Gatonho: Quest 4 Rings</h3>
+      <p style="margin: 0 0 5px 0;">Emulador Atari 2600</p>
+      <p style="font-size: 14px; opacity: 0.8; margin: 0;">Carregando emulador...</p>
+    </div>
+  </div>
+</div>
+
+<!-- Game Guide Section -->
+<section class="team">
+  <h1><b>Sobre o Jogo</b></h1>
+  <div class="team-profile-card">
+    <div class="team-modal-title">Gatonho: Quest 4 Rings</div>
+    <div class="team-modal-role">Aventura Épica de Plataforma</div>
+    <div class="team-modal-desc">Gatonho é um gatinho corajoso nascido sem braços que embarca em uma aventura épica para recuperar a "Copa dos Anéis" roubada por um Slime imitador do Príncipe Jackson! Explore um mundo vibrante, colete chaves e anéis, e prove que coragem não tem limites.</div>
+    
+    <!-- Controls Section -->
+    <div style="margin-bottom: 2em;">
+      <h3 style="color: #2196f3; margin-bottom: 1.5em; text-align: center; font-size: 1.3em;"><i class="fas fa-gamepad" style="margin-right: 8px;"></i>Controles</h3>
+      
+      <!-- Movement Controls -->
+      <div style="background: rgba(33,150,243,0.08); padding: 20px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 24px rgba(33,150,243,0.08);">
+        <h4 style="color: #2196f3; margin: 0 0 15px 0; font-size: 1.1em;"><i class="fas fa-arrows-alt" style="margin-right: 8px;"></i>Movimento</h4>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; margin-bottom: 5px; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">↑</div>
+            <div style="display: flex; gap: 5px;">
+              <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">←</div>
+              <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">↓</div>
+              <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">→</div>
             </div>
-            <div class="controls-info">
-                Use as setas do teclado para mover e a barra de espaço para ação
-            </div>
+          </div>
         </div>
+        <p style="color: #555; margin: 0; text-align: center; font-size: 0.95em;">Use as setas direcionais para mover o Gatonho pelo mundo</p>
+      </div>
+      
+      <!-- Action Controls -->
+      <div style="background: rgba(242,121,97,0.08); padding: 20px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 24px rgba(242,121,97,0.08);">
+        <h4 style="color: #f27961; margin: 0 0 15px 0; font-size: 1.1em;"><i class="fas fa-running" style="margin-right: 8px;"></i>Ação</h4>
+        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+          <div style="background: #f27961; color: white; padding: 12px 24px; border-radius: 12px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 16px rgba(242,121,97,0.3);">ESPAÇO</div>
+        </div>
+        <p style="color: #555; margin: 0; text-align: center; font-size: 0.95em;">Pressione para chutar <strong style="color: #f27961;">(tem cooldown!)</strong></p>
+      </div>
+      
+      <!-- Function Keys -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;" class="controls-grid">
+        <div style="background: rgba(76,175,80,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(76,175,80,0.08);">
+          <div style="background: #4caf50; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(76,175,80,0.3);">F11</div>
+          <p style="color: #555; margin: 0; font-size: 0.9em;"><strong>Dificuldade</strong><br>Fácil (9 vidas) / Normal (7 vidas)</p>
+        </div>
+        <div style="background: rgba(255,152,0,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(255,152,0,0.08);">
+          <div style="background: #ff9800; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(255,152,0,0.3);">F12</div>
+          <p style="color: #555; margin: 0; font-size: 0.9em;"><strong>Reiniciar</strong><br>Recomeça o jogo</p>
+        </div>
+      </div>
     </div>
 
+    <!-- Trophies Guide -->
+    <!-- Story Section -->
+    <div style="width: 100%; margin-bottom: 1.5em;">
+      <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-book-open" style="margin-right: 8px;"></i>História</h3>
+      <div style="background: rgba(33,150,243,0.08); padding: 24px; border-radius: 20px; box-shadow: 0 4px 24px rgba(33,150,243,0.15); border: 2px solid rgba(33,150,243,0.2); margin-bottom: 16px;">
+        <p style="color: #555; margin: 0 0 16px 0; line-height: 1.7; font-size: 1em; text-align: justify;">
+          O Gatonho é um gatinho fofo que nasceu sem bracinhos, mas é cheio de coragem! Um vilão, um Slime rosa que imita o Prince Jackson, usando seu chapéu preto e sapatilhas de dança, roubou a "Taça dos Anéis" - o campeonato de futebol mais importante do Morro do Bigato.
+        </p>
+        <p style="color: #555; margin: 0; line-height: 1.7; font-size: 1em; text-align: justify;">
+          Gatonho foi correndo atrás dele, mas virou na rua errada e se perdeu no Morro do Fundão, um lugar com ruas que parecem um labirinto. Neste bairro desconhecido, todos querem treta com os habitantes do Morro do Bigato, e Gatonho vai ter que abrir caminho dando chutes poderosos até recuperar a preciosa Taça dos Anéis!
+        </p>
+        <div style="margin-top: 16px; padding: 12px; background: rgba(255,193,7,0.1); border-radius: 12px; border-left: 4px solid #ffc107;">
+          <p style="color: #666; margin: 0; font-size: 0.9em; font-style: italic;"><i class="fas fa-gamepad" style="margin-right: 8px; color: #ffc107;"></i>Este jogo é feito para rodar no Videogame Atari 2600. Aqui está funcionando graças ao emulador Javatari.js.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trophy System Section -->
+    <div style="width: 100%; margin-bottom: 1.5em;">
+      <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-trophy" style="margin-right: 8px;"></i>Sistema de Troféus</h3>
+      
+      <!-- Trophy Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; align-items: stretch;" class="trophy-grid">
+        
+        <!-- Gold Trophy -->
+        <div style="background: rgba(255, 215, 0, 0.08); padding: 20px; border-radius: 20px; box-shadow: 0 4px 24px rgba(255, 215, 0, 0.15); text-align: center; border: 2px solid rgba(255, 215, 0, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 32px rgba(255, 215, 0, 0.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 24px rgba(255, 215, 0, 0.15)';">
+          <div style="font-size: 3em; margin-bottom: 12px; color: #ffd700;">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h4 style="color: #ffd700; margin: 0 0 8px 0; font-size: 1.2em; font-weight: 600;">Troféu Ouro<br>(1º Lugar)</h4>
+          <p style="color: #666; margin: 0; font-size: 0.9em; line-height: 1.4;">Pegue todas as 4 chaves, azul, vermelha, branca e verde, e os 4 anéis, azul, vermelha, branca e verde usando as chaves nos barracos com as respectivas cores, vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
+        </div>
+        
+        <!-- Silver Trophy -->
+        <div style="background: rgba(192, 192, 192, 0.08); padding: 20px; border-radius: 20px; box-shadow: 0 4px 24px rgba(192, 192, 192, 0.15); text-align: center; border: 2px solid rgba(192, 192, 192, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 32px rgba(192, 192, 192, 0.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 24px rgba(192, 192, 192, 0.15)';">
+          <div style="font-size: 3em; margin-bottom: 12px; color: #c0c0c0;">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h4 style="color: #c0c0c0; margin: 0 0 8px 0; font-size: 1.2em; font-weight: 600;">Troféu Prata<br>(2º Lugar)</h4>
+          <p style="color: #666; margin: 0; font-size: 0.9em; line-height: 1.4;">Pegue todas as 4 chaves, azul, vermelha, branca e verde, vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
+        </div>
+        
+        <!-- Bronze Trophy -->
+        <div style="background: rgba(205, 127, 50, 0.08); padding: 20px; border-radius: 20px; box-shadow: 0 4px 24px rgba(205, 127, 50, 0.15); text-align: center; border: 2px solid rgba(205, 127, 50, 0.2); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 32px rgba(205, 127, 50, 0.25)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 24px rgba(205, 127, 50, 0.15)';">
+          <div style="font-size: 3em; margin-bottom: 12px; color: #cd7f32;">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h4 style="color: #cd7f32; margin: 0 0 8px 0; font-size: 1.2em; font-weight: 600;">Troféu Bronze<br>(3º Lugar)</h4>
+          <p style="color: #666; margin: 0; font-size: 0.9em; line-height: 1.4;">Vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div style="width: 100%; margin-bottom: 1em;">
+      <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-question-circle" style="margin-right: 8px;"></i>Perguntas Frequentes</h3>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-futbol" style="margin-right: 8px;"></i>Tem horas que o chute parece não sair! Isso é um bug?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">O chute do Gatonho tem Cooldown. Isso significa que num momento você chuta e em seguida é preciso se afastar e esperar. Todos precisam descansar, tomar fôlego. Mas ninguém tem que desistir, só descansar. Um chute pra frente, uma recuada. Ritmo. É tudo que precisamos na verdade.</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-cube" style="margin-right: 8px;"></i>O quê é esse quadrado colorido que aparece no meio, logo no início?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Nos jogos de Atari é preciso imaginação. Imagine que é um baú. E dentro dele existe 50% de chance de você encontrar o sonho do Gatonho, a bola quadrada que dá +1 de dano e ataque à distância. Gatonho sonha em ser jogador de futebol, e uma bola quadrada pra praticar é tudo que ele queria! Mas não se preocupe se não ganhar a bola quadrada com dano +1 e ataque à distância, pois vencendo os Ratoninhos eles deixam baús com bolas e vidas pra trás.</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-dog" style="margin-right: 8px;"></i>Um cachorro sempre me mata. O que fazer?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Ritmo. O Catiorão avança (dá dashes) sempre no mesmo ritmo. É como na vida, como dançar samba; um passo pra frente, um passo pra trás. Você tem que rebolar e não ficar só parado.</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-bat" style="margin-right: 8px;"></i>Morri num monstro que bate asas, parece uma abelha.</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Esse é o morcego Ozzy. Ele foi criado no dia que Ozzy Osborne nos deixou. Ele voa em zigue-zague, pra cima e pra baixo. Pode-se vencê-lo posicionando ele em um ponto, chutando e esperando ele voltar. Sempre com ritmo, sempre Rock, até o fim.</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-crown" style="margin-right: 8px;"></i>Que troço enorme cheio de vida, esquisito rosa, cheio de adereços estranhos foi esse que me venceu dançando e dando passinhos pra trás?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Este é o vilão dos nossos sonhos. Aqui ele se chama Slime imitador de Prince Jackson. Ele tem um escopo enorme e cheio de enfeites que nós não precisamos. Fica mais fácil vencer com ajuda. Vencendo os Catiorões você vai conseguir terríveis chuteiras coloridas, você pode equipar até duas e vão aparecer como uma barra de força acima de Gatonho. Cada uma das 2 chuteiras dão +1 de dano. E se você não abandonar seu sonho para trás, vai ter mais um bônus de +1 e vai poder atacar à distância.</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-key" style="margin-right: 8px;"></i>Para que servem as chaves?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">As chaves abrem os barracos onde os anéis estão escondidos. Cada chave corresponde a uma cor específica: azul, vermelha, branca e verde. Você precisa coletar todas as chaves para acessar todos os anéis!</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-ring" style="margin-right: 8px;"></i>Para que servem os anéis?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Os anéis fazem parte da "Copa dos Anéis" que foi roubada pelo Slime Jackson. Coletar todos os 4 anéis é essencial para completar a missão e conquistar o Troféu de Ouro!</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-question" style="margin-right: 8px;"></i>O jogo tem fim ou é só por pontuação?</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">O jogo tem fim. A pontuação pode te ajudar, mas nunca se esqueça que tudo é jogo e que o jogo vai acabar um dia. Então jogue até o final e não desista jamais. Apesar de você amanhã há de ser outro dia!</p>
+        </details>
+        <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
+          <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-cat" style="margin-right: 8px;"></i>O quê é esse boneco cabeçudo amarelo que parece um E.T.E.? Tenho maus pressentimentos!</summary>
+          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Este é o Gatonho, e não se preocupe, ele não é o E.T.E, ele é um gato sem bracinhos, mas nunca cai em buracos! Mas se mais pessoas lessem o manual, E.T.E.s e Gatonhos assustariam menos, eu garanto! Mas jamais exigiríamos isso.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+       <!-- <footer>
+        <p>&copy; 2025 CHUVA Games. Todos direitos reservados.</p>
+        <div class="redes-sociais">
+  <a href="https://www.youtube.com/@ChuvaGames" class="botao-rede" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/icons/default/default_youtube_footer.webp" alt="YouTube" class="icone-rede icone-rede-padrao">
+    <img src="/assets/images/icons/hover/hover_youtube.webp" alt="YouTube" class="icone-rede icone-rede-hover">
+  </a>
+  <a href="https://discord.gg/Py6nAHGcDX" class="botao-rede" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/icons/default/default_discord_footer.webp" alt="Discord" class="icone-rede icone-rede-padrao">
+    <img src="/assets/images/icons/hover/hover_discord.webp" alt="Discord" class="icone-rede icone-rede-hover">
+  </a>
+  <a href="https://www.instagram.com/chuvagames/" class="botao-rede" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/icons/default/default_insta_footer.webp" alt="Instagram" class="icone-rede icone-rede-padrao">
+    <img src="/assets/images/icons/hover/hover_insta.webp" alt="Instagram" class="icone-rede icone-rede-hover">
+  </a>
+</div>
+    </footer> -->
+
+    <!-- Scripts -->
     <script>
-        // Javatari version 5.0.4
-        // Copyright 2015 by Paulo Augusto Peccin. See license.txt distributed with this file.
-        
-        // Main Emulator parameters.
-        // May be overridden dynamically by URL query parameters, if ALLOW_URL_PARAMETERS = true.
-        
-        Javatari = {
-            PRESETS:                        "",                         // Configuration Presets to apply. See Presets Configuration
-            
-            // Full or relative URL of Media files to load
-            CARTRIDGE_URL:                  "../assets/roms/gatonho.bin",
-            AUTODETECT_URL:                 "../assets/roms/gatonho.bin",
-            STATE_URL:                      "",
-            
-            // Forcing ROM formats
-            CARTRIDGE_FORMAT:               "",                         // 4K, F8, F4, FE, AR, etc...
-            
-            // NetPlay
-            NETPLAY_JOIN:                   "",                         // Join NetPlay! Session automatically
-            NETPLAY_NICK:                   "",                         // NetPlay! Nickname
-            
-            // General configuration
-            AUTO_START:                     true,
-            AUTO_POWER_ON_DELAY:            100,                        // -1: no auto Power-ON; >= 0: wait specified milliseconds before Power-ON
-            CARTRIDGE_SHOW_RECENT:          true,
-            CARTRIDGE_CHANGE_DISABLED:      false,
-            CARTRIDGE_LABEL_COLORS:         "",                         // Space-separated colors for Label, Background, Border. e.g. "#f00 #000 transparent". Leave "" for defaults
-            SCREEN_RESIZE_DISABLED:         false,
-            SCREEN_CONSOLE_PANEL_DISABLED:  false,
-            SCREEN_ELEMENT_ID:              "javatari-screen",
-            CONSOLE_PANEL_ELEMENT_ID:       -1,                         // -1: auto. Don't change! :-)
-            SCREEN_FULLSCREEN_MODE:         -1,                         // -2: disabled; -1: auto; 0: off; 1: on
-            SCREEN_CRT_MODE:                0,                          // -1: auto; 0: off; 1: on
-            SCREEN_FILTER_MODE:             -3,                         // -3: user set (default auto); -2: browser default; -1: auto; 0..3: smoothing level
-            SCREEN_DEFAULT_SCALE:           -1,                         // -1: auto; 0.5..N in 0.1 steps: scale
-            SCREEN_DEFAULT_ASPECT:          1,                          // in 0.1 steps
-            SCREEN_CANVAS_SIZE:             2,                          // Internal canvas size factor. Don't change! :-)
-            SCREEN_CONTROL_BAR:             1,                          // 0: on hover; 1: always
-            SCREEN_FORCE_HOST_NATIVE_FPS:   -1,                         // -1: auto. Don't change! :-)
-            SCREEN_VSYNCH_MODE:             -2,                         // -2: user set (default on); -1: disabled; 0: off; 1: on
-            AUDIO_MONITOR_BUFFER_BASE:      -3,                         // -3: user set (default auto); -2: disable audio; -1: auto; 0: browser default; 1..6: base value. More buffer = more delay
-            AUDIO_MONITOR_BUFFER_SIZE:      -1,                         // -1: auto; 256, 512, 1024, 2048, 4096, 8192, 16384: buffer size.     More buffer = more delay. Don't change! :-)
-            AUDIO_SIGNAL_BUFFER_RATIO:      2,                          // Internal Audio Signal buffer based on Monitor buffer
-            AUDIO_SIGNAL_ADD_FRAMES:        3,                          // Additional frames in internal Audio Signal buffer based on Monitor buffer
-            PADDLES_MODE:                   -1,                         // -1: auto; 0: off; 1: on
-            TOUCH_MODE:                     -1,                         // -1: auto; 0: disabled; 1: enabled; 2: enabled (swapped)
-            
-            IMAGES_PATH:                    window.JAVATARI_IMAGES_PATH || "images/",
-            PAGE_BACK_CSS:                  "",                         // CSS to modify page background color. Applied to the body element
-            
-            SERVER_ADDRESS:                 "webmsx.azurewebsites.net/",
-            SERVER_KEEPALIVE:               0,
-            
-            RESET:                          0,                          // if value = 1 clear all saved data on the client
-            ALLOW_URL_PARAMETERS:           true                        // Allows user to override any of these parameters via URL query parameters
+        // Configure Javatari BEFORE loading the script
+        window.Javatari = {
+            SCREEN_ELEMENT_ID:               "javatari-screen",
+            CARTRIDGE_URL:                   "../assets/roms/gatonho.bin",
+            AUTODETECT_URL:                  "../assets/roms/gatonho.bin",
+            AUTO_START: true,
+            AUTO_POWER_ON_DELAY: 1200,
+            CARTRIDGE_SHOW_RECENT: false,
+            CARTRIDGE_CHANGE_DISABLED: false,
+            SCREEN_CONSOLE_PANEL_DISABLED: false
         };
         
-        Javatari.PRESETS_CONFIG = { };                                  // No built-in Presets for now
-        
-        jt = window.jt || {};                                           // Namespace for all classes and objects
+        console.log("Javatari configured with ROM:", Javatari.CARTRIDGE_URL);
     </script>
+    <script src="/javatari.js"></script>
+    <script src="/assets/scripts/scripts.js"></script>
     
-    <script src="javatari.js"></script>
+    <!-- FAQ Accordion Script -->
     <script>
-    </script>
-    <script>
-        /*
-         * CONFIGURAÇÕES PARA DISCORD ACTIVITIES
-         * 
-         * Para funcionar corretamente no Discord, configure no Developer Portal:
-         * 1. URL Mappings (se necessário):
-         *    - /assets -> seu-dominio.com/assets
-         *    - /activities -> seu-dominio.com/activities
-         * 
-         * 2. Todas as URLs devem ser:
-         *    - Relativas (como /assets/roms/gatonho.bin)
-         *    - Ou usar formato completo: https://{clientId}.discordsays.com/path
-         * 
-         * 3. Recursos externos bloqueados por padrão (CSP)
-         * 4. Cookies precisam: SameSite=None Partitioned
+        /**
+         * Configura o comportamento de accordion para a seção FAQ
+         * Garante que apenas um elemento details fique aberto por vez
          */
-        
-        // Configurações específicas para Discord Activities
-        const isDiscordActivity = window.location.hostname.includes('discordsays.com');
-        const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        
-        // Configuração de segurança para Discord Activities
-        if (isDiscordActivity) {
-            // Configurações específicas para ambiente de produção do Discord
-            console.log('Executando como Discord Activity');
+        function setupFAQAccordion() {
+            // Seleciona todos os elementos details da página
+            const faqDetails = document.querySelectorAll('details');
             
-            // Desabilita funcionalidades que podem não funcionar no Discord
-            if (window.Javatari) {
-                Javatari.SCREEN_FULLSCREEN_MODE = -2; // Desabilita fullscreen no Discord
-                Javatari.NETPLAY_JOIN = ""; // Desabilita NetPlay no Discord por segurança
-            }
+            // Adiciona event listener para cada elemento details
+            faqDetails.forEach(detail => {
+                detail.addEventListener('toggle', function() {
+                    // Se este details foi aberto
+                    if (this.open) {
+                        // Fecha todos os outros details que estão abertos
+                        faqDetails.forEach(otherDetail => {
+                            if (otherDetail !== this && otherDetail.open) {
+                                otherDetail.open = false;
+                            }
+                        });
+                    }
+                });
+            });
         }
         
-        // Inicialização do Javatari
-        function initJavatari() {
-            if (typeof Javatari === 'undefined') {
-                console.error('Javatari não foi carregado!');
-                return;
-            }
-            
-            if (isDiscordActivity) {
-                console.log('Configurações do Discord Activity aplicadas');
-            }
-        }
-        
-        window.addEventListener('load', function() {
-            // Remove a mensagem de loading após um tempo
-            setTimeout(function() {
-                const loadingDiv = document.querySelector('.loading');
-                if (loadingDiv) {
-                    loadingDiv.remove();
-                }
-                initJavatari();
-            }, 1000);
-        });
-        
-        // Função para redimensionar o emulador responsivamente
-        function resizeEmulator() {
-            const screen = document.getElementById('javatari-screen');
-            const wrapper = document.querySelector('.emulator-wrapper');
-            
-            if (screen && wrapper) {
-                const wrapperRect = wrapper.getBoundingClientRect();
-                const controlsHeight = document.querySelector('.controls-info').offsetHeight;
-                const availableHeight = wrapperRect.height - controlsHeight - 32; // 32px para padding
-                
-                screen.style.height = availableHeight + 'px';
-            }
-        }
-        
-        // Redimensiona quando a janela muda de tamanho
-        window.addEventListener('resize', resizeEmulator);
-        
-        // Redimensiona após o carregamento
-        window.addEventListener('load', function() {
-            setTimeout(resizeEmulator, 1500);
-        });
-        
-        // Previne comportamentos indesejados em Discord Activity
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-        
-        // Foca no jogo quando clicado
-        document.getElementById('javatari-screen').addEventListener('click', function() {
-            this.focus();
-        });
+        // Executa a função quando o DOM estiver carregado
+        document.addEventListener('DOMContentLoaded', setupFAQAccordion);
     </script>
+
 </body>
 </html>
+

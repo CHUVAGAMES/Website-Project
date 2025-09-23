@@ -322,10 +322,12 @@
     <!-- Scripts -->
     <script>
         // Configure Javatari BEFORE loading the script
+        // Usando URLs absolutas para compatibilidade com Discord embedded
+        const baseURL = window.location.origin;
         window.Javatari = {
             SCREEN_ELEMENT_ID:               "javatari-screen",
-            CARTRIDGE_URL:                   "/assets/roms/gatonho.bin",
-            AUTODETECT_URL:                  "/assets/roms/gatonho.bin",
+            CARTRIDGE_URL:                   baseURL + "/assets/roms/gatonho.bin",
+            AUTODETECT_URL:                  baseURL + "/assets/roms/gatonho.bin",
             AUTO_START: true,
             AUTO_POWER_ON_DELAY: 1200,
             CARTRIDGE_SHOW_RECENT: false,

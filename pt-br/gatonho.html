@@ -116,7 +116,7 @@
                 </a>
             </li>
             <li class="dropdown">
-                <a href="games.html" class="dropdown-toggle3 navselect"><b>Jogos</b></a>
+                <a href="jogos.html" class="dropdown-toggle3 navselect"><b>Jogos</b></a>
                 <ul class="dropdown-menu">
                     <!--<li><a href="theamazongrove.html">The Amazon Grove</a></li>-->
                     <li><a href="trialsofthearcanegrove.html">TAG: Trials of The Arcane Grove</a></li>
@@ -125,8 +125,8 @@
                     <li><a href="gatonho.html" class="navselect"><b>Gatonho: Quest 4 Rings</b></a></li>
                 </ul>
             </li>
-            <li><a href="team.html">Equipe</a></li>
-            <li><a href="contact.html">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <!--<li><a href="contato.html">Contato</a></li> -->   
             <li>
                 <a href="/eng/gatonho.html" aria-label="English version">
                     <img src="/assets/images/icons/PTBR.webp" alt="Portuguese Icon" style="width: 25px; height: 25px; vertical-align: middle;">
@@ -137,7 +137,7 @@
 </header>
 
     <!-- Game Detail Section -->
-        <section class="team" style="text-align: center;">
+        <section class="game-title-section" style="text-align: center; margin-top: 100px; padding: 2em 0;">
         <h1><b>Gatonho: Quest 4 Rings</b></h1>
     </section>
     
@@ -152,76 +152,87 @@
   </div>
 </div>
 
+<!-- Navigation Buttons -->
+<div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+  <button onclick="scrollToSection('about-game-section')" style="display: inline-block; padding: 0.75em 1em; background-color: #f27961; color: #ffffff; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s ease, transform 0.2s ease; border: none; cursor: pointer; text-align: center;" onmouseover="this.style.backgroundColor='#d0454f'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#f27961'; this.style.transform='translateY(0)';">
+    <i class="fas fa-play-circle" style="margin-right: 8px;"></i>Como Jogar?
+  </button>
+  <button onclick="scrollToSection('history-section')" style="display: inline-block; padding: 0.75em 1em; background-color: #f27961; color: #ffffff; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s ease, transform 0.2s ease; border: none; cursor: pointer; text-align: center;" onmouseover="this.style.backgroundColor='#d0454f'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#f27961'; this.style.transform='translateY(0)';">
+    <i class="fas fa-book-open" style="margin-right: 8px;"></i>História
+  </button>
+  <button onclick="scrollToSection('faq-section')" style="display: inline-block; padding: 0.75em 1em; background-color: #f27961; color: #ffffff; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s ease, transform 0.2s ease; border: none; cursor: pointer; text-align: center;" onmouseover="this.style.backgroundColor='#d0454f'; this.style.transform='translateY(-2px)';" onmouseout="this.style.backgroundColor='#f27961'; this.style.transform='translateY(0)';">
+    <i class="fas fa-question-circle" style="margin-right: 8px;"></i>Dúvidas Frequentes
+  </button>
+</div>
+
 <!-- Game Guide Section -->
-<section class="team">
-  <h1><b>Sobre o Jogo</b></h1>
-  <div class="team-profile-card">
-    <div class="team-modal-title">Gatonho: Quest 4 Rings</div>
-    <div class="team-modal-role">Aventura Épica de Plataforma</div>
-    <div class="team-modal-desc">Gatonho é um gatinho corajoso nascido sem braços que embarca em uma aventura épica para recuperar a "Copa dos Anéis" roubada por um Slime imitador do Príncipe Jackson! Explore um mundo vibrante, colete chaves e anéis, e prove que coragem não tem limites.</div>
+<section class="gatonho-game-section" id="about-game-section" style="padding: 2em; margin: 2em 0;">
+  <h1 style="color: white; font-weight: bold; text-align: center; margin-bottom: 1.5em;"><b>Sobre o Jogo</b></h1>
+  <div class="gatonho-game-info" style="background: #374151; padding: 2em; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); backdrop-filter: blur(10px); max-width: 70%; margin: 0 auto;">
+    <div class="bio">
+      <h3 style="color: white; font-weight: bold; text-align: center; font-size: 1.8em; margin-bottom: 1.5em;">Aventura de Plataforma Épica</h3>
+      <p style="color: white; font-weight: bold; line-height: 1.6;">Gatonho é um corajoso gatinho nascido sem braços que embarca em uma aventura épica para recuperar a "Taça dos Anéis" roubada por um Slime imitador do Príncipe Jackson! Explore um mundo vibrante, colete chaves e anéis, e prove que a coragem não tem limites.</p>
     
     <!-- Controls Section -->
-    <div style="margin-bottom: 2em;">
-      <h3 style="color: #2196f3; margin-bottom: 1.5em; text-align: center; font-size: 1.3em;"><i class="fas fa-gamepad" style="margin-right: 8px;"></i>Controles</h3>
-      
-      <!-- Movement Controls -->
-      <div style="background: rgba(33,150,243,0.08); padding: 20px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 24px rgba(33,150,243,0.08);">
-        <h4 style="color: #2196f3; margin: 0 0 15px 0; font-size: 1.1em;"><i class="fas fa-arrows-alt" style="margin-right: 8px;"></i>Movimento</h4>
-        <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
-          <div style="display: flex; flex-direction: column; align-items: center;">
-            <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; margin-bottom: 5px; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">↑</div>
-            <div style="display: flex; gap: 5px;">
-              <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">←</div>
-              <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">↓</div>
-              <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">→</div>
-            </div>
-          </div>
-        </div>
-        <p style="color: #555; margin: 0; text-align: center; font-size: 0.95em;">Use as setas direcionais para mover o Gatonho pelo mundo</p>
-      </div>
-      
-      <!-- Action Controls -->
-      <div style="background: rgba(242,121,97,0.08); padding: 20px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 24px rgba(242,121,97,0.08);">
-        <h4 style="color: #f27961; margin: 0 0 15px 0; font-size: 1.1em;"><i class="fas fa-running" style="margin-right: 8px;"></i>Ação</h4>
-        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-          <div style="background: #f27961; color: white; padding: 12px 24px; border-radius: 12px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 16px rgba(242,121,97,0.3);">ESPAÇO</div>
-        </div>
-        <p style="color: #555; margin: 0; text-align: center; font-size: 0.95em;">Pressione para chutar <strong style="color: #f27961;">(tem cooldown!)</strong></p>
-      </div>
-      
-      <!-- Function Keys -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;" class="controls-grid">
-        <div style="background: rgba(76,175,80,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(76,175,80,0.08);">
-          <div style="background: #4caf50; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(76,175,80,0.3);">F11</div>
-          <p style="color: #555; margin: 0; font-size: 0.9em;"><strong>Dificuldade</strong><br>Fácil (9 vidas) / Normal (7 vidas)</p>
-        </div>
-        <div style="background: rgba(255,152,0,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(255,152,0,0.08);">
-          <div style="background: #ff9800; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(255,152,0,0.3);">F12</div>
-          <p style="color: #555; margin: 0; font-size: 0.9em;"><strong>Reiniciar</strong><br>Recomeça o jogo</p>
-        </div>
-      </div>
-    </div>
+     <div style="margin-bottom: 2em;">
+       <h3 style="color: white; font-weight: bold; text-align: center; font-size: 1.6em; margin-bottom: 1.5em;"><i class="fas fa-gamepad" style="margin-right: 8px;"></i>Controles</h3>
+       
+       <!-- Movement Controls -->
+       <div style="background: rgba(33,150,243,0.08); padding: 20px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 24px rgba(33,150,243,0.08);">
+         <div style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+           <div style="display: flex; flex-direction: column; align-items: center;">
+             <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; margin-bottom: 5px; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">▲</div>
+             <div style="display: flex; gap: 5px;">
+               <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">◄</div>
+               <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">▼</div>
+               <div style="background: #2196f3; color: white; padding: 8px 12px; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 16px rgba(33,150,243,0.3);">►</div>
+             </div>
+           </div>
+         </div>
+         <p style="color: white; font-weight: bold; margin: 0; text-align: center; font-size: 0.95em;">Use as setas para mover Gatonho pelo mundo</p>
+       </div>
+       
+       <!-- Action Controls -->
+       <div style="background: rgba(33,150,243,0.08); padding: 20px; border-radius: 20px; margin-bottom: 15px; box-shadow: 0 4px 24px rgba(33,150,243,0.08);">
+         <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
+           <div style="background: #f27961; color: white; padding: 12px 24px; border-radius: 12px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 16px rgba(242,121,97,0.3);">ESPAÇO</div>
+         </div>
+         <p style="color: white; font-weight: bold; margin: 0; text-align: center; font-size: 0.95em;">Pressione para chutar <strong style="color: #f27961;">(tem cooldown!)</strong></p>
+       </div>
+       
+       <!-- Special Controls -->
+       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;" class="controls-grid">
+         <div style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(76,175,80,0.08);">
+           <div style="background: #4caf50; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(76,175,80,0.3);">F11</div>
+           <p style="color: white; font-weight: bold; margin: 0; font-size: 0.95em;"><strong>Dificuldade</strong><br>Fácil (9 vidas) / Normal (7 vidas)</h4>
+         </div>
+         <div style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 16px; text-align: center; box-shadow: 0 4px 16px rgba(255,152,0,0.08);">
+           <div style="background: #ff9800; color: white; padding: 8px 16px; border-radius: 8px; font-weight: bold; margin-bottom: 8px; display: inline-block; box-shadow: 0 4px 16px rgba(255,152,0,0.3);">F12</div>
+           <p style="color: white; font-weight: bold; margin: 0; font-size: 0.95em;"><strong>Reiniciar</strong><br>Reinicia o jogo</h4>
+         </div>
+       </div>
+     </div>
 
     <!-- Trophies Guide -->
     <!-- Story Section -->
-    <div style="width: 100%; margin-bottom: 1.5em;">
-      <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-book-open" style="margin-right: 8px;"></i>História</h3>
+    <div id="history-section" style="width: 100%; margin-bottom: 1.5em;">
+      <h3 style="color: white; font-weight: bold; text-align: center; font-size: 1.6em; margin-bottom: 1.5em;"><i class="fas fa-book-open" style="margin-right: 8px;"></i>História</h3>
       <div style="background: rgba(33,150,243,0.08); padding: 24px; border-radius: 20px; box-shadow: 0 4px 24px rgba(33,150,243,0.15); border: 2px solid rgba(33,150,243,0.2); margin-bottom: 16px;">
-        <p style="color: #555; margin: 0 0 16px 0; line-height: 1.7; font-size: 1em; text-align: justify;">
+        <p style="color: white; font-weight: bold; margin: 0 0 16px 0; line-height: 1.7; font-size: 1em; text-align: justify;">
           O Gatonho é um gatinho fofo que nasceu sem bracinhos, mas é cheio de coragem! Um vilão, um Slime rosa que imita o Prince Jackson, usando seu chapéu preto e sapatilhas de dança, roubou a "Taça dos Anéis" - o campeonato de futebol mais importante do Morro do Bigato.
         </p>
-        <p style="color: #555; margin: 0; line-height: 1.7; font-size: 1em; text-align: justify;">
+        <p style="color: white; font-weight: bold; margin: 0; line-height: 1.7; font-size: 1em; text-align: justify;">
           Gatonho foi correndo atrás dele, mas virou na rua errada e se perdeu no Morro do Fundão, um lugar com ruas que parecem um labirinto. Neste bairro desconhecido, todos querem treta com os habitantes do Morro do Bigato, e Gatonho vai ter que abrir caminho dando chutes poderosos até recuperar a preciosa Taça dos Anéis!
         </p>
         <div style="margin-top: 16px; padding: 12px; background: rgba(255,193,7,0.1); border-radius: 12px; border-left: 4px solid #ffc107;">
-          <p style="color: #666; margin: 0; font-size: 0.9em; font-style: italic;"><i class="fas fa-gamepad" style="margin-right: 8px; color: #ffc107;"></i>Este jogo é feito para rodar no Videogame Atari 2600. Aqui está funcionando graças ao emulador Javatari.js.</p>
+          <p style="color: white; font-weight: bold; margin: 0; font-size: 0.9em; font-style: italic;"><i class="fas fa-gamepad" style="margin-right: 8px; color: #ffc107;"></i>Este jogo é feito para rodar no Videogame Atari 2600. Aqui está funcionando graças ao emulador Javatari.js.</p>
         </div>
       </div>
     </div>
 
     <!-- Trophy System Section -->
     <div style="width: 100%; margin-bottom: 1.5em;">
-      <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-trophy" style="margin-right: 8px;"></i>Sistema de Troféus</h3>
+      <h3 style="color: white; font-weight: bold; text-align: center; font-size: 1.6em; margin-bottom: 1.5em;"><i class="fas fa-trophy" style="margin-right: 8px;"></i>Sistema de Troféus</h3>
       
       <!-- Trophy Grid -->
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; align-items: stretch;" class="trophy-grid">
@@ -232,7 +243,7 @@
             <i class="fas fa-trophy"></i>
           </div>
           <h4 style="color: #ffd700; margin: 0 0 8px 0; font-size: 1.2em; font-weight: 600;">Troféu Ouro<br>(1º Lugar)</h4>
-          <p style="color: #666; margin: 0; font-size: 0.9em; line-height: 1.4;">Pegue todas as 4 chaves, azul, vermelha, branca e verde, e os 4 anéis, azul, vermelha, branca e verde usando as chaves nos barracos com as respectivas cores, vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
+          <p style="color: white; font-weight: bold; margin: 0; font-size: 0.9em; line-height: 1.4;">Pegue todas as 4 chaves, azul, vermelha, branca e verde, e os 4 anéis, azul, vermelha, branca e verde usando as chaves nos barracos com as respectivas cores, vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
         </div>
         
         <!-- Silver Trophy -->
@@ -241,7 +252,7 @@
             <i class="fas fa-trophy"></i>
           </div>
           <h4 style="color: #c0c0c0; margin: 0 0 8px 0; font-size: 1.2em; font-weight: 600;">Troféu Prata<br>(2º Lugar)</h4>
-          <p style="color: #666; margin: 0; font-size: 0.9em; line-height: 1.4;">Pegue todas as 4 chaves, azul, vermelha, branca e verde, vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
+          <p style="color: white; font-weight: bold; margin: 0; font-size: 0.9em; line-height: 1.4;">Pegue todas as 4 chaves, azul, vermelha, branca e verde, vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
         </div>
         
         <!-- Bronze Trophy -->
@@ -250,51 +261,51 @@
             <i class="fas fa-trophy"></i>
           </div>
           <h4 style="color: #cd7f32; margin: 0 0 8px 0; font-size: 1.2em; font-weight: 600;">Troféu Bronze<br>(3º Lugar)</h4>
-          <p style="color: #666; margin: 0; font-size: 0.9em; line-height: 1.4;">Vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
+          <p style="color: white; font-weight: bold; margin: 0; font-size: 0.9em; line-height: 1.4;">Vença o Slime Jackson e recupere a Copa do Futebol de Rua.</p>
         </div>
         
       </div>
     </div>
 
     <!-- FAQ Section -->
-    <div style="width: 100%; margin-bottom: 1em;">
-      <h3 style="color: #2196f3; margin-bottom: 1em; text-align: center; font-size: 1.3em;"><i class="fas fa-question-circle" style="margin-right: 8px;"></i>Perguntas Frequentes</h3>
+    <div id="faq-section" style="width: 100%; margin-bottom: 1em;">
+      <h3 style="color: white; font-weight: bold; text-align: center; font-size: 1.6em; margin-bottom: 1.5em;"><i class="fas fa-question-circle" style="margin-right: 8px;"></i>Perguntas Frequentes</h3>
       <div style="display: flex; flex-direction: column; gap: 10px;">
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-futbol" style="margin-right: 8px;"></i>Tem horas que o chute parece não sair! Isso é um bug?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">O chute do Gatonho tem Cooldown. Isso significa que num momento você chuta e em seguida é preciso se afastar e esperar. Todos precisam descansar, tomar fôlego. Mas ninguém tem que desistir, só descansar. Um chute pra frente, uma recuada. Ritmo. É tudo que precisamos na verdade.</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">O chute do Gatonho tem Cooldown. Isso significa que num momento você chuta e em seguida é preciso se afastar e esperar. Todos precisam descansar, tomar fôlego. Mas ninguém tem que desistir, só descansar. Um chute pra frente, uma recuada. Ritmo. É tudo que precisamos na verdade.</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-cube" style="margin-right: 8px;"></i>O quê é esse quadrado colorido que aparece no meio, logo no início?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Nos jogos de Atari é preciso imaginação. Imagine que é um baú. E dentro dele existe 50% de chance de você encontrar o sonho do Gatonho, a bola quadrada que dá +1 de dano e ataque à distância. Gatonho sonha em ser jogador de futebol, e uma bola quadrada pra praticar é tudo que ele queria! Mas não se preocupe se não ganhar a bola quadrada com dano +1 e ataque à distância, pois vencendo os Ratoninhos eles deixam baús com bolas e vidas pra trás.</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">Nos jogos de Atari é preciso imaginação. Imagine que é um baú. E dentro dele existe 50% de chance de você encontrar o sonho do Gatonho, a bola quadrada que dá +1 de dano e ataque à distância. Gatonho sonha em ser jogador de futebol, e uma bola quadrada pra praticar é tudo que ele queria! Mas não se preocupe se não ganhar a bola quadrada com dano +1 e ataque à distância, pois vencendo os Ratoninhos eles deixam baús com bolas e vidas pra trás.</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-dog" style="margin-right: 8px;"></i>Um cachorro sempre me mata. O que fazer?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Ritmo. O Catiorão avança (dá dashes) sempre no mesmo ritmo. É como na vida, como dançar samba; um passo pra frente, um passo pra trás. Você tem que rebolar e não ficar só parado.</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">Ritmo. O Catiorão avança (dá dashes) sempre no mesmo ritmo. É como na vida, como dançar samba; um passo pra frente, um passo pra trás. Você tem que rebolar e não ficar só parado.</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-bat" style="margin-right: 8px;"></i>Morri num monstro que bate asas, parece uma abelha.</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Esse é o morcego Ozzy. Ele foi criado no dia que Ozzy Osborne nos deixou. Ele voa em zigue-zague, pra cima e pra baixo. Pode-se vencê-lo posicionando ele em um ponto, chutando e esperando ele voltar. Sempre com ritmo, sempre Rock, até o fim.</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">Esse é o morcego Ozzy. Ele foi criado no dia que Ozzy Osborne nos deixou. Ele voa em zigue-zague, pra cima e pra baixo. Pode-se vencê-lo posicionando ele em um ponto, chutando e esperando ele voltar. Sempre com ritmo, sempre Rock, até o fim.</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-crown" style="margin-right: 8px;"></i>Que troço enorme cheio de vida, esquisito rosa, cheio de adereços estranhos foi esse que me venceu dançando e dando passinhos pra trás?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Este é o vilão dos nossos sonhos. Aqui ele se chama Slime imitador de Prince Jackson. Ele tem um escopo enorme e cheio de enfeites que nós não precisamos. Fica mais fácil vencer com ajuda. Vencendo os Catiorões você vai conseguir terríveis chuteiras coloridas, você pode equipar até duas e vão aparecer como uma barra de força acima de Gatonho. Cada uma das 2 chuteiras dão +1 de dano. E se você não abandonar seu sonho para trás, vai ter mais um bônus de +1 e vai poder atacar à distância.</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">Este é o vilão dos nossos sonhos. Aqui ele se chama Slime imitador de Prince Jackson. Ele tem um escopo enorme e cheio de enfeites que nós não precisamos. Fica mais fácil vencer com ajuda. Vencendo os Catiorões você vai conseguir terríveis chuteiras coloridas, você pode equipar até duas e vão aparecer como uma barra de força acima de Gatonho. Cada uma das 2 chuteiras dão +1 de dano. E se você não abandonar seu sonho para trás, vai ter mais um bônus de +1 e vai poder atacar à distância.</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-key" style="margin-right: 8px;"></i>Para que servem as chaves?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">As chaves abrem os barracos onde os anéis estão escondidos. Cada chave corresponde a uma cor específica: azul, vermelha, branca e verde. Você precisa coletar todas as chaves para acessar todos os anéis!</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">As chaves abrem os barracos onde os anéis estão escondidos. Cada chave corresponde a uma cor específica: azul, vermelha, branca e verde. Você precisa coletar todas as chaves para acessar todos os anéis!</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-ring" style="margin-right: 8px;"></i>Para que servem os anéis?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Os anéis fazem parte da "Copa dos Anéis" que foi roubada pelo Slime Jackson. Coletar todos os 4 anéis é essencial para completar a missão e conquistar o Troféu de Ouro!</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">Os anéis fazem parte da "Copa dos Anéis" que foi roubada pelo Slime Jackson. Coletar todos os 4 anéis é essencial para completar a missão e conquistar o Troféu de Ouro!</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-question" style="margin-right: 8px;"></i>O jogo tem fim ou é só por pontuação?</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">O jogo tem fim. A pontuação pode te ajudar, mas nunca se esqueça que tudo é jogo e que o jogo vai acabar um dia. Então jogue até o final e não desista jamais. Apesar de você amanhã há de ser outro dia!</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">O jogo tem fim. A pontuação pode te ajudar, mas nunca se esqueça que tudo é jogo e que o jogo vai acabar um dia. Então jogue até o final e não desista jamais. Apesar de você amanhã há de ser outro dia!</p>
         </details>
         <details style="background: rgba(33,150,243,0.08); padding: 15px; border-radius: 8px; cursor: pointer; border-left: 3px solid #2196f3;">
           <summary style="color: #2196f3; font-weight: 600; margin-bottom: 8px; cursor: pointer;"><i class="fas fa-cat" style="margin-right: 8px;"></i>O quê é esse boneco cabeçudo amarelo que parece um E.T.E.? Tenho maus pressentimentos!</summary>
-          <p style="color: #555; margin: 0; line-height: 1.6; font-size: 0.95em;">Este é o Gatonho, e não se preocupe, ele não é o E.T.E, ele é um gato sem bracinhos, mas nunca cai em buracos! Mas se mais pessoas lessem o manual, E.T.E.s e Gatonhos assustariam menos, eu garanto! Mas jamais exigiríamos isso.</p>
+          <p style="color: white; font-weight: bold; margin: 0; line-height: 1.6; font-size: 0.95em;">Este é o Gatonho, e não se preocupe, ele não é o E.T.E, ele é um gato sem bracinhos, mas nunca cai em buracos! Mas se mais pessoas lessem o manual, E.T.E.s e Gatonhos assustariam menos, eu garanto! Mas jamais exigiríamos isso.</p>
         </details>
       </div>
     </div>
@@ -340,6 +351,19 @@
     
     <!-- FAQ Accordion Script -->
     <script>
+        /**
+         * Função para rolar suavemente até uma seção específica
+         */
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
         /**
          * Configura o comportamento de accordion para a seção FAQ
          * Garante que apenas um elemento details fique aberto por vez

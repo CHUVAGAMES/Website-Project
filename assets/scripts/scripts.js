@@ -540,7 +540,7 @@ const teamMembersEn = [
   {
     name: "André Borba",
     slug: "andre-borba",
-    role: "Web Developer / Producer / Community Manager",
+    role: "Community Manager",
     thumb: "/assets/images/team/tuta.webp",
     gif: "/assets/images/team/animated_tuta.webp",
     desc: `André, known as Tutankhamal, is passionate about technology and music. Neurodivergent (autistic and ADHD), he has experience in Front-end development, community management, and customer support. A self-taught learner, he turns his passion for video games and computers into technical knowledge.`,
@@ -807,7 +807,7 @@ const teamMembersPt = [
   {
     name: "André Borba",
     slug: "andre-borba",
-    role: "Desenvolvedor Web / Produtor / Gerente de Comunidade",
+    role: "Gerente de Comunidade",
     thumb: "/assets/images/team/tuta.webp",
     gif: "/assets/images/team/animated_tuta.webp",
     desc: `André, conhecido como Tutankhamal, é apaixonado por tecnologia e música. Neurodivergente (autista e TDAH), ele tem experiência em desenvolvimento Front-end, gerenciamento de comunidade e suporte ao cliente. Um autodidata, ele transforma sua paixão por videogames e computadores em conhecimento técnico.`,

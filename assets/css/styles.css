@@ -24,19 +24,19 @@
 .team-modal-title {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #2196f3;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 0.2em;
 }
 .team-modal-role {
   font-size: 1.1rem;
-  color: #222;
+  color: #ffffff;
   font-weight: 600;
   text-align: center;
   margin-bottom: 0.5em;
 }
 .team-modal-desc {
-  color: #222;
+  color: #ffffff;
   font-size: 1em;
   text-align: justify;
   margin-bottom: 1em;
@@ -564,12 +564,11 @@ footer p {
 
 /* Contact Section */
 .contact-section {
-  padding: 2em 1em;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 2em;
 }
 
 .contact-section h1 {
@@ -734,11 +733,11 @@ footer p {
 }
 
 .team-card:hover .team-card-name {
-  color: #000000;
+  color: #ffffff;
 }
 
 .team-card:hover .team-card-role {
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Modal estilos */
@@ -793,7 +792,7 @@ footer p {
   top: 1rem;
   right: 1.2rem;
   font-size: 1.5rem;
-  color: #000000;
+  color: #ffffff;
   background: none;
   border: none;
   cursor: pointer;
@@ -825,13 +824,13 @@ footer p {
 .team-modal-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 0.3rem;
   text-align: center;
 }
 
 .team-modal-role {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -839,7 +838,7 @@ footer p {
 }
 
 .team-modal-desc {
-  color: #000000;
+  color: #ffffff;
   font-size: 1rem;
   text-align: justify;
   margin-bottom: 1.5rem;
@@ -890,7 +889,7 @@ footer p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
   z-index: 1;
@@ -966,7 +965,7 @@ footer p {
 /* Novo estilo para cards de jogos */
 .games-cards-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row;
   gap: 3rem;
   justify-content: center;
   margin: 2rem auto;
@@ -1120,7 +1119,7 @@ footer p {
   top: 10px;
   right: 18px;
   font-size: 2rem;
-  color: #000000;
+  color: #ffffff;
   background: none;
   border: none;
   cursor: pointer;

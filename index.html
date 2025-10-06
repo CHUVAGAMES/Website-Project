@@ -75,20 +75,29 @@
     </div>
 </footer>
    <script src="assets/scripts/scripts.js"></script>
-   <script>
-                function redirecionarPorIdioma() {
-                  var idiomaNavegador = navigator.language || navigator.userLanguage; 
-                  idiomaNavegador = idiomaNavegador.toLowerCase(); 
-              
-                  if (idiomaNavegador.startsWith('pt-br')) {
-                    window.location.href = 'pt-br/index.html'; 
-                  } else {
-                    window.location.href = 'eng/index.html'; 
-                  }
-                }
-              
-                redirecionarPorIdioma(); 
-              </script>
+<script>
+  function redirecionarPorIdioma() {
+    var ua = navigator.userAgent.toLowerCase();
+    var isDiscord = ua.includes("discord") || ua.includes("electron") || ua.includes("discordbot");
+
+    if (isDiscord) {
+      // Se for o Discord (Activity embed), redireciona direto para o jogo
+      window.location.href = '/games.html';
+      return; // encerra a função aqui pra não continuar pro redirecionamento de idioma
+    }
+
+    var idiomaNavegador = navigator.language || navigator.userLanguage;
+    idiomaNavegador = idiomaNavegador.toLowerCase();
+
+    if (idiomaNavegador.startsWith('pt-br')) {
+      window.location.href = 'pt-br/index.html';
+    } else {
+      window.location.href = 'eng/index.html';
+    }
+  }
+
+  redirecionarPorIdioma();
+</script>
               
 
 

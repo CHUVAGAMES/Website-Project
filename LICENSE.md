@@ -23,11 +23,6 @@ Este projeto é de **uso privado, exclusivo e restrito da CHUVA Games**, um est�
 
 O website oficial da CHUVA Games foi desenvolvido por:
 
-**André "Tutankhamal" Borba**
-- 🌐 **Portfolio**: [tutankhamal.com](https://tutankhamal.com)
-- 👤 **Função**: Desenvolvedor Full-Stack
-- 🏢 **Membro da equipe**: CHUVA Games
-- 📅 **Período**: 2024-2025
 
 ### 🌍 Filosofia de Compartilhamento
 
@@ -306,11 +301,6 @@ A CHUVA Games reserva-se o direito de modificar estes termos a qualquer momento.
 
 Para solicitações de licenciamento comercial ou uso além dos termos aqui especificados, entre em contato:
 
-- **Email**: contato@chuvagames.com
-- **Discord**: [Servidor Oficial](https://discord.gg/Py6nAHGcDX)
-- **Website**: [chuvagames.com](https://chuvagames.com)
-- **Desenvolvedor**: [André Borba - tutankhamal.com](https://tutankhamal.com)
-
 ### Licenciamento Comercial
 
 Para uso comercial, oferecemos:
@@ -359,8 +349,6 @@ Para uso comercial, oferecemos:
 **© 2025 CHUVA Games - Todos os direitos reservados**
 
 *Este documento foi atualizado em Janeiro de 2025*
-
-**Desenvolvido com ❤️ por André "Tutankhamal" Borba para CHUVA Games**
 
 **"Protegendo nossa criatividade, compartilhando conhecimento"**
 

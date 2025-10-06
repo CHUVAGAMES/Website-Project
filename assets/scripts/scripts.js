@@ -2,8 +2,7 @@
  * CHUVA Games - Main JavaScript
  * Handles navigation, animations, and interactive elements for both English and Portuguese versions
  * 
- * Developed by: André 'Tutankhamal' Borba
- * Portfolio: https://tutankhamal.com
+
  * 
  * This script contains all the interactive functionality for the CHUVA Games website,
  * including navigation, animations, team member data, and multilingual support.
@@ -538,37 +537,6 @@ const teamMembersEn = [
     ]
   },
   {
-    name: "André Borba",
-    slug: "andre-borba",
-    role: "Community Manager",
-    thumb: "/assets/images/team/tuta.webp",
-    gif: "/assets/images/team/animated_tuta.webp",
-    desc: `André, known as Tutankhamal, is passionate about technology and music. Neurodivergent (autistic and ADHD), he has experience in Front-end development, community management, and customer support. A self-taught learner, he turns his passion for video games and computers into technical knowledge.`,
-    skills: [
-      { name: "Community Management", value: 100, desc: "Building and managing online communities." },
-      { name: "Front-End Development", value: 100, desc: "Creating user-friendly interfaces for web applications." },
-      { name: "Content Management", value: 100, desc: "Managing and organizing digital content." },
-      { name: "UI/UX", value: 90, desc: "Designing user interfaces and enhancing user experiences." },
-      { name: "Responsive Design", value: 90, desc: "Ensuring websites are accessible and usable on all devices." },
-      { name: "Performance Optimization", value: 90, desc: "Improving website speed and efficiency." },
-      { name: "Image Editing", value: 70, desc: "Creating and manipulating images for web and print materials." },      
-      { name: "SEO", value: 100, desc: "Optimizing websites for search engines." }
-    ],
-    social: [
-      { href: "https://tutankhamal.com", icon: "default_site.webp", hover: "hover_site.webp", alt: "Portifolio" },
-      { href: "https://www.linkedin.com/in/tutankhamal/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
-      { href: "https://github.com/Tutankhamal", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
-      { href: "https://www.youtube.com/@tutankhamal", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
-      { href: "https://www.twitch.tv/tutankhamal", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
-      { href: "https://www.instagram.com/tutankhamal", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
-      { href: "https://www.tiktok.com/@tutankhamal", icon: "default_tiktok.webp", hover: "hover_tiktok.webp", alt: "TikTok" },
-      { href: "https://discordapp.com/users/820522746622246963", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
-      { href: "https://steamcommunity.com/id/Tutankhamal/", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" },
-      { href: "https://x.com/Tutankhamal", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
-      { href: "https://soundcloud.com/tutankhamal", icon: "default_soundcloud.webp", hover: "hover_soundcloud.webp", alt: "Soundcloud" }
-    ]
-  },
-  {
     name: "Camila Sales",
     slug: "camila-sales",
     role: "2D Artist",
@@ -802,37 +770,6 @@ const teamMembersPt = [
       { href: "https://www.twitch.tv/rickgalasio", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
       { href: "https://www.instagram.com/rickgalasio", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
       { href: "https://discordapp.com/users/612803183764307968", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" }
-    ]
-  },
-  {
-    name: "André Borba",
-    slug: "andre-borba",
-    role: "Gerente de Comunidade",
-    thumb: "/assets/images/team/tuta.webp",
-    gif: "/assets/images/team/animated_tuta.webp",
-    desc: `André, conhecido como Tutankhamal, é apaixonado por tecnologia e música. Neurodivergente (autista e TDAH), ele tem experiência em desenvolvimento Front-end, gerenciamento de comunidade e suporte ao cliente. Um autodidata, ele transforma sua paixão por videogames e computadores em conhecimento técnico.`,
-    skills: [
-      { name: "Gestão de Comunidade", value: 100, desc: "Construção e gerenciamento de comunidades online." },
-      { name: "Desenvolvimento Front-End", value: 100, desc: "Criação de interfaces amigáveis para aplicações web." },
-      { name: "Gestão de Conteúdo", value: 100, desc: "Gerenciamento e organização de conteúdo digital." },
-      { name: "UI/UX", value: 90, desc: "Design de interfaces e aprimoramento da experiência do usuário." },
-      { name: "Design Responsivo", value: 90, desc: "Garantia de acessibilidade e usabilidade dos sites em todos os dispositivos." },
-      { name: "Otimização de Performance", value: 90, desc: "Melhoria da velocidade e eficiência de sites." },
-      { name: "Edição de Imagem", value: 70, desc: "Criação e manipulação de imagens para materiais digitais e impressos." },
-      { name: "SEO", value: 100, desc: "Otimização de sites para mecanismos de busca." }
-    ],
-    social: [
-      { href: "https://tutankhamal.com", icon: "default_site.webp", hover: "hover_site.webp", alt: "Portifolio" },
-      { href: "https://www.linkedin.com/in/tutankhamal/", icon: "default_linkedin.webp", hover: "hover_linkedin.webp", alt: "LinkedIn" },
-      { href: "https://github.com/Tutankhamal", icon: "default_github.webp", hover: "hover_github.webp", alt: "GitHub" },
-      { href: "https://www.youtube.com/@tutankhamal", icon: "default_youtube.webp", hover: "hover_youtube.webp", alt: "YouTube" },
-      { href: "https://www.twitch.tv/tutankhamal", icon: "default_twitch.webp", hover: "hover_twitch.webp", alt: "Twitch" },
-      { href: "https://www.instagram.com/tutankhamal", icon: "default_insta.webp", hover: "hover_insta.webp", alt: "Instagram" },
-      { href: "https://www.tiktok.com/@tutankhamal", icon: "default_tiktok.webp", hover: "hover_tiktok.webp", alt: "TikTok" },
-      { href: "https://discordapp.com/users/820522746622246963", icon: "default_discord.webp", hover: "hover_discord.webp", alt: "Discord" },
-      { href: "https://steamcommunity.com/id/Tutankhamal/", icon: "default_steam.webp", hover: "hover_steam.webp", alt: "Steam" },
-      { href: "https://x.com/Tutankhamal", icon: "default_x.webp", hover: "hover_x.webp", alt: "X" },
-      { href: "https://soundcloud.com/tutankhamal", icon: "default_soundcloud.webp", hover: "hover_soundcloud.webp", alt: "Soundcloud" }
     ]
   },
   {

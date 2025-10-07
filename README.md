@@ -38,7 +38,6 @@ chuvagames/
 │       └── scripts.js          # Script principal
 ├── 📁 eng/                     # Versão em inglês
 │   ├── 📁 team/                # Páginas individuais da equipe
-│   │   ├── andre-borba.html
 │   │   ├── andrews-nycollas.html
 │   │   ├── brendo-teles.html
 │   │   ├── camila-sales.html
@@ -61,7 +60,6 @@ chuvagames/
 │   └── trialsofthearcanegrove.html # Página do jogo Trials of the Arcane Grove
 ├── 📁 pt-br/                   # Versão em português
 │   ├── 📁 team/                # Páginas individuais da equipe
-│   │   ├── andre-borba.html
 │   │   ├── andrews-nycollas.html
 │   │   ├── brendo-teles.html
 │   │   ├── camila-sales.html
@@ -471,7 +469,6 @@ Cada jogo possui páginas dedicadas em ambos os idiomas com estrutura consistent
 
 Cada membro da equipe possui uma página individual em `eng/team/` e `pt-br/team/`:
 
-- `andre-borba.html`
 - `andrews-nycollas.html`
 - `brendo-teles.html`
 - `camila-sales.html`
@@ -616,7 +613,7 @@ Este projeto está licenciado sob termos específicos - veja o arquivo [LICENSE.
 <div align="center">
   <img src="/assets/images/logos/chuvamain.png" alt="CHUVA Games Logo" width="200">
   
-  **Desenvolvido com ❤️ pela equipe CHUVA Games**
-  
-  *"Contando histórias através de jogos"*
+
+
+
 </div>
